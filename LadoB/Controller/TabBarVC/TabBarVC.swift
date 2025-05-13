@@ -14,6 +14,8 @@ class TabBarViewController: UITabBarController {
         let tabItem = UITabBarItem()
         tabItem.title = "Pesquisa"
         tabItem.image = UIImage(systemName: "list.bullet.rectangle.portrait.fill")
+        tabItem.badgeColor = .red
+        
         
         let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
         rootViewController.tabBarItem = tabItem
@@ -63,6 +65,8 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.tintColor = .yellow1
+        tabBar.backgroundColor = .purple1
         viewControllers = [searchTabBar, discoTabBar, wishListTabBar, profileTabBar]
     }
 
