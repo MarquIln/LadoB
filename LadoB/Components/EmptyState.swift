@@ -13,19 +13,19 @@ class EmptyState: UIView {
         private lazy var titleLabel: UILabel = {
             var label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
-            //label.font = UIFont(name: "SFProRounded-Bold", size: 17)
+            label.font = UIFont(name: "SFPro-Bold", size: 20)
             label.textAlignment = .center
-            //label.textColor = UIColor(named: "Label-Primary")
+            label.textColor = .white2
             return label
         }()
         
         private lazy var descriptionLabel: UILabel = {
             var label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
-            //label.font = UIFont(name: "SFProRounded-Regular", size: 17)
+            label.font = UIFont(name: "SFPro-Regular", size: 17)
             label.textAlignment = .center
             label.numberOfLines = 0
-            //label.textColor = .secondaryLabel
+            label.textColor = .white3
             return label
         }()
         
@@ -40,20 +40,11 @@ class EmptyState: UIView {
         private lazy var button: Button = {
             var button1 = Button()
             button1.button.setTitle("Adicionar um LP agora", for: .normal)
+            button1.button.setTitleColor(UIColor(named: "Purple1"), for: .normal)
             button1.translatesAutoresizingMaskIntoConstraints = false
+            button1.button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
             return button1
         }()
-        
-    
-//        private lazy var button: UIButton = {
-//            var button = UIButton()
-//            button.translatesAutoresizingMaskIntoConstraints = false
-////            button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-////            button.titleLabel?.font = UIFont(name: "SFProRounded-Semibold", size: 17)
-//            button.backgroundColor = .systemBlue
-//            button.layer.cornerRadius = 12
-//            return button
-//        }()
         
         
         var titleText: String? {
@@ -80,9 +71,10 @@ class EmptyState: UIView {
             fatalError("init(coder:) has not been implemented")
         }
         
-//        @objc func buttonTapped() {
-//            buttonAction()
-//        }
+        @objc func buttonTapped() {
+            //buttonAction()
+            //fazer ação do botão
+        }
         
 }
     
@@ -93,7 +85,6 @@ extension EmptyState: ViewCodeProtocol {
     }
     
     func addSubviews() {
-        //addSubview(imageView)
         addSubview(stack)
         addSubview(button)
     }

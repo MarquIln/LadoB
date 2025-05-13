@@ -15,10 +15,9 @@ class Button: UIView {
         button.setTitle("", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 8
-        button.titleLabel?.font = Fonts.bodyBold  //por enquanto até pegar dos assets
-        //button.titleLabel?.textColor = cor do asset
+        button.titleLabel?.font = UIFont(name: "SFPro-Bold", size: 16)
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        button.backgroundColor = .systemBlue /*cor do asset*/
+        button.backgroundColor = .yellow1
 
         return button
     }()

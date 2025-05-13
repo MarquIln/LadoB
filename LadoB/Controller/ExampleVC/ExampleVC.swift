@@ -20,16 +20,11 @@ class ExampleVC: UIViewController {
     lazy var emptyView: EmptyState = {
         var empty = EmptyState()
         empty.translatesAutoresizingMaskIntoConstraints = false
-        //empty.image = UIImage(named: "task-icon")
         empty.titleText = "Nenhum LP cadastrado ainda"
         empty.descriptionText = """
                                 Os álbuns, coletâneas e listas cadastradas
                                 e criadas por você aparacerão aqui
                                 """
-        //empty.buttonTitle = "Adicionar um LP agora"
-//        empty.buttonAction = { [weak self] in
-//            self?.addTasksButtonTapped()
-        //}
         return empty
     }()
     
