@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Thriller",
+        "artist": "Michael Jackson",
+        "releaseYear": 1982,
+        "genre": "Pop",
+        "coverURL": "image"
+    },
+    {
+      "id": 2,
+      "title": "To Pimp a Butterfly",
+      "artist": "Kendrick Lamar",
+      "releaseYear": 2015,
+      "genre": "hip_hop",
+      "coverURL": "https://example.com/tpab.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Back to Black",
+      "artist": "Amy Winehouse",
+      "releaseYear": 2006,
+      "genre": "soul",
+      "coverURL": "https://example.com/backtoblack.jpg"
+    }
+  ]
+]
