@@ -15,14 +15,19 @@ class Button: UIView {
         button.setTitle("", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 8
-        button.titleLabel?.font = Fonts.bodyBold  //por enquanto até pegar dos assets
-        //button.titleLabel?.textColor = cor do asset
+        button.titleLabel?.font = Fonts.bodyBold
+        button.setTitleColor(.purple1, for: .normal)
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        //button.backgroundColor = cor do asset
+        button.backgroundColor = .yellow1
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
         return button
     }()
 
+    @objc func buttonTapped(){
+        print("botao clicado")
+    }
+    
     var buttonText: String? {
         didSet {
             button.setTitle(buttonText, for: .normal)
