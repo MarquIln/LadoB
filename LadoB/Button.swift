@@ -18,7 +18,7 @@ class Button: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)  //por enquanto até pegar dos assets
         //button.titleLabel?.textColor = cor do asset
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        //button.backgroundColor = cor do asset
+        button.backgroundColor = .systemBlue /*cor do asset*/
 
         return button
     }()

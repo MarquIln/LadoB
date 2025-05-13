@@ -17,13 +17,29 @@ class ExampleVC: UIViewController {
         return label
     }()
     
-    lazy var buttonView: Button = {
-        let view = Button()
-        view.button.setTitle("Tap me!", for: .normal)
-        view.translatesAutoresizingMaskIntoConstraints = false
-
-        return view
+    lazy var emptyView: EmptyState = {
+        var empty = EmptyState()
+        empty.translatesAutoresizingMaskIntoConstraints = false
+        //empty.image = UIImage(named: "task-icon")
+        empty.titleText = "Nenhum LP cadastrado ainda"
+        empty.descriptionText = """
+                                Os álbuns, coletâneas e listas cadastradas
+                                e criadas por você aparacerão aqui
+                                """
+        //empty.buttonTitle = "Adicionar um LP agora"
+//        empty.buttonAction = { [weak self] in
+//            self?.addTasksButtonTapped()
+        //}
+        return empty
     }()
+    
+//    lazy var buttonView: Button = {
+//        let view = Button()
+//        view.button.setTitle("Tap me!", for: .normal)
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//
+//        return view
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +50,8 @@ class ExampleVC: UIViewController {
 extension ExampleVC: ViewCodeProtocol {
     func addSubviews() {
         view.addSubview(titleLabel)
-        view.addSubview(buttonView)
+        view.addSubview(emptyView)
+        //view.addSubview(buttonView)
     }
     
     func setupConstraints() {
@@ -43,10 +60,15 @@ extension ExampleVC: ViewCodeProtocol {
             titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             
+            emptyView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
+            emptyView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            emptyView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+           emptyView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
-            buttonView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
-            buttonView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            buttonView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16)
+            
+//            buttonView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
+//            buttonView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+//            buttonView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16)
             ])
     }
     
