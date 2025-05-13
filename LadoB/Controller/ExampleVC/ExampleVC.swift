@@ -43,6 +43,7 @@ class ExampleVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .purple1
         setup()
     }
 }
