@@ -98,7 +98,7 @@ extension EmptyState: ViewCodeProtocol {
             
             button.topAnchor.constraint(equalTo: stack.bottomAnchor, constant: 16),
             
-            button.heightAnchor.constraint(equalToConstant: 50),
+            button.heightAnchor.constraint(equalToConstant: 40),
             button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             button.bottomAnchor.constraint(equalTo: self.bottomAnchor)
