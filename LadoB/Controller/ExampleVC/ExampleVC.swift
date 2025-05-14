@@ -17,17 +17,13 @@ class ExampleVC: UIViewController {
         return label
     }()
     
-    lazy var buttonView: Button = {
-        let view = Button()
-        view.button.setTitle("Tap me!", for: .normal)
-        view.translatesAutoresizingMaskIntoConstraints = false
-
-        return view
-    }()
+    let cardView = CardTableView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple1
+        cardView.translatesAutoresizingMaskIntoConstraints = false
         setup()
     }
 }
@@ -35,7 +31,7 @@ class ExampleVC: UIViewController {
 extension ExampleVC: ViewCodeProtocol {
     func addSubviews() {
         view.addSubview(titleLabel)
-        view.addSubview(buttonView)
+        view.addSubview(cardView)
     }
     
     func setupConstraints() {
@@ -45,9 +41,10 @@ extension ExampleVC: ViewCodeProtocol {
             titleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             
             
-            buttonView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
-            buttonView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            buttonView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16)
+            cardView.topAnchor.constraint(equalTo: view.topAnchor),
+            cardView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            cardView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            cardView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
             ])
     }
     

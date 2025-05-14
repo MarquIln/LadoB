@@ -6,7 +6,7 @@
 //
 
 
-enum Genre: String, Codable {
+enum Genre: String, Codable, CaseIterable {
     case rock
     case pop
     case jazz

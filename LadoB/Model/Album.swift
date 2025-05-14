@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct Album: Codable {
-    var id = UUID()
-    var title: String
-    var artist: String
-    var decade: Date
-    var genre: Genre
-    var cover: String
-    
-    init(id: UUID = UUID(), title: String, artist: String, decade: Date, genre: Genre, cover: String) {
+struct Album: Decodable {
+    let id: UUID?
+    let title: String
+    let artist: String
+    let decade: Int
+    let genre: Genre
+    let cover: String
+
+    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, cover: String) {
         self.id = id
         self.title = title
         self.artist = artist
