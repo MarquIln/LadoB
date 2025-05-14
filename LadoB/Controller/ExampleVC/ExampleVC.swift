@@ -17,8 +17,19 @@ class ExampleVC: UIViewController {
         return label
     }()
     
+    lazy var emptyView: EmptyState = {
+        var empty = EmptyState()
+        empty.translatesAutoresizingMaskIntoConstraints = false
+        empty.titleText = "Nenhum LP cadastrado ainda"
+        empty.descriptionText = """
+                                Os álbuns, coletâneas e listas cadastradas
+                                e criadas por você aparacerão aqui
+                                """
+        return empty
+    }()
     let cardView = CardTableView()
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +42,7 @@ class ExampleVC: UIViewController {
 extension ExampleVC: ViewCodeProtocol {
     func addSubviews() {
         view.addSubview(titleLabel)
+        view.addSubview(emptyView)
         view.addSubview(cardView)
     }
     
@@ -40,6 +52,10 @@ extension ExampleVC: ViewCodeProtocol {
             titleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             
+            emptyView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
+            emptyView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            emptyView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+           emptyView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
             cardView.topAnchor.constraint(equalTo: view.topAnchor),
             cardView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
