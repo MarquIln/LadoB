@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
     lazy var searchTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "Pesquisa"
-        tabItem.image = UIImage(systemName: "list.bullet.rectangle.portrait.fill")
+        tabItem.image = UIImage(systemName: "sparkle.magnifyingglass")
         tabItem.badgeColor = .red
         
         
@@ -28,7 +28,7 @@ class TabBarViewController: UITabBarController {
     lazy var discoTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "Discoteca"
-        tabItem.image = UIImage(systemName: "list.bullet.rectangle.portrait.fill")
+        tabItem.image = UIImage(systemName: "square.3.layers.3d.down.backward")
         
         let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
         rootViewController.tabBarItem = tabItem
@@ -41,7 +41,7 @@ class TabBarViewController: UITabBarController {
     lazy var wishListTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "WishList"
-        tabItem.image = UIImage(systemName: "list.bullet.rectangle.portrait.fill")
+        tabItem.image = UIImage(named: "custom.record.circle.fill.badge.sparkles.alt")
         
         let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
         rootViewController.tabBarItem = tabItem
@@ -54,7 +54,7 @@ class TabBarViewController: UITabBarController {
     lazy var profileTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "Perfil"
-        tabItem.image = UIImage(systemName: "list.bullet.rectangle.portrait.fill")
+        tabItem.image = UIImage(systemName: "person.fill")
         
         let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
         rootViewController.tabBarItem = tabItem
