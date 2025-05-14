@@ -3,6 +3,7 @@
     "title": "Thriller",
     "artist": "Michael Jackson",
     "decade": 1980,
+
     "genre": "Pop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Michael_Jackson_-_Thriller.jpg/250px-Michael_Jackson_-_Thriller.jpg"
   },
@@ -700,5 +701,4 @@
     "decade": 1970,
     "genre": "Pop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a6/Off_the_Wall.jpg"
-  }
 ]
