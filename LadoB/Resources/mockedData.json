@@ -569,7 +569,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/0/00/TheClashLondonCallingalbumcover.jpg"
   },
   {
-    "id": 82,
     "title": "Ramones",
     "artist": "Ramones",
     "decade": 1970,
@@ -577,7 +576,6 @@
     "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDRoSRWoHsQW21CGO6xWyrabHjmMyt0o5LQ&s"
   },
   {
-    "id": 83,
     "title": "Never Mind the Bollocks, Here's the Sex Pistols",
     "artist": "Sex Pistols",
     "decade": 1970,
@@ -585,7 +583,6 @@
     "coverURL": "https://m.media-amazon.com/images/I/71oSBQbCnIL.jpg"
   },
   {
-    "id": 84,
     "title": "Bleach",
     "artist": "Nirvana",
     "decade": 1980,
@@ -593,7 +590,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a1/Nirvana-Bleach.jpg"
   },
   {
-    "id": 85,
     "title": "Are You Experienced",
     "artist": "The Jimi Hendrix Experience",
     "decade": 1960,
@@ -601,7 +597,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Are_You_Experienced_-_US_cover.jpg"
   },
   {
-    "id": 86,
     "title": "Horses",
     "artist": "Patti Smith",
     "decade": 1970,
@@ -609,7 +604,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/en/8/88/PattiSmithHorses.jpg"
   },
   {
-    "id": 87,
     "title": "Let it be",
     "artist": "The Beatles",
     "decade": 1960,
@@ -617,7 +611,6 @@
     "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4-ij4AjCLNRCmXzoDu_8ubVZnXDUEfHw7Cw&s"
   },
   {
-    "id": 88,
     "title": "Exile on Main St.",
     "artist": "The Rolling Stones",
     "decade": 1970,
@@ -625,7 +618,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/8/8a/F60130iffzd.jpg"
   },
   {
-    "id": 89,
     "title": "Sgt. Pepper's Lonely Hearts Club Band",
     "artist": "The Beatles",
     "decade": 1960,
@@ -633,7 +625,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/6/68/Sgt_Peppers.jpg"
   },
   {
-    "id": 90,
     "title": "Led Zeppelin IV",
     "artist": "Led Zeppelin",
     "decade": 1970,
@@ -641,7 +632,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/4/4b/LedZeppelinIV.jpg"
   },
   {
-    "id": 91,
     "title": "Nebraska",
     "artist": "Bruce Springsteen",
     "decade": 1980,
@@ -649,7 +639,6 @@
     "coverURL": "https://m.media-amazon.com/images/I/71fGFktZFTL._UF1000,1000_QL80_.jpg"
   },
   {
-    "id": 92,
     "title": "Miles Smiles",
     "artist": "Miles Davis",
     "decade": 1960,
@@ -657,7 +646,6 @@
     "coverURL": "https://m.media-amazon.com/images/I/81Q9utQuyDL._UF1000,1000_QL80_.jpg"
   },
   {
-    "id": 93,
     "title": "Bitches Brew",
     "artist": "Miles Davis",
     "decade": 1970,
@@ -665,7 +653,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a0/Miles_Davis_-_Bitches_Brew.jpg"
   },
   {
-    "id": 94,
     "title": "Speak No Evil",
     "artist": "Wayne Shorter",
     "decade": 1960,
@@ -673,7 +660,6 @@
     "coverURL": "https://m.media-amazon.com/images/I/61FA1lPP1kS.jpg"
   },
   {
-    "id": 95,
     "title": "Mingus Ah Um",
     "artist": "Charles Mingus",
     "decade": 1950,
@@ -681,7 +667,6 @@
     "coverURL": "https://m.media-amazon.com/images/I/81PoWzt0k+L._UF1000,1000_QL80_.jpg"
   },
   {
-    "id": 96,
     "title": "Tutu",
     "artist": "Miles Davis",
     "decade": 1950,
@@ -689,7 +674,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/en/0/06/Miles_Davis-Tutu_%28album_cover%29.jpg"
   },
   {
-    "id": 97,
     "title": "My Favourite thing",
     "artist": "John Coltrane",
     "decade": 1970,
@@ -697,7 +681,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/en/9/9b/My_Favorite_Things.jpg"
   },
   {
-    "id": 98,
     "title": "Roberto Carlos",
     "artist": "Roberto Carlos",
     "decade": 1970,
@@ -705,7 +688,6 @@
     "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fKkCJZH4veOICbiqQ0hEOVdIIM2956Wtgw&s"
   },
   {
-    "id": 99,
     "title": "Nirvana",
     "artist": "Nirvana",
     "decade": 2000,
@@ -713,7 +695,6 @@
     "coverURL": "https://upload.wikimedia.org/wikipedia/commons/7/72/Nirvana_album_cover.jpg"
   },
   {
-    "id": 100,
     "title": "Off the Wall",
     "artist": "Michael Jackson",
     "decade": 1970,
