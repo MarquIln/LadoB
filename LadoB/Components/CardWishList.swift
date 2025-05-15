@@ -7,8 +7,10 @@
 
 import UIKit
 
-class CardWishList: UIView {
+class CardWishList: UICollectionViewCell {
 
+    static let identifier: String = "cardCollectionCell"
+    
     //imagem em destaque do album
     private lazy var albumImage: UIImageView = {
         let image = UIImageView()
@@ -21,7 +23,7 @@ class CardWishList: UIView {
     }()
     
     //nome da musica
-    private lazy var labelSongName: UILabel = {
+    private lazy var labelAlbumName: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
@@ -41,7 +43,7 @@ class CardWishList: UIView {
     }()
     
     private lazy var stackViewLabels: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [labelSongName, labelArtist])
+        let stackView = UIStackView(arrangedSubviews: [labelAlbumName, labelArtist])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 0
@@ -64,24 +66,41 @@ class CardWishList: UIView {
         }
     }
     
-    var songName: String? {
+    var albumName: String? {
         didSet {
-            labelSongName.text = songName
+            labelAlbumName.text = albumName
         }
     }
     
     var albumImageURL: URL? {
         didSet {
             guard let url = albumImageURL else { return }
-
-                   URLSession.shared.dataTask(with: url) { data, response, error in
-                       if let data = data, let image = UIImage(data: data) {
-                           DispatchQueue.main.async {
-                               self.albumImage.image = image
-                           }
-                       }
-                   }.resume()
+            
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self.albumImage.image = image
+                    }
+                }
+            }.resume()
         }
+    }
+    
+    func config(image: URL?, album: String, artist: String){
+        self.artistName = artist
+        self.albumName = album
+        self.albumImageURL = image
+    }
+    
+    // MARK: Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+        contentView.clipsToBounds = true
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }
@@ -91,6 +110,7 @@ extension CardWishList: ViewCodeProtocol {
     func setup() {
         addSubviews()
         setupConstraints()
+        
     }
     
     func addSubviews() {
