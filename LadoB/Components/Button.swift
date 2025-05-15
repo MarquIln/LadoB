@@ -7,39 +7,12 @@
 
 import UIKit
 
-class Button: UIView {
-
-    //MARK: BOTÃO
-    lazy var button: UIButton = {
-        let button = UIButton()
-        button.setTitle("", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.cornerRadius = 8
-        button.titleLabel?.font = Fonts.bodyBold
-        button.setTitleColor(.purple1, for: .normal)
-        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        button.backgroundColor = .yellow1
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-
-        return button
-    }()
-
-    @objc func buttonTapped(){
-        print("botao clicado")
-    }
-    
-    var buttonText: String? {
-        didSet {
-            button.setTitle(buttonText, for: .normal)
-        }
-    }
+class Button: UIButton {
 
     var buttonHeight: Double? {
         didSet {
-            if let buttonHeight {
-                button.heightAnchor.constraint(
-                    equalToConstant: CGFloat(buttonHeight)
-                ).isActive = true
+            if let height = buttonHeight {
+                heightAnchor.constraint(equalToConstant: CGFloat(height)).isActive = true
             }
         }
     }
@@ -52,19 +25,21 @@ class Button: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-}
 
-extension Button: ViewCodeProtocol {
-    func addSubviews() {
-        addSubview(button)
+    private func setup() {
+        setTitle("", for: .normal)
+        layer.cornerRadius = 8
+        titleLabel?.font = Fonts.bodyBold
+        setTitleColor(.purple1, for: .normal)
+        backgroundColor = .yellow1
+        addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
 
-    func setupConstraints() {
-        NSLayoutConstraint.activate([
-            button.topAnchor.constraint(equalTo: self.topAnchor),
-            button.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-        ])
+    @objc private func buttonTapped() {
+        print("botão clicado")
+    }
+
+    func buttonText(_ text: String) {
+        setTitle(text, for: .normal)
     }
 }
