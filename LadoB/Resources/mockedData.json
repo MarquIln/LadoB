@@ -1,705 +1,674 @@
 [
   {
-    "title": "Thriller",
-    "artist": "Michael Jackson",
-    "decade": 1980,
-
-    "genre": "Pop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Michael_Jackson_-_Thriller.jpg/250px-Michael_Jackson_-_Thriller.jpg"
+    "title": "Ok Computer",
+    "artist": "Radiohead",
+    "decade": 1970,
+    "genre": "Alternative Rock",
+    "coverAsset": "ok_computer"
   },
   {
-    "title": "The Beatles",
-    "artist": "The Beatles",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/4/49/The_Beatles_-_Please_Please_Me.jpg"
+    "title": "Kind Of Blue",
+    "artist": "Miles Davis",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "kind_of_blue"
   },
   {
-    "title": "Abbey Road",
-    "artist": "The Beatles",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/3/3d/Abbey_Road.jpg"
-  },
-  {
-    "title": "Revolver",
-    "artist": "The Beatles",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/2/24/Revolver_%C3%A1lbum.jpg"
-  },
-  {
-    "title": "Pet Sounds",
-    "artist": "The Beach Boys",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/1/1c/Pet_Sounds.jpg"
-  },
-  {
-    "title": "What's Going On",
+    "title": "Whats Going On",
     "artist": "Marvin Gaye",
     "decade": 1970,
     "genre": "Soul",
-    "coverURL": "https://akamai.sscdn.co/uploadfile/letras/albuns/9/4/9/6/11385.jpg"
+    "coverAsset": "whats_going_on"
   },
   {
-    "title": "Electric Ladyland",
+    "title": "Mingus Ah Um",
+    "artist": "Charles Mingus",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "mingus_ah_um"
+  },
+  {
+    "title": "Are You Experienced",
     "artist": "The Jimi Hendrix Experience",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a9/ElectricLadyland.jpg"
-  },
-  {
-    "title": "The Dark Side of the Moon",
-    "artist": "Pink Floyd",
     "decade": 1970,
     "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/3b/Dark_Side_of_the_Moon.png/250px-Dark_Side_of_the_Moon.png"
+    "coverAsset": "are_you_experienced"
   },
   {
-    "title": "Back in Black",
-    "artist": "AC/DC",
-    "decade": 1980,
-    "genre": "Hard Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Back_in_Black_by_ACDC_Portuguese_single.jpg"
-  },
-  {
-    "title": "Hotel California",
-    "artist": "Eagles",
+    "title": "The Velvet Underground & Nico",
+    "artist": "The Velvet Underground",
     "decade": 1970,
     "genre": "Rock",
-    "coverURL": "https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2019/09/cbf214b-capa-hotel-california-1024x1016.jpg"
+    "coverAsset": "the_velvet_underground_&_nico"
   },
   {
-    "title": "Born to Run",
-    "artist": "Bruce Springsteen",
+    "title": "Never Mind The Bollocks, Heres The Sex Pistols",
+    "artist": "Sex Pistols",
     "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://m.media-amazon.com/images/I/8127ICDt45L.jpg"
+    "genre": "Punk",
+    "coverAsset": "never_mind_the_bollocks,_heres_the_sex_pistols"
   },
   {
-    "title": "Nevermind",
+    "title": "Nirvana",
     "artist": "Nirvana",
-    "decade": 1990,
+    "decade": 1970,
     "genre": "Grunge",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8bxzV8TBveyP5mvFTKvQr_bIHS38J2r0FEA&s"
+    "coverAsset": "nirvana"
   },
   {
-    "title": "Jagged Little Pill",
-    "artist": "Alanis Morissette",
-    "decade": 1990,
-    "genre": "Rock",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoHRsrdJZSrTCmdmD6XDSQBV2FhY6YIQyVQQ&s"
-  },
-  {
-    "title": "The Chronic",
-    "artist": "Dr. Dre",
-    "decade": 1990,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c7/The_Chronic.jpg"
-  },
-  {
-    "title": "Illmatic",
-    "artist": "Nas",
-    "decade": 1990,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/9c/Illmatic.jpg"
-  },
-  {
-    "title": "The Miseducation of Lauryn Hill",
-    "artist": "Lauryn Hill",
-    "decade": 1990,
-    "genre": "R&B",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/e/e7/Capa_de_The_Miseducation_of_Lauryn_Hill_%281998%29.jpg"
-  },
-  {
-    "title": "Purple Rain",
-    "artist": "Prince",
-    "decade": 1980,
-    "genre": "Pop",
-    "coverURL": ""
-  },
-  {
-    "title": "Rumours",
-    "artist": "Fleetwood Mac",
+    "title": "Back In Black",
+    "artist": "AC/DC",
     "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/d/da/Purple_Rain_Album.jpeg"
+    "genre": "Hard Rock",
+    "coverAsset": "back_in_black"
   },
   {
-    "title": "Legend",
-    "artist": "Bob Marley & The Wailers",
-    "decade": 1980,
-    "genre": "Reggae",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/cc/Legend_Bob_Marley.jpg"
-  },
-  {
-    "title": "Kind of Blue",
-    "artist": "Miles Davis",
-    "decade": 1950,
-    "genre": "Jazz",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kind_of_Blue_(1959,_CL_1355)_album_cover.jpg"
-  },
-  {
-    "title": "Blue Train",
-    "artist": "John Coltrane",
-    "decade": 1950,
-    "genre": "Jazz",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/John_Coltrane_-_Blue_Train.jpg/250px-John_Coltrane_-_Blue_Train.jpg"
-  },
-  {
-    "title": "Time Out",
-    "artist": "The Dave Brubeck Quartet",
-    "decade": 1950,
-    "genre": "Jazz",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/6/6b/Time_Out.jpg"
-  },
-  {
-    "title": "A Love Supreme",
-    "artist": "John Coltrane",
-    "decade": 1960,
-    "genre": "Jazz",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/9/97/A_Love_Supreme.jpg"
-  },
-  {
-    "title": "Grace",
-    "artist": "Jeff Buckley",
-    "decade": 1990,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/e/e4/Jeff_Buckley_grace.jpg"
-  },
-  {
-    "title": "21",
-    "artist": "Adele",
-    "decade": 2010,
-    "genre": "Pop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/cf/Capa_de_21_por_Adele.jpg"
-  },
-  {
-    "title": "Back to Black",
-    "artist": "Amy Winehouse",
-    "decade": 2000,
-    "genre": "Soul",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/93/Capa_de_Back_to_Black.jpg"
-  },
-  {
-    "title": "Lemonade",
-    "artist": "Beyoncé",
-    "decade": 2010,
-    "genre": "R&B",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/1/1a/Capa_de_Lemonade_de_Beyonc%C3%A9.jpg"
-  },
-  {
-    "title": "1989",
-    "artist": "Taylor Swift",
-    "decade": 2010,
-    "genre": "Pop",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZCy7VfAsAv96DXd8RcmLGBNMbt-cMec9bXA&s"
-  },
-  {
-    "title": "AM",
-    "artist": "Arctic Monkeys",
-    "decade": 2010,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/96/Capa-AM_%28oficial%29.jpeg"
-  },
-  {
-    "title": "Paranoid",
-    "artist": "Black Sabbath",
+    "title": "Clube Da Esquina",
+    "artist": "Milton Nascimento & L\u00f4 Borges",
     "decade": 1970,
-    "genre": "Heavy Metal",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/6/64/Black_Sabbath_-_Paranoid.jpg"
-  },
-  {
-    "title": "OK Computer",
-    "artist": "Radiohead",
-    "decade": 1990,
-    "genre": "Alternative Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Radioheadokcomputer.png/250px-Radioheadokcomputer.png"
-  },
-  
-  {
-    "title": "Viva la Vida or Death and All His Friends",
-    "artist": "Coldplay",
-    "decade": 2000,
-    "genre": "Alternative Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/d/d7/Vivalavida.jpg"
-  },
-  {
-    "title": "Bad",
-    "artist": "Michael Jackson",
-    "decade": 1980,
-    "genre": "Pop",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStep0q8UYqVHVo4DfoNdFHSKDjWQInSrRSjw&s"
+    "genre": "MPB",
+    "coverAsset": "clube_da_esquina"
   },
   {
     "title": "The Joshua Tree",
     "artist": "U2",
-    "decade": 1980,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/5/5b/U2_-_The_Joshua_Tree.png"
-  },
-  {
-    "title": "Bat Out of Hell",
-    "artist": "Meat Loaf",
     "decade": 1970,
     "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/0/00/Bat_out_of_Hell.jpg"
+    "coverAsset": "the_joshua_tree"
   },
   {
-    "title": "Forever Changes",
-    "artist": "Love",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/c/c8/Love_-_forever_changes.jpgs"
-  },
-  {
-    "title": "Songs in the Key of Life",
-    "artist": "Stevie Wonder",
+    "title": "1989",
+    "artist": "Taylor Swift",
     "decade": 1970,
-    "genre": "Soul",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/b/b2/Songs_in_the_Key_of_Life.jpg"
-  },
-  {
-    "title": "Lady Soul",
-    "artist": "Aretha Franklin",
-    "decade": 1960,
-    "genre": "Soul",
-    "coverURL": "https://m.media-amazon.com/images/I/511656Q3nPL._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Innervisions",
-    "artist": "Stevie Wonder",
-    "decade": 1970,
-    "genre": "Soul",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Steviewonder_innervisions.jpg/250px-Steviewonder_innervisions.jpg"
-  },
-  {
-    "title": "I Never Loved a Man the Way I Love You",
-    "artist": "Aretha Franklin",
-    "decade": 1960,
-    "genre": "Soul",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/1/15/Aretha_Franklin_%E2%80%93_I_Never_Loved_a_Man_the_Way_I_Love_You.jpg"
-  },
-  {
-    "title": "Achtung Baby",
-    "artist": "U2",
-    "decade": 1990,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/2/2e/U2_-_Achtung_Baby.jpg"
-  },
-  {
-    "title": "My Beautiful Dark Twisted Fantasy",
-    "artist": "Kanye West",
-    "decade": 2010,
-    "genre": "Hip Hop",
-    "coverURL": "https://m.media-amazon.com/images/I/91dHRGIV65L.jpg"
-  },
-  {
-    "title": "To Pimp a Butterfly",
-    "artist": "Kendrick Lamar",
-    "decade": 2010,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c9/To_Pimp_a_Butterfly.jpg"
-  },
-  {
-    "title": "The Marshall Mathers LP",
-    "artist": "Eminem",
-    "decade": 2000,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/ae/The_Marshall_Mathers_LP.jpg"
-  },
-  {
-    "title": "Ready to Die",
-    "artist": "The Notorious B.I.G.",
-    "decade": 1990,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/1/1f/Ready_to_Die.jpg"
-  },
-  {
-    "title": "Getz/Gilberto",
-    "artist": "Stan Getz & João Gilberto",
-    "decade": 1960,
-    "genre": "Jazz/Bossa Nova",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/96/Getz-gilberto.jpg"
-  },
-  {
-    "title": "Clube da Esquina",
-    "artist": "Milton Nascimento & Lô Borges",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/cb/Milton_Nascimento_-_Clube_da_Esquina.jpg"
-  },
-  {
-    "title": "Secos & Molhados",
-    "artist": "Secos & Molhados",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/e/e0/SecoseMolhados1973.jpg"
-  },
-  {
-    "title": "Transa",
-    "artist": "Caetano Veloso",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverURL": "https://monkeybuzz.com.br/wp-content/uploads/2019/12/transa.jpg"
-  },
-  {
-    "title": "Expresso 2222",
-    "artist": "Gilberto Gil",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/5/55/Expresso2222.jpg"
-  },
-  {
-    "title": "Elis & Tom",
-    "artist": "Elis Regina & Antônio Carlos Jobim",
-    "decade": 1970,
-    "genre": "Bossa Nova",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/0/0e/Elis_Regina_-_Elis_%26_Tom.jpg"
-  },
-  {
-    "title": "Construção",
-    "artist": "Chico Buarque",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/75/Constru%C3%A7%C3%A3o_chico_buarque.jpg/250px-Constru%C3%A7%C3%A3o_chico_buarque.jpg"
-  },
-  {
-    "title": "Re",
-    "artist": "Gilberto Gil",
-    "genre": "MPB",
-    "decade": 1970,
-    "coverURL": "https://http2.mlstatic.com/D_NQ_NP_646719-MLB44435305918_122020-O.webp"
-  },
-  {
-    "title": "Caetano Veloso",
-    "artist": "Caetano Veloso",
-    "decade": 1960,
-    "genre": "MPB",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/6/6b/2_g.jpeg/220px-2_g.jpeg"
-  },
-  {
-    "title": "Legal",
-    "artist": "Gal Costa",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/e/e3/LegalAlbum.jpg"
-  },
-  {
-    "title": "A Cor de Rosa Choque",
-    "artist": "Rita Lee",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://discografia.discosdobrasil.com.br/storage/capas/DI01080.jpg"
-  },
-  {
-    "title": "Cabeça Dinossauro",
-    "artist": "Titãs",
-    "decade": 1980,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/f/f4/Titas_CabDin.JPG"
-  },
-  {
-    "title": "Dois",
-    "artist": "Legião Urbana",
-    "decade": 1980,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/7/72/Legi%C3%A3o_Urbana_-_Dois.jpg"
-  },
-  {
-    "title": "Matriz",
-    "artist": "Pitty",
-    "decade": 2000,
-    "genre": "Rock",
-    "coverURL": "https://i0.wp.com/www.bahiarock.com.br/wp-content/uploads/2019/06/pitty-matriz.jpg?fit=430%2C430&ssl=1"
-  },
-  {
-    "title": "Da Lama ao Caos",
-    "artist": "Nação Zumbi",
-    "decade": 1990,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/f/fd/Da_lama_ao_caos.jpg"
-  },
-  {
-    "title": "Barão Vermelho",
-    "artist": "Barão Vermelho",
-    "decade": 1980,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/1/1c/BaraoVermelho01.jpg"
-  },
-  {
-    "title": "Acabou Chorare",
-    "artist": "Novos Baianos",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/f/f6/AcabouChorare.jpg"
-  },
-  {
-    "title": "Acústico MTV",
-    "artist": "Cássia Eller",
-    "decade": 2000,
-    "genre": "Rock",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrKjSOsgJogp4p-AaGKbQ-K7l4_sTIMIVB6A&s"
-  },
-  {
-    "title": "Ventura",
-    "artist": "Los Hermanos",
-    "decade": 1990,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a7/Ventura_Los_Hermanos.jpg"
-  },
-  {
-    "title": "Discovery",
-    "artist": "Daft Punk",
-    "decade": 2000,
-    "genre": "Electronic",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/2/28/Daft_Punk_Discovery.jpg"
+    "genre": "Pop",
+    "coverAsset": "1989"
   },
   {
     "title": "Random Access Memories",
     "artist": "Daft Punk",
     "decade": 1970,
     "genre": "Electronic",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/7/76/Random_Access_Memories_capa.jpg"
+    "coverAsset": "random_access_memories"
   },
   {
-    "title": "Play",
-    "artist": "Moby",
+    "title": "Thriller",
+    "artist": "Michael Jackson",
     "decade": 1970,
-    "genre": "Electronic",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/72/Moby_-_Play.jpg/250px-Moby_-_Play.jpgambi"
+    "genre": "Pop",
+    "coverAsset": "thriller"
   },
   {
-    
-    "title": "Selected Ambient Works 85–92",
-    "artist": "Aphex Twin",
-    "decade": 1990,
-    "genre": "Electronic",
-    "coverURL": "https://i.scdn.co/image/ab67616d0000b273199ea843202536b10f985d7b"
-  },
-  {
-    "title": "Mezzanine",
-    "artist": "Massive Attack",
-    "decade": 1990,
-    "genre": "Electronic",
-    "coverURL": "https://m.media-amazon.com/images/I/71fk4+CG0pL._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Oxygène",
-    "artist": "Jean-Michel Jarre",
+    "title": "Grace",
+    "artist": "Jeff Buckley",
     "decade": 1970,
-    "genre": "Electronic",
-    "coverURL": "https://m.media-amazon.com/images/I/81dPIaOfvwL._AC_UF1000,1000_QL80_.jpg"
+    "genre": "Rock",
+    "coverAsset": "grace"
   },
   {
-    "title": "The Man-Machine",
-    "artist": "Kraftwerk",
-    "decade": 1970,
-    "genre": "Electronic",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd4ok0qD2K0xcTwRhrkgldV5hdLC9ke_pUKw&s"
-  },
-  {
-    "title": "Head Hunters",
-    "artist": "Herbie Hancock",
+    "title": "My Favourite Thing",
+    "artist": "John Coltrane",
     "decade": 1970,
     "genre": "Jazz",
-    "coverURL": "https://m.media-amazon.com/images/I/81KRhLp0JGL._UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Blue Lines",
-    "artist": "Massive Attack",
-    "decade": 1990,
-    "genre": "Electronic",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/a/a7/MassiveAttackBlueLines.jpg"
-  },
-  {
-    "title": "The Blueprint",
-    "artist": "Jay-Z",
-    "decade": 2000,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c9/Jay-z-the-blueprint.jpg"
-  },
-  {
-    "title": "ATLiens",
-    "artist": "OutKast",
-    "decade": 1990,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/e/e0/Outkast_-_ATLiens.jpg"
-  },
-  {
-    "title": "Enter the Wu-Tang (36 Chambers)",
-    "artist": "Wu-Tang Clan",
-    "decade": 1990,
-    "genre": "Hip Hop",
-    "coverURL": "https://m.media-amazon.com/images/I/614UiJzoxPL.jpg"
-  },
-  {
-    "title": "The College Dropout",
-    "artist": "Kanye West",
-    "decade": 2000,
-    "genre": "Hip Hop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a3/Kanyewest_collegedropout.jpg"
-  },
-  {
-    "title": "In Rainbows",
-    "artist": "Radiohead",
-    "decade": 2000,
-    "genre": "Alternative Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/96/Radiohead_-_In_Rainbows.jpg"
-  },
-  {
-    "title": "Queen II",
-    "artist": "Queen",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/ad/Queen_II.jpg"
-  },
-  {
-    "title": "The Velvet Underground & Nico",
-    "artist": "The Velvet Underground",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/1/14/The_Velvet_Underground_and_Nico.jpg"
-  },
-  {
-    "title": "London Calling",
-    "artist": "The Clash",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/0/00/TheClashLondonCallingalbumcover.jpg"
+    "coverAsset": "my_favourite_thing"
   },
   {
     "title": "Ramones",
     "artist": "Ramones",
     "decade": 1970,
     "genre": "Punk",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDRoSRWoHsQW21CGO6xWyrabHjmMyt0o5LQ&s"
+    "coverAsset": "ramones"
   },
   {
-    "title": "Never Mind the Bollocks, Here's the Sex Pistols",
-    "artist": "Sex Pistols",
+    "title": "Lady Soul",
+    "artist": "Aretha Franklin",
     "decade": 1970,
-    "genre": "Punk",
-    "coverURL": "https://m.media-amazon.com/images/I/71oSBQbCnIL.jpg"
+    "genre": "Soul",
+    "coverAsset": "lady_soul"
+  },
+  {
+    "title": "Enter The Wu-Tang (36 Chambers)",
+    "artist": "Wu-Tang Clan",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "enter_the_wu-tang_(36_chambers)"
+  },
+  {
+    "title": "Led Zeppelin Iv",
+    "artist": "Led Zeppelin",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "led_zeppelin_iv"
+  },
+  {
+    "title": "Oxyg\u00e8ne",
+    "artist": "Jean-Michel Jarre",
+    "decade": 1970,
+    "genre": "Electronic",
+    "coverAsset": "oxyg\u00e8ne"
   },
   {
     "title": "Bleach",
     "artist": "Nirvana",
-    "decade": 1980,
+    "decade": 1970,
     "genre": "Grunge",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a1/Nirvana-Bleach.jpg"
+    "coverAsset": "bleach"
   },
   {
-    "title": "Are You Experienced",
-    "artist": "The Jimi Hendrix Experience",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Are_You_Experienced_-_US_cover.jpg"
-  },
-  {
-    "title": "Horses",
-    "artist": "Patti Smith",
+    "title": "Legend",
+    "artist": "Bob Marley & The Wailers",
     "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/8/88/PattiSmithHorses.jpg"
-  },
-  {
-    "title": "Let it be",
-    "artist": "The Beatles",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4-ij4AjCLNRCmXzoDu_8ubVZnXDUEfHw7Cw&s"
-  },
-  {
-    "title": "Exile on Main St.",
-    "artist": "The Rolling Stones",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/8/8a/F60130iffzd.jpg"
-  },
-  {
-    "title": "Sgt. Pepper's Lonely Hearts Club Band",
-    "artist": "The Beatles",
-    "decade": 1960,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/6/68/Sgt_Peppers.jpg"
-  },
-  {
-    "title": "Led Zeppelin IV",
-    "artist": "Led Zeppelin",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/4/4b/LedZeppelinIV.jpg"
-  },
-  {
-    "title": "Nebraska",
-    "artist": "Bruce Springsteen",
-    "decade": 1980,
-    "genre": "Rock",
-    "coverURL": "https://m.media-amazon.com/images/I/71fGFktZFTL._UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Miles Smiles",
-    "artist": "Miles Davis",
-    "decade": 1960,
-    "genre": "Jazz",
-    "coverURL": "https://m.media-amazon.com/images/I/81Q9utQuyDL._UF1000,1000_QL80_.jpg"
+    "genre": "Reggae",
+    "coverAsset": "legend"
   },
   {
     "title": "Bitches Brew",
     "artist": "Miles Davis",
     "decade": 1970,
     "genre": "Jazz",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a0/Miles_Davis_-_Bitches_Brew.jpg"
+    "coverAsset": "bitches_brew"
   },
   {
-    "title": "Speak No Evil",
-    "artist": "Wayne Shorter",
-    "decade": 1960,
-    "genre": "Jazz",
-    "coverURL": "https://m.media-amazon.com/images/I/61FA1lPP1kS.jpg"
+    "title": "The Marshall Mathers Lp",
+    "artist": "Eminem",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "the_marshall_mathers_lp"
   },
   {
-    "title": "Mingus Ah Um",
-    "artist": "Charles Mingus",
-    "decade": 1950,
-    "genre": "Jazz",
-    "coverURL": "https://m.media-amazon.com/images/I/81PoWzt0k+L._UF1000,1000_QL80_.jpg"
+    "title": "Paranoid",
+    "artist": "Black Sabbath",
+    "decade": 1970,
+    "genre": "Heavy Metal",
+    "coverAsset": "paranoid"
   },
   {
-    "title": "Tutu",
-    "artist": "Miles Davis",
-    "decade": 1950,
-    "genre": "Jazz",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/0/06/Miles_Davis-Tutu_%28album_cover%29.jpg"
+    "title": "Re",
+    "artist": "Gilberto Gil",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "re"
   },
   {
-    "title": "My Favourite thing",
+    "title": "Blue Lines",
+    "artist": "Massive Attack",
+    "decade": 1970,
+    "genre": "Electronic",
+    "coverAsset": "blue_lines"
+  },
+  {
+    "title": "The Dark Side Of The Moon",
+    "artist": "Pink Floyd",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "the_dark_side_of_the_moon"
+  },
+  {
+    "title": "Ventura",
+    "artist": "Los Hermanos",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "ventura"
+  },
+  {
+    "title": "Songs In The Key Of Life",
+    "artist": "Stevie Wonder",
+    "decade": 1970,
+    "genre": "Soul",
+    "coverAsset": "songs_in_the_key_of_life"
+  },
+  {
+    "title": "Blue Train",
     "artist": "John Coltrane",
     "decade": 1970,
     "genre": "Jazz",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/en/9/9b/My_Favorite_Things.jpg"
+    "coverAsset": "blue_train"
+  },
+  {
+    "title": "Transa",
+    "artist": "Caetano Veloso",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "transa"
   },
   {
     "title": "Roberto Carlos",
     "artist": "Roberto Carlos",
     "decade": 1970,
     "genre": "MPB",
-    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fKkCJZH4veOICbiqQ0hEOVdIIM2956Wtgw&s"
+    "coverAsset": "roberto_carlos"
   },
   {
-    "title": "Nirvana",
+    "title": "Innervisions",
+    "artist": "Stevie Wonder",
+    "decade": 1970,
+    "genre": "Soul",
+    "coverAsset": "innervisions"
+  },
+  {
+    "title": "Tutu",
+    "artist": "Miles Davis",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "tutu"
+  },
+  {
+    "title": "Secos & Molhados",
+    "artist": "Secos & Molhados",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "secos_&_molhados"
+  },
+  {
+    "title": "A Love Supreme",
+    "artist": "John Coltrane",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "a_love_supreme"
+  },
+  {
+    "title": "Ac\u00fastico Mtv",
+    "artist": "C\u00e1ssia Eller",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "ac\u00fastico_mtv"
+  },
+  {
+    "title": "Matriz",
+    "artist": "Pitty",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "matriz"
+  },
+  {
+    "title": "Acabou Chorare",
+    "artist": "Novos Baianos",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "acabou_chorare"
+  },
+  {
+    "title": "Sgt. Peppers Lonely Hearts Club Band",
+    "artist": "The Beatles",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "sgt._peppers_lonely_hearts_club_band"
+  },
+  {
+    "title": "The Blueprint",
+    "artist": "Jay-Z",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "the_blueprint"
+  },
+  {
+    "title": "Jagged Little Pill",
+    "artist": "Alanis Morissette",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "jagged_little_pill"
+  },
+  {
+    "title": "Da Lama Ao Caos",
+    "artist": "Na\u00e7\u00e3o Zumbi",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "da_lama_ao_caos"
+  },
+  {
+    "title": "Illmatic",
+    "artist": "Nas",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "illmatic"
+  },
+  {
+    "title": "21",
+    "artist": "Adele",
+    "decade": 1970,
+    "genre": "Pop",
+    "coverAsset": "21"
+  },
+  {
+    "title": "Miles Smiles",
+    "artist": "Miles Davis",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "miles_smiles"
+  },
+  {
+    "title": "The Beatles",
+    "artist": "The Beatles",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "the_beatles"
+  },
+  {
+    "title": "I Never Loved A Man The Way I Love You",
+    "artist": "Aretha Franklin",
+    "decade": 1970,
+    "genre": "Soul",
+    "coverAsset": "i_never_loved_a_man_the_way_i_love_you"
+  },
+  {
+    "title": "Caetano Veloso",
+    "artist": "Caetano Veloso",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "caetano_veloso"
+  },
+  {
+    "title": "Discovery",
+    "artist": "Daft Punk",
+    "decade": 1970,
+    "genre": "Electronic",
+    "coverAsset": "discovery"
+  },
+  {
+    "title": "Cabe\u00e7a Dinossauro",
+    "artist": "Tit\u00e3s",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "cabe\u00e7a_dinossauro"
+  },
+  {
+    "title": "Nebraska",
+    "artist": "Bruce Springsteen",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "nebraska"
+  },
+  {
+    "title": "Let It Be",
+    "artist": "The Beatles",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "let_it_be"
+  },
+  {
+    "title": "Expresso 2222",
+    "artist": "Gilberto Gil",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "expresso_2222"
+  },
+  {
+    "title": "Queen Ii",
+    "artist": "Queen",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "queen_ii"
+  },
+  {
+    "title": "The Chronic",
+    "artist": "Dr. Dre",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "the_chronic"
+  },
+  {
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "artist": "Kanye West",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "my_beautiful_dark_twisted_fantasy"
+  },
+  {
+    "title": "Electric Ladyland",
+    "artist": "The Jimi Hendrix Experience",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "electric_ladyland"
+  },
+  {
+    "title": "Viva La Vida Or Death And All His Friends",
+    "artist": "Coldplay",
+    "decade": 1970,
+    "genre": "Alternative Rock",
+    "coverAsset": "viva_la_vida_or_death_and_all_his_friends"
+  },
+  {
+    "title": "Head Hunters",
+    "artist": "Herbie Hancock",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "head_hunters"
+  },
+  {
+    "title": "Ready To Die",
+    "artist": "The Notorious B.I.G.",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "ready_to_die"
+  },
+  {
+    "title": "The Man-Machine",
+    "artist": "Kraftwerk",
+    "decade": 1970,
+    "genre": "Electronic",
+    "coverAsset": "the_man-machine"
+  },
+  {
+    "title": "A Cor De Rosa Choque",
+    "artist": "Rita Lee",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "a_cor_de_rosa_choque"
+  },
+  {
+    "title": "Atliens",
+    "artist": "OutKast",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "atliens"
+  },
+  {
+    "title": "Speak No Evil",
+    "artist": "Wayne Shorter",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "speak_no_evil"
+  },
+  {
+    "title": "Achtung Baby",
+    "artist": "U2",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "achtung_baby"
+  },
+  {
+    "title": "Back To Black",
+    "artist": "Amy Winehouse",
+    "decade": 1970,
+    "genre": "Soul",
+    "coverAsset": "back_to_black"
+  },
+  {
+    "title": "Bar\u00e3o Vermelho",
+    "artist": "Bar\u00e3o Vermelho",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "bar\u00e3o_vermelho"
+  },
+  {
+    "title": "Rumours",
+    "artist": "Fleetwood Mac",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "rumours"
+  },
+  {
+    "title": "Bat Out Of Hell",
+    "artist": "Meat Loaf",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "bat_out_of_hell"
+  },
+  {
+    "title": "Nevermind",
     "artist": "Nirvana",
-    "decade": 2000,
+    "decade": 1970,
     "genre": "Grunge",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/7/72/Nirvana_album_cover.jpg"
+    "coverAsset": "nevermind"
   },
   {
-    "title": "Off the Wall",
+    "title": "Constru\u00e7\u00e3o",
+    "artist": "Chico Buarque",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "constru\u00e7\u00e3o"
+  },
+  {
+    "title": "Revolver",
+    "artist": "The Beatles",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "revolver"
+  },
+  {
+    "title": "Time Out",
+    "artist": "The Dave Brubeck Quartet",
+    "decade": 1970,
+    "genre": "Jazz",
+    "coverAsset": "time_out"
+  },
+  {
+    "title": "Off The Wall",
     "artist": "Michael Jackson",
     "decade": 1970,
     "genre": "Pop",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a6/Off_the_Wall.jpg"
+    "coverAsset": "off_the_wall"
+  },
+  {
+    "title": "Legal",
+    "artist": "Gal Costa",
+    "decade": 1970,
+    "genre": "MPB",
+    "coverAsset": "legal"
+  },
+  {
+    "title": "In Rainbows",
+    "artist": "Radiohead",
+    "decade": 1970,
+    "genre": "Alternative Rock",
+    "coverAsset": "in_rainbows"
+  },
+  {
+    "title": "The Miseducation Of Lauryn Hill",
+    "artist": "Lauryn Hill",
+    "decade": 1970,
+    "genre": "R&B",
+    "coverAsset": "the_miseducation_of_lauryn_hill"
+  },
+  {
+    "title": "Lemonade",
+    "artist": "Beyonc\u00e9",
+    "decade": 1970,
+    "genre": "R&B",
+    "coverAsset": "lemonade"
+  },
+  {
+    "title": "Mezzanine",
+    "artist": "Massive Attack",
+    "decade": 1970,
+    "genre": "Electronic",
+    "coverAsset": "mezzanine"
+  },
+  {
+    "title": "Am",
+    "artist": "Arctic Monkeys",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "am"
+  },
+  {
+    "title": "Abbey Road",
+    "artist": "The Beatles",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "abbey_road"
+  },
+  {
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "hotel_california"
+  },
+  {
+    "title": "Horses",
+    "artist": "Patti Smith",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "horses"
+  },
+  {
+    "title": "Bad",
+    "artist": "Michael Jackson",
+    "decade": 1970,
+    "genre": "Pop",
+    "coverAsset": "bad"
+  },
+  {
+    "title": "To Pimp A Butterfly",
+    "artist": "Kendrick Lamar",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "to_pimp_a_butterfly"
+  },
+  {
+    "title": "Exile On Main St.",
+    "artist": "The Rolling Stones",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "exile_on_main_st."
+  },
+  {
+    "title": "Pet Sounds",
+    "artist": "The Beach Boys",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "pet_sounds"
+  },
+  {
+    "title": "Selected Ambient Works 85\u201392",
+    "artist": "Aphex Twin",
+    "decade": 1970,
+    "genre": "Electronic",
+    "coverAsset": "selected_ambient_works_85\u201392"
+  },
+  {
+    "title": "Elis & Tom",
+    "artist": "Elis Regina & Ant\u00f4nio Carlos Jobim",
+    "decade": 1970,
+    "genre": "Bossa Nova",
+    "coverAsset": "elis_&_tom"
+  },
+  {
+    "title": "Dois",
+    "artist": "Legi\u00e3o Urbana",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "dois"
+  },
+  {
+    "title": "Born To Run",
+    "artist": "Bruce Springsteen",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "born_to_run"
+  },
+  {
+    "title": "London Calling",
+    "artist": "The Clash",
+    "decade": 1970,
+    "genre": "Rock",
+    "coverAsset": "london_calling"
+  },
+  {
+    "title": "The College Dropout",
+    "artist": "Kanye West",
+    "decade": 1970,
+    "genre": "Hip Hop",
+    "coverAsset": "the_college_dropout"
   }
 ]

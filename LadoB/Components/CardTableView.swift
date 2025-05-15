@@ -8,7 +8,8 @@
 import UIKit
 
 class CardTableView: UIView {
-    private var albums: [Album] = []
+    private var groupedAlbums: [String: [Album]] = [:]
+    private var sectionTitles: [String] = []
 
     lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -31,6 +32,17 @@ class CardTableView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    private func groupAndSortAlbums(_ albums: [Album]) {
+        let sortedAlbums = albums.sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
+
+        groupedAlbums = Dictionary(grouping: sortedAlbums) { album in
+            String(album.title.prefix(1)).uppercased()
+        }
+
+        sectionTitles = groupedAlbums.keys.sorted()
+    }
+
 
     private func buildContent() {
         guard let url = Bundle.main.url(forResource: "mockedData", withExtension: "json"),
@@ -38,11 +50,12 @@ class CardTableView: UIView {
               let decoded = try? JSONDecoder().decode([Album].self, from: data) else {
             return
         }
-        albums = decoded
+        groupAndSortAlbums(decoded)
+        tableView.reloadData()
     }
-    
+
     func updateAlbums(_ albums: [Album]) {
-        self.albums = albums
+        groupAndSortAlbums(albums)
         tableView.reloadData()
     }
 }
@@ -63,25 +76,31 @@ extension CardTableView: ViewCodeProtocol {
 }
 
 extension CardTableView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sectionTitles.count
     }
-    
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let key = sectionTitles[section]
+        return groupedAlbums[key]?.count ?? 0
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.reuseIdentifier, for: indexPath) as? CardTableViewCell else {
             return UITableViewCell()
         }
-        
-        cell.config(with: albums[indexPath.row])
-        
-        tableView.deselectRow(at: indexPath, animated: true)
-        
+
+        let key = sectionTitles[indexPath.section]
+        if let album = groupedAlbums[key]?[indexPath.row] {
+            cell.config(with: album)
+        }
+
         return cell
     }
 }
 
 extension CardTableView: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return albums.count
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionTitles[section]
     }
 }
