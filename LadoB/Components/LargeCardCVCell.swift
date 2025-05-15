@@ -1,5 +1,5 @@
 //
-//  SmallCardCVCell.swift
+//  LargeCardCVCell.swift
 //  LadoB
 //
 //  Created by Carolina Silva dos Santos on 15/05/25.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class SmallCardCVCell: UICollectionViewCell {
+class LargeCardCVCell: UICollectionViewCell {
     
-    static let identifier = "SmallCardCVCell"
+    static let identifier = "LargeCardCVCell"
 
-    private lazy var cardView: CardSmallSearch = {
-        let view = CardSmallSearch()
+    private lazy var cardView: CardBigSearch = {
+        let view = CardBigSearch()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -43,7 +43,7 @@ class SmallCardCVCell: UICollectionViewCell {
     }
 }
 
-extension SmallCardCVCell: ViewCodeProtocol {
+extension LargeCardCVCell: ViewCodeProtocol {
     
     func addSubviews() {
         contentView.addSubview(backgroundImage)
@@ -59,8 +59,8 @@ extension SmallCardCVCell: ViewCodeProtocol {
             
             cardView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             cardView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            cardView.widthAnchor.constraint(equalToConstant: 126),
-            cardView.heightAnchor.constraint(equalToConstant: 163)
+            cardView.widthAnchor.constraint(equalToConstant: 174),
+            cardView.heightAnchor.constraint(equalToConstant: 272)
         ])
     }
 }

@@ -20,20 +20,30 @@ extension UISearchController {
 extension SearchVC: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        5
+        10
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallItemCVCell.identifier, for: indexPath) as? SmallItemCVCell
-        else { fatalError() }
+        if indexPath.section == 0 {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallCardCVCell.identifier, for: indexPath) as? SmallCardCVCell
+            else { fatalError() }
+            
+            cell.config(title: "Name", artist: "Artist", image: UIImage(named: "Checker"), bgColor: .purple1)
+            
+            return cell
+        } else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LargeCardCVCell.identifier, for: indexPath) as? LargeCardCVCell
+            else { fatalError() }
+            
+            cell.config(title: "Name", artist: "Artist", image: UIImage(named: "Checker2"), bgColor: .purple1)
+            
+            return cell
+        }
         
-        cell.config(title: "Name", artist: "Artist", image: UIImage(named: "Checker"), bgColor: .purple1)
-                
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView,

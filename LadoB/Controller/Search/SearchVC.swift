@@ -17,8 +17,8 @@ class SearchVC: UIViewController {
         collectionView.backgroundColor = .purple1
         
         //Cells
-        collectionView.register(SmallItemCVCell.self, forCellWithReuseIdentifier: SmallItemCVCell.identifier)
-//        collectionView.register(LargeItemCollectionViewCell.self, forCellWithReuseIdentifier: LargeItemCollectionViewCell.identifier)
+        collectionView.register(SmallCardCVCell.self, forCellWithReuseIdentifier: SmallCardCVCell.identifier)
+        collectionView.register(LargeCardCVCell.self, forCellWithReuseIdentifier: LargeCardCVCell.identifier)
 
         // Header
         collectionView.register(SearchSectionHeader.self,
