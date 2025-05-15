@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         tabItem.badgeColor = .red
         
         
-        let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
+        let rootViewController = SearchVC() //mudar para a pagina de pesquisa
         rootViewController.tabBarItem = tabItem
         
         let navigationController = UINavigationController(rootViewController: rootViewController)

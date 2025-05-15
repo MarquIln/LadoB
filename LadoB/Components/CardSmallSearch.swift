@@ -13,7 +13,7 @@ class CardSmallSearch: UIView {
         let card = UIImageView()
         card.translatesAutoresizingMaskIntoConstraints = false
         card.layer.masksToBounds = true
-        card.image = UIImage(named: "testeChesterSmall")
+        card.image = UIImage(named: "Checker")
         card.heightAnchor.constraint(equalToConstant: 102).isActive = true
         card.widthAnchor.constraint(equalToConstant: 102).isActive = true
         card.layer.cornerRadius = 4
@@ -23,7 +23,7 @@ class CardSmallSearch: UIView {
     private lazy var albumTitleLabel: UILabel = {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "SFPro-Regular", size: 17)
+        label.font = UIFont(name: "SFPro-Regular", size: 15)
         label.textAlignment = .center
         label.textColor = .white2
         return label
@@ -32,7 +32,7 @@ class CardSmallSearch: UIView {
     private lazy var artistLabel: UILabel = {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "SFPro-Regular", size: 14)
+        label.font = UIFont(name: "SFPro-Regular", size: 13)
         label.textAlignment = .center
         label.textColor = .white3
         return label
@@ -120,6 +120,7 @@ extension CardSmallSearch: ViewCodeProtocol {
             stackViewLabels.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 12),
             stackViewLabels.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -12),
             stackViewLabels.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8),
+            stackViewLabels.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -12),
             
             containerView.topAnchor.constraint(equalTo: self.topAnchor),
             containerView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
