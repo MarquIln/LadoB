@@ -60,7 +60,7 @@
     "title": "Back in Black",
     "artist": "AC/DC",
     "decade": 1980,
-    "genre": "Hard Rock",
+    "genre": "Rock",
     "coverURL": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Back_in_Black_by_ACDC_Portuguese_single.jpg"
   },
   {
@@ -81,7 +81,7 @@
     "title": "Nevermind",
     "artist": "Nirvana",
     "decade": 1990,
-    "genre": "Grunge",
+    "genre": "Rock",
     "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8bxzV8TBveyP5mvFTKvQr_bIHS38J2r0FEA&s"
   },
   {
@@ -95,14 +95,14 @@
     "title": "The Chronic",
     "artist": "Dr. Dre",
     "decade": 1990,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c7/The_Chronic.jpg"
   },
   {
     "title": "Illmatic",
     "artist": "Nas",
     "decade": 1990,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/9c/Illmatic.jpg"
   },
   {
@@ -207,14 +207,14 @@
     "title": "Paranoid",
     "artist": "Black Sabbath",
     "decade": 1970,
-    "genre": "Heavy Metal",
+    "genre": "Rock",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/6/64/Black_Sabbath_-_Paranoid.jpg"
   },
   {
     "title": "OK Computer",
     "artist": "Radiohead",
     "decade": 1990,
-    "genre": "Alternative Rock",
+    "genre": "Rock",
     "coverURL": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Radioheadokcomputer.png/250px-Radioheadokcomputer.png"
   },
   
@@ -222,7 +222,7 @@
     "title": "Viva la Vida or Death and All His Friends",
     "artist": "Coldplay",
     "decade": 2000,
-    "genre": "Alternative Rock",
+    "genre": "Rock",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/d/d7/Vivalavida.jpg"
   },
   {
@@ -292,35 +292,35 @@
     "title": "My Beautiful Dark Twisted Fantasy",
     "artist": "Kanye West",
     "decade": 2010,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://m.media-amazon.com/images/I/91dHRGIV65L.jpg"
   },
   {
     "title": "To Pimp a Butterfly",
     "artist": "Kendrick Lamar",
     "decade": 2010,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c9/To_Pimp_a_Butterfly.jpg"
   },
   {
     "title": "The Marshall Mathers LP",
     "artist": "Eminem",
     "decade": 2000,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/ae/The_Marshall_Mathers_LP.jpg"
   },
   {
     "title": "Ready to Die",
     "artist": "The Notorious B.I.G.",
     "decade": 1990,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/1/1f/Ready_to_Die.jpg"
   },
   {
     "title": "Getz/Gilberto",
     "artist": "Stan Getz & João Gilberto",
     "decade": 1960,
-    "genre": "Jazz/Bossa Nova",
+    "genre": "Jazz",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/96/Getz-gilberto.jpg"
   },
   {
@@ -355,7 +355,7 @@
     "title": "Elis & Tom",
     "artist": "Elis Regina & Antônio Carlos Jobim",
     "decade": 1970,
-    "genre": "Bossa Nova",
+    "genre": "Jazz",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/0/0e/Elis_Regina_-_Elis_%26_Tom.jpg"
   },
   {
@@ -517,35 +517,35 @@
     "title": "The Blueprint",
     "artist": "Jay-Z",
     "decade": 2000,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c9/Jay-z-the-blueprint.jpg"
   },
   {
     "title": "ATLiens",
     "artist": "OutKast",
     "decade": 1990,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/e/e0/Outkast_-_ATLiens.jpg"
   },
   {
     "title": "Enter the Wu-Tang (36 Chambers)",
     "artist": "Wu-Tang Clan",
     "decade": 1990,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://m.media-amazon.com/images/I/614UiJzoxPL.jpg"
   },
   {
     "title": "The College Dropout",
     "artist": "Kanye West",
     "decade": 2000,
-    "genre": "Hip Hop",
+    "genre": "HipHop",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a3/Kanyewest_collegedropout.jpg"
   },
   {
     "title": "In Rainbows",
     "artist": "Radiohead",
     "decade": 2000,
-    "genre": "Alternative Rock",
+    "genre": "Rock",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/96/Radiohead_-_In_Rainbows.jpg"
   },
   {
@@ -587,7 +587,7 @@
     "title": "Bleach",
     "artist": "Nirvana",
     "decade": 1980,
-    "genre": "Grunge",
+    "genre": "Rock",
     "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a1/Nirvana-Bleach.jpg"
   },
   {
@@ -692,7 +692,7 @@
     "title": "Nirvana",
     "artist": "Nirvana",
     "decade": 2000,
-    "genre": "Grunge",
+    "genre": "Rock",
     "coverURL": "https://upload.wikimedia.org/wikipedia/commons/7/72/Nirvana_album_cover.jpg"
   },
   {

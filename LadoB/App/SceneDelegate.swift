@@ -15,7 +15,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
-                
+        
+        print(Album.loadAlbunsFromJSON()) //pega os albuns do json, só dando print pra ver se funciona
+        
         window?.rootViewController = TabBarViewController()
         window?.makeKeyAndVisible()
     }

@@ -14,7 +14,7 @@ class TabBarViewController: UITabBarController {
         let tabItem = UITabBarItem()
         tabItem.title = "Pesquisa"
         tabItem.image = UIImage(systemName: "sparkle.magnifyingglass")
-        tabItem.badgeColor = .red
+        
         
         
         let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
@@ -43,7 +43,7 @@ class TabBarViewController: UITabBarController {
         tabItem.title = "WishList"
         tabItem.image = UIImage(named: "custom.record.circle.fill.badge.sparkles.alt")
         
-        let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
+        let rootViewController = WishListVC()
         rootViewController.tabBarItem = tabItem
         
         let navigationController = UINavigationController(rootViewController: rootViewController)
@@ -67,6 +67,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         tabBar.tintColor = .yellow1
         tabBar.backgroundColor = .purple1
+        tabBar.unselectedItemTintColor = .pink3
         viewControllers = [searchTabBar, discoTabBar, wishListTabBar, profileTabBar]
     }
 
