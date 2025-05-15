@@ -8,28 +8,29 @@
 import UIKit
 
 class WishListVC: UIViewController {
-
+    var albuns = Album.loadAlbunsFromJSON() //pegando os albusn do json pra por na tela
+    
     lazy var emptyStateWishList: EmptyState = {
             var empty = EmptyState()
             empty.translatesAutoresizingMaskIntoConstraints = false
             empty.titleText = "Nenhum LP cadastrado ainda"
             empty.descriptionText = """
-                                    Os álbuns, coletâneas e listas cadastradas
-                                    e criadas por você aparacerão aqui
+                                    Procure um álbum que gostaria de ter em sua Discoteca, salve no Radar para lembrar na hora que estiver garimpando por aí.
                                     """
             return empty
         }()
     
-    lazy var cardTest: CardWishList = {
-        var card = CardWishList()
-        card.translatesAutoresizingMaskIntoConstraints = false
-        card.artistName = "Teste"
-        card.songName = "Musica banger"
-        card.albumImageURL = URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8bxzV8TBveyP5mvFTKvQr_bIHS38J2r0FEA&s")
-        
-        card.setup()
-        return card
-    }()
+//    lazy var cardTest: CardWishList = {
+//        var card = CardWishList()
+//        card.translatesAutoresizingMaskIntoConstraints = false
+//        card.artistName = "Teste"
+//        card.songName = "Musica banger"
+//        card.albumImageURL = URL(string: album[0].coverURL) //pega a url do primeiro album
+//
+//        card.setup()
+//        return card
+//    }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,19 +44,20 @@ class WishListVC: UIViewController {
 
 extension WishListVC: ViewCodeProtocol {
     func addSubviews() {
-        //view.addSubview(emptyStateWishList)
-        view.addSubview(cardTest)
+        
+        if albuns.isEmpty {
+            view.addSubview(emptyStateWishList)
+        }
+    
+//        view.addSubview(cardTest)
     }
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-//            emptyStateWishList.topAnchor.constraint(equalTo: view.bottomAnchor, constant: 16),
-//                       emptyStateWishList.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-//                       emptyStateWishList.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-//                      emptyStateWishList.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            cardTest.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            cardTest.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-        ])
+               emptyStateWishList.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+               emptyStateWishList.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+               emptyStateWishList.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+           ])
     }
     
     

@@ -57,9 +57,10 @@ class Card: UIView {
         return stackView
     }()
     
-    func config(artistName: String, albumName: String) {
+    func config(artistName: String, albumName: String, albumImage: String) {
         artistNameLabel.text = artistName
         albumNameLabel.text = albumName
+        
     }
     
     override init(frame: CGRect) {
