@@ -27,14 +27,12 @@ class ExampleVC: UIViewController {
                                 """
         return empty
     }()
-    let cardView = CardTableView()
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple1
-        cardView.translatesAutoresizingMaskIntoConstraints = false
         setup()
     }
 }
@@ -43,7 +41,6 @@ extension ExampleVC: ViewCodeProtocol {
     func addSubviews() {
         view.addSubview(titleLabel)
         view.addSubview(emptyView)
-        view.addSubview(cardView)
     }
     
     func setupConstraints() {
@@ -56,11 +53,6 @@ extension ExampleVC: ViewCodeProtocol {
             emptyView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             emptyView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
            emptyView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            
-            cardView.topAnchor.constraint(equalTo: view.topAnchor),
-            cardView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            cardView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            cardView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
             ])
     }
     

@@ -13,14 +13,14 @@ struct Album: Decodable {
     let artist: String
     let decade: Int
     let genre: Genre
-    let cover: String
+    let coverAsset: String
 
-    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, cover: String) {
+    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String) {
         self.id = id
         self.title = title
         self.artist = artist
         self.decade = decade
         self.genre = genre
-        self.cover = cover
+        self.coverAsset = coverAsset
     }
 }

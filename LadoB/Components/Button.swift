@@ -12,7 +12,8 @@ class Button: UIButton {
     var buttonHeight: Double? {
         didSet {
             if let height = buttonHeight {
-                heightAnchor.constraint(equalToConstant: CGFloat(height)).isActive = true
+                heightAnchor.constraint(equalToConstant: CGFloat(height))
+                    .isActive = true
             }
         }
     }
@@ -28,6 +29,7 @@ class Button: UIButton {
 
     private func setup() {
         setTitle("", for: .normal)
+        setImage(UIImage(), for: .normal)
         layer.cornerRadius = 8
         titleLabel?.font = Fonts.bodyBold
         setTitleColor(.purple1, for: .normal)
@@ -42,4 +44,9 @@ class Button: UIButton {
     func buttonText(_ text: String) {
         setTitle(text, for: .normal)
     }
+
+    func buttonImage(_ image: UIImage) {
+        setImage(image, for: .normal)
+    }
+
 }

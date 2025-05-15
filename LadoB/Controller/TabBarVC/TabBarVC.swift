@@ -30,7 +30,7 @@ class TabBarViewController: UITabBarController {
         tabItem.title = "Discoteca"
         tabItem.image = UIImage(systemName: "square.3.layers.3d.down.backward")
         
-        let rootViewController = ExampleVC() //mudar para a pagina de pesquisa
+        let rootViewController = DiscoVC()
         rootViewController.tabBarItem = tabItem
         
         let navigationController = UINavigationController(rootViewController: rootViewController)
