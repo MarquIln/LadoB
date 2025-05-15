@@ -7,36 +7,37 @@
 
 
 enum Genre: String, Codable, CaseIterable {
-    case rock
-    case pop
-    case jazz
-    case blues
-    case hipHop = "hip_hop"
-    case electronic
-    case classical
-    case reggae
-    case metal
-    case country
-    case folk
-    case rnb
-    case punk
-    case soul
-    case indie
-    case latin
-    case funk
-    case disco
-    case gospel
-    case kpop
-    case other
+    case Rock
+    case Pop
+    case Jazz
+    case Blues
+    case HipHop = "HipHop"
+    case Electronic
+    case Classical
+    case Reggae
+    case Metal
+    case Country
+    case Folk
+    case Rnb = "R&B"
+    case Punk
+    case Soul
+    case Indie
+    case Latin
+    case Funk
+    case MPB
+    case Disco
+    case Gospel
+    case Kpop = "K-Pop"
+    case Other
 }
 
 extension Genre {
     var displayName: String {
         switch self {
-        case .hipHop: return "Hip-Hop"
-        case .rnb: return "R&B"
-        case .kpop: return "K-Pop"
-        case .other: return "Other"
+        case .HipHop: return "Hip-Hop"
+        case .Rnb: return "R&B"
+        case .Kpop: return "K-Pop"
+        case .Other: return "Other"
         default:
             return self.rawValue.capitalized
         }

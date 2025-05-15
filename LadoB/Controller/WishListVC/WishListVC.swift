@@ -8,22 +8,57 @@
 import UIKit
 
 class WishListVC: UIViewController {
+    var albuns = Album.loadAlbunsFromJSON() //pegando os albusn do json pra por na tela
+    
+    lazy var emptyStateWishList: EmptyState = {
+            var empty = EmptyState()
+            empty.translatesAutoresizingMaskIntoConstraints = false
+            empty.titleText = "Nenhum LP cadastrado ainda"
+            empty.descriptionText = """
+                                    Procure um álbum que gostaria de ter em sua Discoteca, salve no Radar para lembrar na hora que estiver garimpando por aí.
+                                    """
+            return empty
+        }()
+    
+//    lazy var cardTest: CardWishList = {
+//        var card = CardWishList()
+//        card.translatesAutoresizingMaskIntoConstraints = false
+//        card.artistName = "Teste"
+//        card.songName = "Musica banger"
+//        card.albumImageURL = URL(string: album[0].coverURL) //pega a url do primeiro album
+//
+//        card.setup()
+//        return card
+//    }()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .purple1
+        
+        
+        setup()
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+extension WishListVC: ViewCodeProtocol {
+    func addSubviews() {
+        
+        if albuns.isEmpty {
+            view.addSubview(emptyStateWishList)
+        }
+    
+//        view.addSubview(cardTest)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+               emptyStateWishList.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+               emptyStateWishList.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+               emptyStateWishList.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+           ])
     }
-    */
-
+    
+    
 }
