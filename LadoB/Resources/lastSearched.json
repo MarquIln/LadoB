@@ -1,0 +1,95 @@
+
+[
+    {
+      "title": "Acabou Chorare",
+      "artist": "Novos Baianos",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "acabou_chorare"
+    },
+    {
+      "title": "Sgt. Peppers Lonely Hearts Club Band",
+      "artist": "The Beatles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "sgt._peppers_lonely_hearts_club_band"
+    },
+    {
+      "title": "The Blueprint",
+      "artist": "Jay-Z",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "the_blueprint"
+    },
+    {
+      "title": "Jagged Little Pill",
+      "artist": "Alanis Morissette",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "jagged_little_pill"
+    },
+    {
+      "title": "Da Lama Ao Caos",
+      "artist": "Na\u00e7\u00e3o Zumbi",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "da_lama_ao_caos"
+    },
+    {
+      "title": "Illmatic",
+      "artist": "Nas",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "illmatic"
+    },
+    {
+      "title": "21",
+      "artist": "Adele",
+      "decade": 1970,
+      "genre": "Pop",
+      "coverAsset": "21"
+    },
+    {
+      "title": "Miles Smiles",
+      "artist": "Miles Davis",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "miles_smiles"
+    },
+    {
+      "title": "The Beatles",
+      "artist": "The Beatles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "the_beatles"
+    },
+    {
+      "title": "I Never Loved A Man The Way I Love You",
+      "artist": "Aretha Franklin",
+      "decade": 1970,
+      "genre": "Soul",
+      "coverAsset": "i_never_loved_a_man_the_way_i_love_you"
+    },
+    {
+      "title": "Caetano Veloso",
+      "artist": "Caetano Veloso",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "caetano_veloso"
+    },
+    {
+      "title": "Discovery",
+      "artist": "Daft Punk",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "discovery"
+    },
+    {
+      "title": "Cabe\u00e7a Dinossauro",
+      "artist": "Tit\u00e3s",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "cabe\u00e7a_dinossauro"
+    }
+]
+

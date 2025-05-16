@@ -12,7 +12,7 @@ class CardTableView: UIView {
     private var sectionTitles: [String] = []
 
     lazy var tableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.delegate = self
@@ -96,6 +96,12 @@ extension CardTableView: UITableViewDelegate {
         }
 
         return cell
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        tableView.sectionIndexColor = .yellow1
+        tableView.sectionIndexBackgroundColor = .purple1
+        return sectionTitles
     }
 }
 

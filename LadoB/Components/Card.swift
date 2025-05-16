@@ -49,13 +49,22 @@ class Card: UIView {
     }()
     
     private lazy var buttonImageView: UIImageView = {
+        let config = UIImage.SymbolConfiguration(weight: .bold)
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "chevron.right")
+        imageView.image = UIImage(systemName: "chevron.right", withConfiguration: config)
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = .pink1
+        imageView.isUserInteractionEnabled = true
+
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        imageView.addGestureRecognizer(tapGesture)
 
         return imageView
     }()
+    
+    @objc func handleTap() {
+        print("TAP")
+    }
 
     lazy var albumStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
@@ -65,7 +74,7 @@ class Card: UIView {
         stackView.alignment = .leading
         stackView.spacing = 8
         stackView.backgroundColor = .purple1
-
+        
         return stackView
     }()
     

@@ -96,7 +96,7 @@ extension DiscoVC: ViewCodeProtocol {
                 constant: -16
             ),
 
-            cardTableView.topAnchor.constraint(equalTo: view.topAnchor),
+            cardTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             cardTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             cardTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             cardTableView.trailingAnchor.constraint(

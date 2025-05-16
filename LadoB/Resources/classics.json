@@ -1,0 +1,184 @@
+[
+    {
+      "title": "Rumours",
+      "artist": "Fleetwood Mac",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "rumours"
+    },
+    {
+      "title": "Bat Out Of Hell",
+      "artist": "Meat Loaf",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "bat_out_of_hell"
+    },
+    {
+      "title": "Nevermind",
+      "artist": "Nirvana",
+      "decade": 1970,
+      "genre": "Grunge",
+      "coverAsset": "nevermind"
+    },
+    {
+      "title": "Constru\u00e7\u00e3o",
+      "artist": "Chico Buarque",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "constru\u00e7\u00e3o"
+    },
+    {
+      "title": "Revolver",
+      "artist": "The Beatles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "revolver"
+    },
+    {
+      "title": "Time Out",
+      "artist": "The Dave Brubeck Quartet",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "time_out"
+    },
+    {
+      "title": "Off The Wall",
+      "artist": "Michael Jackson",
+      "decade": 1970,
+      "genre": "Pop",
+      "coverAsset": "off_the_wall"
+    },
+    {
+      "title": "Legal",
+      "artist": "Gal Costa",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "legal"
+    },
+    {
+      "title": "In Rainbows",
+      "artist": "Radiohead",
+      "decade": 1970,
+      "genre": "Alternative Rock",
+      "coverAsset": "in_rainbows"
+    },
+    {
+      "title": "The Miseducation Of Lauryn Hill",
+      "artist": "Lauryn Hill",
+      "decade": 1970,
+      "genre": "R&B",
+      "coverAsset": "the_miseducation_of_lauryn_hill"
+    },
+    {
+      "title": "Lemonade",
+      "artist": "Beyonc\u00e9",
+      "decade": 1970,
+      "genre": "R&B",
+      "coverAsset": "lemonade"
+    },
+    {
+      "title": "Mezzanine",
+      "artist": "Massive Attack",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "mezzanine"
+    },
+    {
+      "title": "Am",
+      "artist": "Arctic Monkeys",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "am"
+    },
+    {
+      "title": "Abbey Road",
+      "artist": "The Beatles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "abbey_road"
+    },
+    {
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "hotel_california"
+    },
+    {
+      "title": "Horses",
+      "artist": "Patti Smith",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "horses"
+    },
+    {
+      "title": "Bad",
+      "artist": "Michael Jackson",
+      "decade": 1970,
+      "genre": "Pop",
+      "coverAsset": "bad"
+    },
+    {
+      "title": "To Pimp A Butterfly",
+      "artist": "Kendrick Lamar",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "to_pimp_a_butterfly"
+    },
+    {
+      "title": "Exile On Main St.",
+      "artist": "The Rolling Stones",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "exile_on_main_st."
+    },
+    {
+      "title": "Pet Sounds",
+      "artist": "The Beach Boys",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "pet_sounds"
+    },
+    {
+      "title": "Selected Ambient Works 85\u201392",
+      "artist": "Aphex Twin",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "selected_ambient_works_85\u201392"
+    },
+    {
+      "title": "Elis & Tom",
+      "artist": "Elis Regina & Ant\u00f4nio Carlos Jobim",
+      "decade": 1970,
+      "genre": "Bossa Nova",
+      "coverAsset": "elis_&_tom"
+    },
+    {
+      "title": "Dois",
+      "artist": "Legi\u00e3o Urbana",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "dois"
+    },
+    {
+      "title": "Born To Run",
+      "artist": "Bruce Springsteen",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "born_to_run"
+    },
+    {
+      "title": "London Calling",
+      "artist": "The Clash",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "london_calling"
+    },
+    {
+      "title": "The College Dropout",
+      "artist": "Kanye West",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "the_college_dropout"
+    }
+]
