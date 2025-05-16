@@ -35,8 +35,15 @@
     "coverAsset": "are_you_experienced"
   },
   {
-    "title": "The Velvet Underground & Nico",
-    "artist": "The Velvet Underground",
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "decade": 1980,
+    "genre": "Rock",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Back_in_Black_by_ACDC_Portuguese_single.jpg"
+  },
+  {
+    "title": "Hotel California",
+    "artist": "Eagles",
     "decade": 1970,
     "genre": "Rock",
     "coverAsset": "the_velvet_underground_&_nico"
@@ -51,9 +58,9 @@
   {
     "title": "Nirvana",
     "artist": "Nirvana",
-    "decade": 1970,
-    "genre": "Grunge",
-    "coverAsset": "nirvana"
+    "decade": 1990,
+    "genre": "Rock",
+    "coverURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8bxzV8TBveyP5mvFTKvQr_bIHS38J2r0FEA&s"
   },
   {
     "title": "Back In Black",
@@ -63,18 +70,18 @@
     "coverAsset": "back_in_black"
   },
   {
-    "title": "Clube Da Esquina",
-    "artist": "Milton Nascimento & L\u00f4 Borges",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverAsset": "clube_da_esquina"
+    "title": "The Chronic",
+    "artist": "Dr. Dre",
+    "decade": 1990,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c7/The_Chronic.jpg"
   },
   {
-    "title": "The Joshua Tree",
-    "artist": "U2",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "the_joshua_tree"
+    "title": "Illmatic",
+    "artist": "Nas",
+    "decade": 1990,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/9c/Illmatic.jpg"
   },
   {
     "title": "1989",
@@ -178,22 +185,22 @@
     "title": "Paranoid",
     "artist": "Black Sabbath",
     "decade": 1970,
-    "genre": "Heavy Metal",
-    "coverAsset": "paranoid"
+    "genre": "Rock",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/6/64/Black_Sabbath_-_Paranoid.jpg"
   },
   {
-    "title": "Re",
-    "artist": "Gilberto Gil",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverAsset": "re"
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "decade": 1990,
+    "genre": "Rock",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Radioheadokcomputer.png/250px-Radioheadokcomputer.png"
   },
   {
-    "title": "Blue Lines",
-    "artist": "Massive Attack",
-    "decade": 1970,
-    "genre": "Electronic",
-    "coverAsset": "blue_lines"
+    "title": "Viva la Vida or Death and All His Friends",
+    "artist": "Coldplay",
+    "decade": 2000,
+    "genre": "Rock",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/d/d7/Vivalavida.jpg"
   },
   {
     "title": "The Dark Side Of The Moon",
@@ -259,39 +266,39 @@
     "coverAsset": "secos_&_molhados"
   },
   {
-    "title": "A Love Supreme",
-    "artist": "John Coltrane",
-    "decade": 1970,
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "artist": "Kanye West",
+    "decade": 2010,
+    "genre": "HipHop",
+    "coverURL": "https://m.media-amazon.com/images/I/91dHRGIV65L.jpg"
+  },
+  {
+    "title": "To Pimp a Butterfly",
+    "artist": "Kendrick Lamar",
+    "decade": 2010,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c9/To_Pimp_a_Butterfly.jpg"
+  },
+  {
+    "title": "The Marshall Mathers LP",
+    "artist": "Eminem",
+    "decade": 2000,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/ae/The_Marshall_Mathers_LP.jpg"
+  },
+  {
+    "title": "Ready to Die",
+    "artist": "The Notorious B.I.G.",
+    "decade": 1990,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/1/1f/Ready_to_Die.jpg"
+  },
+  {
+    "title": "Getz/Gilberto",
+    "artist": "Stan Getz & João Gilberto",
+    "decade": 1960,
     "genre": "Jazz",
-    "coverAsset": "a_love_supreme"
-  },
-  {
-    "title": "Ac\u00fastico Mtv",
-    "artist": "C\u00e1ssia Eller",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "ac\u00fastico_mtv"
-  },
-  {
-    "title": "Matriz",
-    "artist": "Pitty",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "matriz"
-  },
-  {
-    "title": "Acabou Chorare",
-    "artist": "Novos Baianos",
-    "decade": 1970,
-    "genre": "MPB",
-    "coverAsset": "acabou_chorare"
-  },
-  {
-    "title": "Sgt. Peppers Lonely Hearts Club Band",
-    "artist": "The Beatles",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "sgt._peppers_lonely_hearts_club_band"
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/96/Getz-gilberto.jpg"
   },
   {
     "title": "The Blueprint",
@@ -325,8 +332,8 @@
     "title": "21",
     "artist": "Adele",
     "decade": 1970,
-    "genre": "Pop",
-    "coverAsset": "21"
+    "genre": "Jazz",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/0/0e/Elis_Regina_-_Elis_%26_Tom.jpg"
   },
   {
     "title": "Miles Smiles",
@@ -476,39 +483,39 @@
     "coverAsset": "achtung_baby"
   },
   {
-    "title": "Back To Black",
-    "artist": "Amy Winehouse",
-    "decade": 1970,
-    "genre": "Soul",
-    "coverAsset": "back_to_black"
+    "title": "The Blueprint",
+    "artist": "Jay-Z",
+    "decade": 2000,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/c/c9/Jay-z-the-blueprint.jpg"
   },
   {
-    "title": "Bar\u00e3o Vermelho",
-    "artist": "Bar\u00e3o Vermelho",
-    "decade": 1970,
+    "title": "ATLiens",
+    "artist": "OutKast",
+    "decade": 1990,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/e/e0/Outkast_-_ATLiens.jpg"
+  },
+  {
+    "title": "Enter the Wu-Tang (36 Chambers)",
+    "artist": "Wu-Tang Clan",
+    "decade": 1990,
+    "genre": "HipHop",
+    "coverURL": "https://m.media-amazon.com/images/I/614UiJzoxPL.jpg"
+  },
+  {
+    "title": "The College Dropout",
+    "artist": "Kanye West",
+    "decade": 2000,
+    "genre": "HipHop",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a3/Kanyewest_collegedropout.jpg"
+  },
+  {
+    "title": "In Rainbows",
+    "artist": "Radiohead",
+    "decade": 2000,
     "genre": "Rock",
-    "coverAsset": "bar\u00e3o_vermelho"
-  },
-  {
-    "title": "Rumours",
-    "artist": "Fleetwood Mac",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "rumours"
-  },
-  {
-    "title": "Bat Out Of Hell",
-    "artist": "Meat Loaf",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "bat_out_of_hell"
-  },
-  {
-    "title": "Nevermind",
-    "artist": "Nirvana",
-    "decade": 1970,
-    "genre": "Grunge",
-    "coverAsset": "nevermind"
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/9/96/Radiohead_-_In_Rainbows.jpg"
   },
   {
     "title": "Constru\u00e7\u00e3o",
@@ -546,11 +553,11 @@
     "coverAsset": "legal"
   },
   {
-    "title": "In Rainbows",
-    "artist": "Radiohead",
-    "decade": 1970,
-    "genre": "Alternative Rock",
-    "coverAsset": "in_rainbows"
+    "title": "Bleach",
+    "artist": "Nirvana",
+    "decade": 1980,
+    "genre": "Rock",
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a1/Nirvana-Bleach.jpg"
   },
   {
     "title": "The Miseducation Of Lauryn Hill",
@@ -651,11 +658,11 @@
     "coverAsset": "dois"
   },
   {
-    "title": "Born To Run",
-    "artist": "Bruce Springsteen",
-    "decade": 1970,
+    "title": "Nirvana",
+    "artist": "Nirvana",
+    "decade": 2000,
     "genre": "Rock",
-    "coverAsset": "born_to_run"
+    "coverURL": "https://upload.wikimedia.org/wikipedia/commons/7/72/Nirvana_album_cover.jpg"
   },
   {
     "title": "London Calling",

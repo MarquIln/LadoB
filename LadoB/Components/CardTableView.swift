@@ -45,13 +45,7 @@ class CardTableView: UIView {
 
 
     private func buildContent() {
-        guard let url = Bundle.main.url(forResource: "mockedData", withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let decoded = try? JSONDecoder().decode([Album].self, from: data) else {
-            return
-        }
-        groupAndSortAlbums(decoded)
-        tableView.reloadData()
+        albums = Album.loadAlbunsFromJSON() //coloquei a funcao dentro do model
     }
 
     func updateAlbums(_ albums: [Album]) {

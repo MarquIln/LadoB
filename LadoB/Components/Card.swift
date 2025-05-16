@@ -94,6 +94,7 @@ class Card: UIView {
         imageView.image = imageURL
         artistNameLabel.text = artistName
         albumNameLabel.text = albumName
+        
     }
 
     override init(frame: CGRect) {

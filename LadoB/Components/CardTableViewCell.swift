@@ -21,13 +21,7 @@ class CardTableViewCell: UITableViewCell {
     }
 
     func config(with album: Album) {
-        if let image = UIImage(named: album.coverAsset) {
-            card.config(
-                imageURL: image,
-                artistName: album.artist,
-                albumName: album.title
-            )
-        }
+        card.config(artistName: album.artist, albumName: album.title, albumImage: album.coverURL)
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
