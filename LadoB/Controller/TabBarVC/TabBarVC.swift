@@ -8,14 +8,10 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
-    //MARK: TabBar de Search
     lazy var searchTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "Pesquisa"
         tabItem.image = UIImage(systemName: "sparkle.magnifyingglass")
-        tabItem.badgeColor = .red
-        
         
         let rootViewController = SearchVC()
         rootViewController.tabBarItem = tabItem
@@ -24,7 +20,6 @@ class TabBarViewController: UITabBarController {
         return navigationController
     }()
 
-    //MARK: TabBar de Discoteca
     lazy var discoTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "Discoteca"
@@ -37,7 +32,6 @@ class TabBarViewController: UITabBarController {
         return navigationController
     }()
     
-    //MARK: TabBar de WishList
     lazy var wishListTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "WishList"
@@ -50,7 +44,6 @@ class TabBarViewController: UITabBarController {
         return navigationController
     }()
     
-    //MARK: TabBar de Discoteca
     lazy var profileTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
         tabItem.title = "Perfil"

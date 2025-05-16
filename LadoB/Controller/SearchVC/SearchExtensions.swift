@@ -7,15 +7,15 @@
 
 import UIKit
 
-extension UISearchController {
-    static func create(localizedPlaceholder placeholder: String = "Search") -> UISearchController {
-        let searchController = UISearchController()
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.searchBar.placeholder = placeholder
-        return searchController
-    }
-}
+//extension UISearchController {
+//    static func create(localizedPlaceholder placeholder: String = "Search") -> UISearchController {
+//        let searchController = UISearchController()
+//        searchController.obscuresBackgroundDuringPresentation = false
+//        searchController.hidesNavigationBarDuringPresentation = false
+//        searchController.searchBar.placeholder = placeholder
+//        return searchController
+//    }
+//}
 
 extension SearchVC: UICollectionViewDataSource {
     

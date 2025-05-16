@@ -87,12 +87,32 @@ class SearchVC: UIViewController {
             return nil
         }
     }
-
     
+    private let searchController = UISearchController(searchResultsController: nil)
+    
+    private func configureSearchController() {
+//        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Álbum, Artista, Banda, Gênero"
+        searchController.searchBar.searchTextField.font = Fonts.bodyBold
+        searchController.searchBar.autocapitalizationType = .none
+        navigationItem.searchController = searchController
+//        searchController.searchBar.delegate = self
+        definesPresentationContext = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple1
         loadAllSections()
+        
+        navigationItem.title = "Descobrir"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+
+        
+        configureSearchController()
+        
         setup()
     }
 }

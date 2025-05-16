@@ -43,13 +43,29 @@ class WishListVC: UIViewController {
         return collectionView
     }()
     
+    private let searchController = UISearchController(searchResultsController: nil)
+    
+    private func configureSearchController() {
+//        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Álbum, Artista, Banda"
+        searchController.searchBar.searchTextField.font = Fonts.bodyBold
+        searchController.searchBar.autocapitalizationType = .none
+        navigationItem.searchController = searchController
+//        searchController.searchBar.delegate = self
+        definesPresentationContext = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple1
         
-        albuns[0].isWished = true
-        albuns[4].isWished = true
-//        
+        navigationItem.title = "No Radar"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+        
+        configureSearchController()
+        
         wishedAlbuns = albuns.filter({$0.isWished == true})
         print(wishedAlbuns)
         

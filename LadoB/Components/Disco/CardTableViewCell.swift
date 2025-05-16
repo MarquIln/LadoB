@@ -22,7 +22,11 @@ class CardTableViewCell: UITableViewCell {
 
     func config(with album: Album) {
         if let image = UIImage(named: album.coverAsset) {
-            card.config(imageURL: image, artistName: album.artist, albumName: album.title)
+            card.config(
+                imageURL: image,
+                artistName: album.artist,
+                albumName: album.title
+            )
         }
     }
 
@@ -42,19 +46,16 @@ extension CardTableViewCell: ViewCodeProtocol {
         NSLayoutConstraint.activate([
             card.topAnchor.constraint(
                 equalTo: contentView.topAnchor,
-                constant: 8
             ),
             card.bottomAnchor.constraint(
                 equalTo: contentView.bottomAnchor,
-                constant: -8
             ),
             card.leadingAnchor.constraint(
                 equalTo: contentView.leadingAnchor,
-                constant: 8
             ),
             card.trailingAnchor.constraint(
                 equalTo: contentView.trailingAnchor,
-                constant: -8
+
             ),
         ])
     }
