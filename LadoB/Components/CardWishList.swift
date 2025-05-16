@@ -18,6 +18,7 @@ class CardWishList: UICollectionViewCell {
         image.heightAnchor.constraint(equalToConstant: 174).isActive = true
         image.widthAnchor.constraint(equalToConstant: 174).isActive = true
         image.layer.cornerRadius = 8
+        image.clipsToBounds = true
         
         return image
     }()
