@@ -41,7 +41,7 @@ class DiscoVC: UIViewController {
 
         return rows
     }
-    
+
     private lazy var addButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
             barButtonSystemItem: .add,
@@ -50,20 +50,28 @@ class DiscoVC: UIViewController {
         )
         return button
     }()
-    
+
     @objc private func addTapped() {
         print("Add Tapped")
     }
 
-    let cardTableView = CardTableView()
+    let cardTableView: CardTableView = {
+        let tableView = CardTableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Discoteca"
-        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            .foregroundColor: UIColor.pink2
+        ]
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = .purple1
+        navigationController?.navigationBar.barTintColor = .purple1
         navigationItem.rightBarButtonItem = addButton
-        
+
         setup()
     }
 }
@@ -73,8 +81,6 @@ extension DiscoVC: ViewCodeProtocol {
         view.addSubview(emptyState)
         view.backgroundColor = .purple1
         view.addSubview(cardTableView)
-
-        cardTableView.translatesAutoresizingMaskIntoConstraints = false
 
         let albums: [Album] = JSONLoader.loadAlbums(from: "mockedData")
         rows = buildRows(from: albums)
@@ -96,12 +102,10 @@ extension DiscoVC: ViewCodeProtocol {
                 constant: -16
             ),
 
-            cardTableView.topAnchor.constraint(equalTo: view.topAnchor),
+            cardTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             cardTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             cardTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            cardTableView.trailingAnchor.constraint(
-                equalTo: view.trailingAnchor
-            ),
+            cardTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
     }
 }
