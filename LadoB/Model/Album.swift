@@ -14,7 +14,7 @@ struct Album: Decodable {
     let decade: Int
     let genre: Genre
     let coverAsset: String
-//    var isWished: Bool = false
+    var isWished: Bool?
 
     init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String) {
         self.id = id
@@ -23,6 +23,5 @@ struct Album: Decodable {
         self.decade = decade
         self.genre = genre
         self.coverAsset = coverAsset
-//        self.isWished = isWished
     }
 }

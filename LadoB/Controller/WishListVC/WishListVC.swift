@@ -47,10 +47,10 @@ class WishListVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .purple1
         
-//        albuns[0].isWished = true
-//        albuns[4].isWished = true
+        albuns[0].isWished = true
+        albuns[4].isWished = true
 //        
-//        wishedAlbuns = albuns.filter({$0.isWished})
+        wishedAlbuns = albuns.filter({$0.isWished == true})
         print(wishedAlbuns)
         
         setup()

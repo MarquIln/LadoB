@@ -43,7 +43,7 @@ class TabBarViewController: UITabBarController {
         tabItem.title = "WishList"
         tabItem.image = UIImage(named: "custom.record.circle.fill.badge.sparkles.alt")
         
-        let rootViewController = ExampleVC()
+        let rootViewController = WishListVC()
         rootViewController.tabBarItem = tabItem
         
         let navigationController = UINavigationController(rootViewController: rootViewController)
