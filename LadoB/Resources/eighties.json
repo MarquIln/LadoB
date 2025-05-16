@@ -1,0 +1,115 @@
+
+[
+    {
+      "title": "Songs In The Key Of Life",
+      "artist": "Stevie Wonder",
+      "decade": 1970,
+      "genre": "Soul",
+      "coverAsset": "songs_in_the_key_of_life"
+    },
+    {
+      "title": "Blue Train",
+      "artist": "John Coltrane",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "blue_train"
+    },
+    {
+      "title": "Transa",
+      "artist": "Caetano Veloso",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "transa"
+    },
+    {
+      "title": "Roberto Carlos",
+      "artist": "Roberto Carlos",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "roberto_carlos"
+    },
+    {
+      "title": "Innervisions",
+      "artist": "Stevie Wonder",
+      "decade": 1970,
+      "genre": "Soul",
+      "coverAsset": "innervisions"
+    },
+    {
+      "title": "Tutu",
+      "artist": "Miles Davis",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "tutu"
+    },
+    {
+      "title": "Secos & Molhados",
+      "artist": "Secos & Molhados",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "secos_&_molhados"
+    },
+    {
+      "title": "A Love Supreme",
+      "artist": "John Coltrane",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "a_love_supreme"
+    },
+    {
+      "title": "Ac\u00fastico Mtv",
+      "artist": "C\u00e1ssia Eller",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "ac\u00fastico_mtv"
+    },
+    {
+      "title": "Matriz",
+      "artist": "Pitty",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "matriz"
+    },
+    {
+      "title": "Acabou Chorare",
+      "artist": "Novos Baianos",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "acabou_chorare"
+    },
+    {
+      "title": "Sgt. Peppers Lonely Hearts Club Band",
+      "artist": "The Beatles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "sgt._peppers_lonely_hearts_club_band"
+    },
+    {
+      "title": "The Blueprint",
+      "artist": "Jay-Z",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "the_blueprint"
+    },
+    {
+      "title": "Jagged Little Pill",
+      "artist": "Alanis Morissette",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "jagged_little_pill"
+    },
+    {
+      "title": "Da Lama Ao Caos",
+      "artist": "Na\u00e7\u00e3o Zumbi",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "da_lama_ao_caos"
+    },
+    {
+      "title": "Illmatic",
+      "artist": "Nas",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "illmatic"
+    }
+]

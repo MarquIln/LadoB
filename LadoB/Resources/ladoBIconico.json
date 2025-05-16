@@ -1,0 +1,163 @@
+[
+    {
+      "title": "Legal",
+      "artist": "Gal Costa",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "legal"
+    },
+    {
+      "title": "In Rainbows",
+      "artist": "Radiohead",
+      "decade": 1970,
+      "genre": "Alternative Rock",
+      "coverAsset": "in_rainbows"
+    },
+    {
+      "title": "The Miseducation Of Lauryn Hill",
+      "artist": "Lauryn Hill",
+      "decade": 1970,
+      "genre": "R&B",
+      "coverAsset": "the_miseducation_of_lauryn_hill"
+    },
+    {
+      "title": "Lemonade",
+      "artist": "Beyonc\u00e9",
+      "decade": 1970,
+      "genre": "R&B",
+      "coverAsset": "lemonade"
+    },
+    {
+      "title": "Mezzanine",
+      "artist": "Massive Attack",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "mezzanine"
+    },
+    {
+      "title": "Am",
+      "artist": "Arctic Monkeys",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "am"
+    },
+    {
+      "title": "Abbey Road",
+      "artist": "The Beatles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "abbey_road"
+    },
+    {
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "hotel_california"
+    },
+    {
+      "title": "Horses",
+      "artist": "Patti Smith",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "horses"
+    },
+    {
+      "title": "Discovery",
+      "artist": "Daft Punk",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "discovery"
+    },
+    {
+      "title": "Cabe\u00e7a Dinossauro",
+      "artist": "Tit\u00e3s",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "cabe\u00e7a_dinossauro"
+    },
+    {
+      "title": "Nebraska",
+      "artist": "Bruce Springsteen",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "nebraska"
+    },
+    {
+      "title": "Let It Be",
+      "artist": "The Beatles",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "let_it_be"
+    },
+    {
+      "title": "Expresso 2222",
+      "artist": "Gilberto Gil",
+      "decade": 1970,
+      "genre": "MPB",
+      "coverAsset": "expresso_2222"
+    },
+    {
+      "title": "Queen Ii",
+      "artist": "Queen",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "queen_ii"
+    },
+    {
+      "title": "The Chronic",
+      "artist": "Dr. Dre",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "the_chronic"
+    },
+    {
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "my_beautiful_dark_twisted_fantasy"
+    },
+    {
+      "title": "Electric Ladyland",
+      "artist": "The Jimi Hendrix Experience",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "electric_ladyland"
+    },
+    {
+      "title": "Viva La Vida Or Death And All His Friends",
+      "artist": "Coldplay",
+      "decade": 1970,
+      "genre": "Alternative Rock",
+      "coverAsset": "viva_la_vida_or_death_and_all_his_friends"
+    },
+    {
+      "title": "Head Hunters",
+      "artist": "Herbie Hancock",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "head_hunters"
+    },
+    {
+      "title": "Ready To Die",
+      "artist": "The Notorious B.I.G.",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "ready_to_die"
+    },
+    {
+      "title": "The Man-Machine",
+      "artist": "Kraftwerk",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "the_man-machine"
+    },
+    {
+      "title": "A Cor De Rosa Choque",
+      "artist": "Rita Lee",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "a_cor_de_rosa_choque"
+    }
+]

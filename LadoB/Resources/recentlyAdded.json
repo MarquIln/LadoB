@@ -1,0 +1,73 @@
+
+[
+    {
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "my_beautiful_dark_twisted_fantasy"
+    },
+    {
+      "title": "Electric Ladyland",
+      "artist": "The Jimi Hendrix Experience",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "electric_ladyland"
+    },
+    {
+      "title": "Viva La Vida Or Death And All His Friends",
+      "artist": "Coldplay",
+      "decade": 1970,
+      "genre": "Alternative Rock",
+      "coverAsset": "viva_la_vida_or_death_and_all_his_friends"
+    },
+    {
+      "title": "Head Hunters",
+      "artist": "Herbie Hancock",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "head_hunters"
+    },
+    {
+      "title": "Ready To Die",
+      "artist": "The Notorious B.I.G.",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "ready_to_die"
+    },
+    {
+      "title": "The Man-Machine",
+      "artist": "Kraftwerk",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "the_man-machine"
+    },
+    {
+      "title": "A Cor De Rosa Choque",
+      "artist": "Rita Lee",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "a_cor_de_rosa_choque"
+    },
+    {
+      "title": "Atliens",
+      "artist": "OutKast",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "atliens"
+    },
+    {
+      "title": "Speak No Evil",
+      "artist": "Wayne Shorter",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "speak_no_evil"
+    },
+    {
+      "title": "Achtung Baby",
+      "artist": "U2",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "achtung_baby"
+    }
+]

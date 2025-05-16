@@ -20,27 +20,45 @@ extension UISearchController {
 extension SearchVC: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        10
+        return SearchSection.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        guard let sectionEnum = SearchSection(rawValue: section),
+                 let items = dataBySection[sectionEnum] else {
+               return 0
+           }
+           return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let sectionEnum = SearchSection(rawValue: indexPath.section),
+                  let album = dataBySection[sectionEnum]?[indexPath.item] else {
+                fatalError("Data not found")
+            }
+        
         if indexPath.section == 0 {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallCardCVCell.identifier, for: indexPath) as? SmallCardCVCell
             else { fatalError() }
             
-            cell.config(title: "Name", artist: "Artist", image: UIImage(named: "Checker"), bgColor: .purple1)
-            
+            let image = UIImage(named: album.coverAsset)
+            let title = album.title
+            let artist = album.artist
+
+            cell.config(with: album, title: title, artist: artist, image: image, bgColor: .purple1)
+                        
             return cell
         } else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LargeCardCVCell.identifier, for: indexPath) as? LargeCardCVCell
             else { fatalError() }
             
-            cell.config(title: "Name", artist: "Artist", image: UIImage(named: "Checker2"), bgColor: .purple1)
+            let image = UIImage(named: album.coverAsset)
+            let title = album.title
+            let artist = album.artist
             
+            cell.config(with: album, title: title, artist: artist, image: image, bgColor: .purple1)
+                        
             return cell
         }
         
@@ -54,15 +72,11 @@ extension SearchVC: UICollectionViewDataSource {
             ofKind: kind,
             withReuseIdentifier: SearchSectionHeader.identifier,
             for: indexPath
-        ) as? SearchSectionHeader else {
+        ) as? SearchSectionHeader, let sectionEnum = SearchSection(rawValue: indexPath.section) else {
             fatalError()
         }
         
-        if indexPath.section == 0 {
-            header.setTitle("Últimas pesquisas")
-        } else {
-            header.setTitle("Adicionados recentemente")
-        }
+        header.setTitle(sectionEnum.title)
 
         return header
     }

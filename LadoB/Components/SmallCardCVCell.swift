@@ -34,10 +34,11 @@ class SmallCardCVCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func config(title: String, artist: String, image: UIImage?, bgColor: UIColor? = nil, bgImage: UIImage? = nil) {
+    func config(with album: Album, title: String, artist: String, image: UIImage?, bgColor: UIColor? = nil, bgImage: UIImage? = nil) {
+        
+        cardView.image = image
         cardView.albumTitle = title
         cardView.artistTitle = artist
-        cardView.image = image
         backgroundImage.image = bgImage
         backgroundImage.backgroundColor = bgColor
     }
