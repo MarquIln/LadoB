@@ -111,10 +111,12 @@ extension WishListVC {
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(217))
     
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item, item])
+        group.interItemSpacing = .fixed(22)
         
         //secao
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0)
+        section.interGroupSpacing = 4.0
                                                         
         //layout
         let layout = UICollectionViewCompositionalLayout(section: section)
@@ -131,7 +133,7 @@ extension WishListVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: CardWishList.identifier, for: indexPath) as? CardWishList else {fatalError()}
         
-        cell.translatesAutoresizingMaskIntoConstraints = false
+//        cell.translatesAutoresizingMaskIntoConstraints = false
         
         let album = wishedAlbuns[indexPath.row]
         
