@@ -19,6 +19,9 @@ class WishListVC: UIViewController {
             empty.descriptionText = """
                                     Procure um álbum que gostaria de ter em sua Discoteca, salve no Radar para lembrar na hora que estiver garimpando por aí.
                                     """
+        empty.buttonAction = { [weak self] in
+            self?.tabBarController?.selectedIndex = 0
+        }
             return empty
         }()
 
@@ -58,11 +61,11 @@ class WishListVC: UIViewController {
         
         configureSearchController()
         
-        albuns[8].isWished = true
-        albuns[80].isWished = true
-        albuns[33].isWished = true
-        albuns[25].isWished = true
-        albuns[7].isWished = true
+//        albuns[8].isWished = true
+//        albuns[80].isWished = true
+//        albuns[33].isWished = true
+//        albuns[25].isWished = true
+//        albuns[7].isWished = true
         
         wishedAlbuns = albuns.filter({$0.isWished == true})
     
