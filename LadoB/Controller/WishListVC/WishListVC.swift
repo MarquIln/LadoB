@@ -10,6 +10,7 @@ import UIKit
 class WishListVC: UIViewController {
     var albuns = JSONLoader.loadAlbums(from: "mockedData")
     var wishedAlbuns: [Album] = []
+    var filteredAlbums: [Album] = []
     
     lazy var emptyStateWishList: EmptyState = {
             var empty = EmptyState()
@@ -20,21 +21,11 @@ class WishListVC: UIViewController {
                                     """
             return empty
         }()
-    
-//    lazy var cardTest: CardWishList = {
-//        var card = CardWishList()
-//        card.translatesAutoresizingMaskIntoConstraints = false
-//        card.artistName = "Teste"
-//        card.songName = "Musica banger"
-//        card.albumImageURL = URL(string: albuns[0].coverURL) //pega a url do primeiro album
-//
-//        card.setup()
-//        return card
-//    }()
 
     lazy var wishListcollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createSectionLayout())
         
+        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -6)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.backgroundColor = .purple1
@@ -46,7 +37,7 @@ class WishListVC: UIViewController {
     private let searchController = UISearchController(searchResultsController: nil)
     
     private func configureSearchController() {
-//        searchController.searchResultsUpdater = self
+        searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Álbum, Artista, Banda"
         searchController.searchBar.searchTextField.font = Fonts.bodyBold
@@ -60,15 +51,21 @@ class WishListVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .purple1
         
+        
         navigationItem.title = "No Radar"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
         
         configureSearchController()
         
-        wishedAlbuns = albuns.filter({$0.isWished == true})
-        print(wishedAlbuns)
+        albuns[8].isWished = true
+        albuns[80].isWished = true
+        albuns[33].isWished = true
+        albuns[25].isWished = true
+        albuns[7].isWished = true
         
+        wishedAlbuns = albuns.filter({$0.isWished == true})
+    
         setup()
     }
 
@@ -132,7 +129,7 @@ extension WishListVC {
         //secao
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0)
-        section.interGroupSpacing = 4.0
+        section.interGroupSpacing = 20
                                                         
         //layout
         let layout = UICollectionViewCompositionalLayout(section: section)
@@ -143,14 +140,28 @@ extension WishListVC {
 
 extension WishListVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return wishedAlbuns.count
+        if searchController.isActive && !filteredAlbums.isEmpty {
+            
+            return filteredAlbums.count
+        }else{
+            
+            return wishedAlbuns.count
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: CardWishList.identifier, for: indexPath) as? CardWishList else {fatalError()}
         
-        let album = wishedAlbuns[indexPath.row]
+        let album: Album
         
+        if searchController.isActive && !filteredAlbums.isEmpty {
+         
+            album = filteredAlbums[indexPath.row]
+        }else{
+            
+            album = wishedAlbuns[indexPath.row]
+        }
         
         if let image = UIImage(named: album.coverAsset) {
             cell.config(imageURL: image, artistName: album.artist, albumName: album.title)
@@ -160,4 +171,28 @@ extension WishListVC: UICollectionViewDataSource {
     }
     
     
+}
+
+extension WishListVC: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let query = searchController.searchBar.text ?? ""
+        
+        if !query.isEmpty {
+            filteredAlbums = wishedAlbuns.filter { $0.title.lowercased().contains(query.lowercased()) ||
+                $0.artist.lowercased().contains(query.lowercased())
+            }
+        }else{
+            filteredAlbums = []
+        }
+        
+        wishListcollectionView.reloadData()
+        
+    }
+    
+}
+
+extension WishListVC: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
 }
