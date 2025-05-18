@@ -31,6 +31,7 @@ class WishListVC: UIViewController {
         collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -6)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = .purple1
         collectionView.register(CardWishList.self, forCellWithReuseIdentifier: CardWishList.identifier)
         
@@ -46,7 +47,7 @@ class WishListVC: UIViewController {
         searchController.searchBar.searchTextField.font = Fonts.bodyBold
         searchController.searchBar.autocapitalizationType = .none
         navigationItem.searchController = searchController
-//        searchController.searchBar.delegate = self
+        searchController.searchBar.delegate = self
         definesPresentationContext = true
     }
     
@@ -61,11 +62,11 @@ class WishListVC: UIViewController {
         
         configureSearchController()
         
-//        albuns[8].isWished = true
-//        albuns[80].isWished = true
-//        albuns[33].isWished = true
-//        albuns[25].isWished = true
-//        albuns[7].isWished = true
+        albuns[8].isWished = true
+        albuns[80].isWished = true
+        albuns[33].isWished = true
+        albuns[25].isWished = true
+        albuns[7].isWished = true
         
         wishedAlbuns = albuns.filter({$0.isWished == true})
     
@@ -199,3 +200,18 @@ extension WishListVC: UISearchBarDelegate {
         searchBar.resignFirstResponder()
     }
 }
+
+extension WishListVC: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            
+        let albumSelected: Album = wishedAlbuns[indexPath.row]
+        
+        print("Album clicado: \(albumSelected.title)")
+        
+        
+        present(ExampleVC(), animated: true)
+    }
+    
+}
+
