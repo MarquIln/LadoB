@@ -18,6 +18,7 @@ class CardTableView: UIView {
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "default-cell")
         tableView.register(CardTableViewCell.self, forCellReuseIdentifier: CardTableViewCell.reuseIdentifier)
+        tableView.contentInsetAdjustmentBehavior = .automatic
         tableView.backgroundColor = .purple1
         
         return tableView

@@ -58,9 +58,15 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         tabBar.tintColor = .yellow1
-        tabBar.backgroundColor = .purple1
+
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .black4
+        tabBar.standardAppearance = appearance
+        tabBar.scrollEdgeAppearance = appearance
+
         viewControllers = [searchTabBar, discoTabBar, wishListTabBar, profileTabBar]
     }
-
 }
