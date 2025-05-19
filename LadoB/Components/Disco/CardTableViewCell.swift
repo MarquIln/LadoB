@@ -39,7 +39,7 @@ class CardTableViewCell: UITableViewCell {
 extension CardTableViewCell: ViewCodeProtocol {
     func addSubviews() {
         contentView.addSubview(card)
-        contentView.backgroundColor = .purple1
+        contentView.backgroundColor = .purple2
     }
 
     func setupConstraints() {

@@ -10,7 +10,6 @@ import UIKit
 extension DiscoVC: ViewCodeProtocol {
     func addSubviews() {
         view.addSubview(emptyState)
-        view.backgroundColor = .purple1
         view.addSubview(cardTableView)
 
         cardTableView.translatesAutoresizingMaskIntoConstraints = false

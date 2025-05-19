@@ -56,6 +56,7 @@ class CardWishList: UICollectionViewCell {
         let stackView = UIStackView(arrangedSubviews: [albumImage, stackViewLabels])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
+        stackView.backgroundColor = .purple2
         stackView.spacing = 8
         return stackView
     }()

@@ -75,8 +75,10 @@ class DiscoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .purple1
         navigationItem.title = "Discoteca"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = .purple1
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
         navigationItem.rightBarButtonItem = addButton
 
