@@ -153,27 +153,27 @@ extension SearchResultsVC: ViewCodeProtocol {
     }
 }
 
-//extension SearchResultsVC: UICollectionViewDataSource {
-//    
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return filteredData.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-////        guard let cell = collectionView.dequeueReusableCell(
-////            withReuseIdentifier: SearchResultCell.identifier,
-////            for: indexPath
-////        ) as? SearchResultCell else {
-////            fatalError()
-////        }
-//
-//        let album = filteredData[indexPath.item]
-//        let image = UIImage(named: album.coverAsset)
-//        cell.configure(title: album.title, artist: album.artist, image: image)
-//
-//        return cell
-//    }
-//}
+extension SearchResultsVC: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return filteredData.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: SearchResultsCell.identifier,
+            for: indexPath
+        ) as? SearchResultsCell else {
+            fatalError()
+        }
+
+        let album = filteredData[indexPath.item]
+        
+        cell.config(albumCover: UIImage(named: album.coverAsset), artistName: album.artist, albumName: album.title)
+
+        return cell
+    }
+}
 
 
 extension SearchVC: UISearchResultsUpdating {

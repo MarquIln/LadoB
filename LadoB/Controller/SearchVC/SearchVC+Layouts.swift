@@ -15,12 +15,14 @@ extension SearchVC {
             widthDimension: .absolute(126),
             heightDimension: .absolute(163)
         )
+        
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .estimated(126),
             heightDimension: .absolute(163)
         )
+        
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.interItemSpacing = .fixed(10)
 
@@ -107,31 +109,38 @@ extension SearchResultsVC {
     }
     
     func smallItemGridLayout() -> NSCollectionLayoutSection {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalHeight(1.0))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .absolute(106),
+            heightDimension: .absolute(144)
+        )
         
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
         let groupSize = NSCollectionLayoutSize(
-            widthDimension: .estimated(174),
-            heightDimension: .absolute(272)
+            widthDimension: .estimated(106),
+            heightDimension: .absolute(144)
         )
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-        group.interItemSpacing = .fixed(10)
+        
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: groupSize,
+            subitems: [item, item, item]
+        )
+        
+        group.interItemSpacing = .fixed(20)
 
         let section = NSCollectionLayoutSection(group: group)
-        section.orthogonalScrollingBehavior = .continuous
-        section.interGroupSpacing = 8.0
+        section.orthogonalScrollingBehavior = .none
+        section.interGroupSpacing = 20.0
         section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 16, trailing: 16)
         
         return section
     }
     
-    func createAllLayout() -> UICollectionViewLayout {
+    func createResultsLayout() -> UICollectionViewLayout {
         
         let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
             if sectionIndex == 0 {
-                return self.filterItemLayout()
+                return self.smallItemGridLayout()
             } else {
                 return self.smallItemGridLayout()
             }

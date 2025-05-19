@@ -12,13 +12,13 @@ class SearchResultsVC: UIViewController {
     var filteredData: [Album] = []
     
     lazy var collectionView: UICollectionView = {
-            let layout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .vertical
-            let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-            cv.translatesAutoresizingMaskIntoConstraints = false
-            cv.backgroundColor = .purple1
-            return cv
-        }()
+        let layout = createResultsLayout()
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.translatesAutoresizingMaskIntoConstraints = false
+        cv.dataSource = self
+        cv.backgroundColor = .purple1
+        return cv
+    }()
     
     func updateResults(with results: [Album]) {
         filteredData = results
@@ -28,6 +28,9 @@ class SearchResultsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
+        collectionView.register(SearchResultsCell.self, forCellWithReuseIdentifier: SearchResultsCell.identifier)
+        collectionView.dataSource = self
         
     }
 }
