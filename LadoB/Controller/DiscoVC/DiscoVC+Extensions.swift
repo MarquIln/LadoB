@@ -10,9 +10,14 @@ import UIKit
 extension DiscoVC: ViewCodeProtocol {
     func addSubviews() {
         view.addSubview(emptyState)
+        view.backgroundColor = .purple1
         view.addSubview(cardTableView)
 
         cardTableView.translatesAutoresizingMaskIntoConstraints = false
+
+        allAlbums = JSONLoader.loadAlbums(from: "mockedData")
+        rows = buildRows(from: allAlbums)
+        sections = Array(repeating: 0, count: rows.count)
     }
 
     func setupConstraints() {
@@ -29,10 +34,9 @@ extension DiscoVC: ViewCodeProtocol {
                 equalTo: view.trailingAnchor,
                 constant: -16
             ),
-            emptyState.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
 
             cardTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            cardTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            cardTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             cardTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             cardTableView.trailingAnchor.constraint(
                 equalTo: view.trailingAnchor

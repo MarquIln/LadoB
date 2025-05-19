@@ -64,6 +64,7 @@ class CardTableView: UIView {
 extension CardTableView: ViewCodeProtocol {
     func addSubviews() {
         addSubview(tableView)
+        tableView.reloadData()
     }
 
     func setupConstraints() {

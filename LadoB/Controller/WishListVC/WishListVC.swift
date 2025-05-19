@@ -25,7 +25,7 @@ class WishListVC: UIViewController {
             return empty
         }()
 
-    lazy var wishListcollectionView: UICollectionView = {
+    lazy var wishListCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createSectionLayout())
         
         collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -6)
@@ -46,34 +46,24 @@ class WishListVC: UIViewController {
         searchController.searchBar.searchTextField.font = Fonts.bodyBold
         searchController.searchBar.autocapitalizationType = .none
         navigationItem.searchController = searchController
-//        searchController.searchBar.delegate = self
+        searchController.searchBar.delegate = self
         definesPresentationContext = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple1
-        
-        
-<<<<<<< HEAD
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithTransparentBackground()
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-=======
->>>>>>> origin/feat/disco
+        view.backgroundColor = .purple2
         navigationItem.title = "No Radar"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
         
         configureSearchController()
         
-//        albuns[8].isWished = true
-//        albuns[80].isWished = true
-//        albuns[33].isWished = true
-//        albuns[25].isWished = true
-//        albuns[7].isWished = true
+        albuns[8].isWished = true
+        albuns[80].isWished = true
+        albuns[33].isWished = true
+        albuns[25].isWished = true
+        albuns[7].isWished = true
         
         wishedAlbuns = albuns.filter({$0.isWished == true})
     
@@ -89,7 +79,7 @@ extension WishListVC: ViewCodeProtocol {
         if wishedAlbuns.isEmpty{
             view.addSubview(emptyStateWishList)
         } else{
-            view.addSubview(wishListcollectionView)
+            view.addSubview(wishListCollectionView)
         }
         
     }
@@ -107,10 +97,10 @@ extension WishListVC: ViewCodeProtocol {
             
         } else{
             NSLayoutConstraint.activate([
-                    wishListcollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 16),
-                    wishListcollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-                    wishListcollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-                    wishListcollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+                    wishListCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 16),
+                    wishListCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+                    wishListCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+                    wishListCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
                     
                 ])
         }
@@ -196,7 +186,7 @@ extension WishListVC: UISearchResultsUpdating {
             filteredAlbums = []
         }
         
-        wishListcollectionView.reloadData()
+        wishListCollectionView.reloadData()
         
     }
     

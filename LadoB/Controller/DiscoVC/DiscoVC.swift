@@ -8,25 +8,27 @@
 import UIKit
 
 class DiscoVC: UIViewController {
-    var allAlbums: [Album] = []
+     var allAlbums: [Album] = []
 
-     lazy var emptyState: EmptyState = {
+     let emptyState: EmptyState = {
         let view = EmptyState()
         view.titleText = "Nenhum LP salvo ainda"
         view.descriptionText =
             "Os álbuns, coletâneas e listas cadastradas e criadas por você aparecerão aqui"
         view.translatesAutoresizingMaskIntoConstraints = false
-        
-         view.buttonAction = { [weak self] in
-             self?.tabBarController?.selectedIndex = 0
-         }
         return view
     }()
 
-    var sections: [Int] = []
-    var rows: [[Album]] = []
+     var sections: [Int] = []
+     var rows: [[Album]] = []
 
-    func buildRows(from albums: [Album]) -> [[Album]] {
+     func buildSections() {
+        for _ in 0..<10 {
+            sections.append(0)
+        }
+    }
+
+     func buildRows(from albums: [Album]) -> [[Album]] {
         var rows: [[Album]] = []
         var currentRow: [Album] = []
 
@@ -40,8 +42,8 @@ class DiscoVC: UIViewController {
 
         return rows
     }
-
-    lazy var addButton: UIBarButtonItem = {
+    
+     lazy var addButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
@@ -49,19 +51,15 @@ class DiscoVC: UIViewController {
         )
         return button
     }()
-
-    @objc func addTapped() {
+    
+    @objc  func addTapped() {
         print("Add Tapped")
     }
 
-    let cardTableView: CardTableView = {
-        let view = CardTableView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-
-    let searchController = UISearchController(searchResultsController: nil)
-
+     let cardTableView = CardTableView()
+    
+     let searchController = UISearchController(searchResultsController: nil)
+    
     func configureSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -69,29 +67,23 @@ class DiscoVC: UIViewController {
         searchController.searchBar.searchTextField.font = Fonts.bodyBold
         searchController.searchBar.autocapitalizationType = .none
         searchController.searchBar.delegate = self
+        navigationItem.searchController = searchController
         definesPresentationContext = true
-    }
 
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple2 
 
         navigationItem.title = "Discoteca"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-        
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithTransparentBackground()
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
         navigationItem.rightBarButtonItem = addButton
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
 
         configureSearchController()
-
+        
         setup()
     }
 }
+
+
