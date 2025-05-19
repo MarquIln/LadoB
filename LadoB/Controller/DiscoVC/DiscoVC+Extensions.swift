@@ -11,13 +11,15 @@ extension DiscoVC: ViewCodeProtocol {
     func addSubviews() {
         view.addSubview(emptyState)
         view.backgroundColor = .purple1
-        view.addSubview(cardTableView)
-
-        cardTableView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(tableView)
+        
+        configureNavigationBar()
+        configureSearchController()
+        configureLayout()
+        configureTableView()
+        loadAlbums()
 
         allAlbums = JSONLoader.loadAlbums(from: "mockedData")
-        rows = buildRows(from: allAlbums)
-        sections = Array(repeating: 0, count: rows.count)
     }
 
     func setupConstraints() {
@@ -34,72 +36,74 @@ extension DiscoVC: ViewCodeProtocol {
                 equalTo: view.trailingAnchor,
                 constant: -16
             ),
+            
+            emptyState.bottomAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.bottomAnchor
+            ),
 
-            cardTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            cardTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            cardTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            cardTableView.trailingAnchor.constraint(
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(
                 equalTo: view.trailingAnchor
             ),
         ])
     }
 }
 
-extension DiscoVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)
-        -> Int
-    {
-        return rows[section].count
+extension DiscoVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sectionTitles.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
-        -> UITableViewCell
-    {
-        guard
-            let cell = tableView.dequeueReusableCell(
-                withIdentifier: CardTableViewCell.reuseIdentifier,
-                for: indexPath
-            ) as? CardTableViewCell
-        else {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let key = sectionTitles[section]
+        return groupedAlbums[key]?.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionTitles[section]
+    }
+
+    func tableView(_ tableView: UITableView, sectionIndexTitlesForTableView tableView2: UITableView) -> [String]? {
+        return sectionTitles
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.reuseIdentifier, for: indexPath) as? CardTableViewCell else {
             return UITableViewCell()
         }
 
-        let album: Album = rows[indexPath.section][indexPath.row]
-        cell.config(with: album)
-        return cell
-    }
+        let key = sectionTitles[indexPath.section]
+        if let album = groupedAlbums[key]?[indexPath.row] {
+            cell.config(with: album)
+        }
 
-    func numberOfSections(in tableView: UITableView) -> Int {
-        emptyState.isHidden = sections.isEmpty
-        cardTableView.isHidden = !sections.isEmpty
-        return sections.count
+        return cell
     }
 }
 
 extension DiscoVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text?.lowercased(), !searchText.isEmpty else {
-            cardTableView.updateAlbums(allAlbums)
+        guard let text = searchController.searchBar.text?.lowercased(), !text.isEmpty else {
+            updateAlbums(allAlbums)
             return
         }
 
         let filtered = allAlbums.filter {
-            $0.title.lowercased().contains(searchText) ||
-            $0.artist.lowercased().contains(searchText)
+            $0.title.lowercased().contains(text) || $0.artist.lowercased().contains(text)
         }
 
-        cardTableView.updateAlbums(filtered)
+        updateAlbums(filtered)
     }
 }
 
 extension DiscoVC: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        updateAlbums(allAlbums)
     }
 
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        rows = buildRows(from: allAlbums)
-        sections = Array(repeating: 0, count: rows.count)
-        cardTableView.updateAlbums(allAlbums)
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }

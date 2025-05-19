@@ -8,58 +8,66 @@
 import UIKit
 
 class DiscoVC: UIViewController {
-     var allAlbums: [Album] = []
+    var allAlbums: [Album] = []
+    var groupedAlbums: [String: [Album]] = [:]
+    var sectionTitles: [String] = []
 
-     let emptyState: EmptyState = {
+    let tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(CardTableViewCell.self, forCellReuseIdentifier: CardTableViewCell.reuseIdentifier)
+        tableView.backgroundColor = .purple1
+        tableView.sectionIndexColor = .yellow1
+        tableView.sectionIndexBackgroundColor = .purple1
+        tableView.contentInsetAdjustmentBehavior = .automatic
+        return tableView
+    }()
+
+    let emptyState: EmptyState = {
         let view = EmptyState()
         view.titleText = "Nenhum LP salvo ainda"
-        view.descriptionText =
-            "Os álbuns, coletâneas e listas cadastradas e criadas por você aparecerão aqui"
+        view.descriptionText = "Os álbuns, coletâneas e listas cadastradas e criadas por você aparecerão aqui"
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
-     var sections: [Int] = []
-     var rows: [[Album]] = []
+    let searchController = UISearchController(searchResultsController: nil)
 
-     func buildSections() {
-        for _ in 0..<10 {
-            sections.append(0)
-        }
-    }
-
-     func buildRows(from albums: [Album]) -> [[Album]] {
-        var rows: [[Album]] = []
-        var currentRow: [Album] = []
-
-        for (index, album) in albums.enumerated() {
-            currentRow.append(album)
-            if currentRow.count == 4 || index == albums.count - 1 {
-                rows.append(currentRow)
-                currentRow = []
-            }
-        }
-
-        return rows
-    }
-    
-     lazy var addButton: UIBarButtonItem = {
+    lazy var addButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: .add,
+            image: UIImage(systemName: "plus.circle.fill"),
+            style: .plain,
             target: self,
-            action: #selector(addTapped),
+            action: #selector(addTapped)
         )
+        button.tintColor = .yellow1
         return button
     }()
-    
-    @objc  func addTapped() {
-        print("Add Tapped")
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
     }
 
-     let cardTableView = CardTableView()
-    
-     let searchController = UISearchController(searchResultsController: nil)
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateAddButtonIcon()
+    }
+
+    func configureNavigationBar() {
+        navigationItem.title = "Discoteca"
+        navigationItem.rightBarButtonItem = addButton
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+
     func configureSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -69,21 +77,61 @@ class DiscoVC: UIViewController {
         searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         definesPresentationContext = true
-
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        navigationItem.title = "Discoteca"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
-        navigationItem.rightBarButtonItem = addButton
+    func configureLayout() {
+        view.addSubview(tableView)
+        view.addSubview(emptyState)
 
-        configureSearchController()
-        
-        setup()
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+
+            emptyState.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 321),
+            emptyState.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            emptyState.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            emptyState.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+    }
+
+    func configureTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+
+    func updateAddButtonIcon() {
+        let iconName = allAlbums.isEmpty ? "plus.circle.fill" : "heart.fill"
+        addButton.image = UIImage(systemName: iconName)
+    }
+
+    @objc func addTapped() {
+        print("Add Tapped")
+    }
+
+    func loadAlbums() {
+        guard let url = Bundle.main.url(forResource: "mockedData", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let decoded = try? JSONDecoder().decode([Album].self, from: data) else {
+            return
+        }
+
+        allAlbums = decoded
+        groupAndSortAlbums(decoded)
+        tableView.reloadData()
+    }
+
+    func updateAlbums(_ albums: [Album]) {
+        groupAndSortAlbums(albums)
+        tableView.reloadData()
+    }
+
+    private func groupAndSortAlbums(_ albums: [Album]) {
+        let sorted = albums.sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
+        groupedAlbums = Dictionary(grouping: sorted) { String($0.title.prefix(1)).uppercased() }
+        sectionTitles = groupedAlbums.keys.sorted()
+        emptyState.isHidden = !albums.isEmpty
+        tableView.isHidden = albums.isEmpty
     }
 }
-
-
