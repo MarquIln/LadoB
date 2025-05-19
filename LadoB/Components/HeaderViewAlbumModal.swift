@@ -7,22 +7,22 @@
 import UIKit
 class HeaderViewAlbumModal: UIView {
     // MARK: Subviews
-    private lazy var backButton: UIButton = {
-        var button = UIButton(type: .system)
-        
-        var configuration = UIButton.Configuration.plain()
-        configuration.image = UIImage(systemName: "chevron.left")
-        configuration.imagePadding = 4
-        configuration.title = "Voltar"
-        configuration.baseForegroundColor = UIColor(named: "Yellow1") // ou use .systemYellow, se não tiver custom
-        configuration.contentInsets = .zero
-
-        button.configuration = configuration
-        button.titleLabel?.font = UIFont(name: "SFProRounded-Semibold", size: 17)
-        button.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
-
-        return button
-    }()
+//    private lazy var backButton: UIButton = {
+//        var button = UIButton(type: .system)
+//        
+//        var configuration = UIButton.Configuration.plain()
+//        configuration.image = UIImage(systemName: "chevron.left")
+//        configuration.imagePadding = 4
+//        configuration.title = "Voltar"
+//        configuration.baseForegroundColor = UIColor(named: "Yellow1") // ou use .systemYellow, se não tiver custom
+//        configuration.contentInsets = .zero
+//
+//        button.configuration = configuration
+//        button.titleLabel?.font = UIFont(name: "SFProRounded-Semibold", size: 17)
+//        button.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+//
+//        return button
+//    }()
 
     private lazy var titleLabel: UILabel = {
         var label = UILabel()
@@ -32,19 +32,19 @@ class HeaderViewAlbumModal: UIView {
         return label
     }()
 
-    private lazy var addButton: UIButton = {
+    private lazy var okButton: UIButton = {
         var button = UIButton()
-        button.setTitle("Add", for: .normal)
+        button.setTitle("Ok", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
-        button.setTitle("Add", for: .disabled)
+        button.setTitle("Ok", for: .disabled)
         button.setTitleColor(.systemGray, for: .disabled)
         button.isEnabled = false
-        button.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(okButtonTapped), for: .touchUpInside)
         return button
     }()
 
     private lazy var stack: UIStackView = {
-        var stack = UIStackView(arrangedSubviews: [backButton, titleLabel, addButton])
+        var stack = UIStackView(arrangedSubviews:[ /*[backButton,*/ titleLabel, okButton])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.distribution = .equalCentering
         return stack
@@ -66,16 +66,17 @@ class HeaderViewAlbumModal: UIView {
 
     var addButtonIsEnabled: Bool = false {
         didSet {
-            addButton.isEnabled = addButtonIsEnabled
+            okButton.isEnabled = addButtonIsEnabled
         }
     }
 
     var backButtonAction: () -> Void = {}
-    var addButtonAction: () -> Void = {}
+    var okButtonAction: () -> Void = {}
 
     // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = .purple4
         setup()
     }
 
@@ -88,8 +89,8 @@ class HeaderViewAlbumModal: UIView {
         backButtonAction()
     }
 
-    @objc func addButtonTapped() {
-        addButtonAction()
+    @objc func okButtonTapped() {
+        okButtonAction()
     }
 }
 

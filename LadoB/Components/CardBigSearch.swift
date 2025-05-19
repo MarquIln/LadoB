@@ -147,6 +147,9 @@ class CardBigSearch: UIView {
     
     @objc func buttonTappedArrow() {
         //fazer ação do botão Arrow
+        print ("cliquei no botão arrow")
+        let albumModalVC = AlbumModalViewController()
+        //present(albumModalVC, animated: true)
     }
     
     @objc func buttonTappedShare() {

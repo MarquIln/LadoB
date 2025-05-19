@@ -10,10 +10,11 @@ class CardAlbumModal: UIView {
  
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
-
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = .systemBlue
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.heightAnchor.constraint(equalToConstant: 370).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 370).isActive = true
         return imageView
     }()
     
@@ -36,8 +37,48 @@ class CardAlbumModal: UIView {
         return label
     }()
     
+    lazy var totalMusicsLabel: UILabel = {
+        let label = UILabel()
+        label.font = Fonts.subtitle
+        label.text = "Total musics"
+        label.textColor = .gray
+        return label
+    }()
+    
+    var imageName: String? {
+            didSet {
+                if let name = imageName {
+                    imageView.image = UIImage(named: name)
+                }
+            }
+        }
+    
+    var title: String? {
+        didSet {
+            albumNameLabel.text = title
+        }
+    }
+    
+    var artistName: String? {
+        didSet {
+            artistNameAndYearLabel.text = artistName
+        }
+    }
+    
+    var totalMusics: String? {
+        didSet {
+            totalMusicsLabel.text = totalMusics
+        }
+    }
     
     
+    lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [imageView, albumNameLabel, artistNameAndYearLabel])
+        stackView.axis = .vertical
+        stackView.spacing = 8
+        stackView.distribution = .fillProportionally
+        return stackView
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -52,12 +93,15 @@ class CardAlbumModal: UIView {
 
 extension CardAlbumModal: ViewCodeProtocol {
     func addSubviews() {
-        //addSubview(cardStackView)
+        addSubview(stackView)
     }
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            //
+            stackView.topAnchor.constraint(equalTo: self.topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
         ])
     }
 }

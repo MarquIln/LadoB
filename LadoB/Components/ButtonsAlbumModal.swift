@@ -10,8 +10,8 @@ class ButtonsAlbumModal: UIView {
  
         lazy var iconImageView: UIImageView = {
           let imageView = UIImageView()
-          imageView.image = UIImage(systemName: "checkmark.circle.fill") 
-          imageView.tintColor = UIColor(named: "DarkPurple") ?? .darkGray
+          imageView.image = UIImage(systemName: "custom.record.circle.fill.badge.sparkles.alt")
+          //imageView.tintColor = UIColor(named: "DarkPurple") ?? .darkGray
           imageView.translatesAutoresizingMaskIntoConstraints = false
           imageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
           imageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
@@ -22,7 +22,7 @@ class ButtonsAlbumModal: UIView {
           let label = UILabel()
           label.text = "Tenho"
           //label.textColor = UIColor(named: "DarkPurple") ?? .darkGray
-          label.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+          label.font = Fonts.bodyBold
           label.translatesAutoresizingMaskIntoConstraints = false
           return label
       }()
@@ -64,12 +64,17 @@ class ButtonsAlbumModal: UIView {
 
 extension ButtonsAlbumModal: ViewCodeProtocol {
     func addSubviews() {
-        //addSubview(cardStackView)
+        addSubview(stack)
     }
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
             //
+            stack.topAnchor.constraint(equalTo: self.topAnchor),
+            stack.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            stack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            
         ])
     }
 }

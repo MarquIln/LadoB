@@ -11,7 +11,7 @@ class BiographyDescription: UIView {
  
     lazy var biographyTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.calloutBold
+        label.font = UIFont(name: "SFPro-Bold", size: 20)
         label.text = "Biografia"
         label.textColor = .pink2
         label.numberOfLines = 0
@@ -61,12 +61,15 @@ class BiographyDescription: UIView {
 
 extension BiographyDescription: ViewCodeProtocol {
     func addSubviews() {
-        //addSubview(cardStackView)
+        addSubview(mainStack)
     }
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            //
+            mainStack.topAnchor.constraint(equalTo: self.topAnchor),
+            mainStack.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            mainStack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            mainStack.trailingAnchor.constraint(equalTo: self.trailingAnchor),
         ])
     }
 }

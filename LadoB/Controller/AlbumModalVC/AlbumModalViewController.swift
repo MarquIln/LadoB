@@ -9,11 +9,11 @@ import UIKit
 
 class AlbumModalViewController: UIViewController {
     
-//    lazy var hearderView: UIView = {
-//        let view = UIView()
-//        view.backgroundColor = .systemBlue
-//        return view
-//    }()
+    lazy var headerView: HeaderViewAlbumModal = {
+        let view = HeaderViewAlbumModal()
+        view.backgroundColor = .purple2
+        return view
+    }()
     
     
     lazy var albumImageView: UIImageView = {
