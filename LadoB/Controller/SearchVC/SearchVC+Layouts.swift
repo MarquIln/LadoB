@@ -80,3 +80,65 @@ extension SearchVC {
        }
     
 }
+
+extension SearchResultsVC {
+    
+    func filterItemLayout() -> NSCollectionLayoutSection {
+            
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .absolute(126),
+            heightDimension: .absolute(163)
+        )
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .estimated(126),
+            heightDimension: .absolute(163)
+        )
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.interItemSpacing = .fixed(10)
+
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        section.interGroupSpacing = 8.0
+        section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 16, trailing: 16)
+        
+        return section
+    }
+    
+    func smallItemGridLayout() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                              heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .estimated(174),
+            heightDimension: .absolute(272)
+        )
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.interItemSpacing = .fixed(10)
+
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        section.interGroupSpacing = 8.0
+        section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 16, trailing: 16)
+        
+        return section
+    }
+    
+    func createAllLayout() -> UICollectionViewLayout {
+        
+        let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
+            if sectionIndex == 0 {
+                return self.filterItemLayout()
+            } else {
+                return self.smallItemGridLayout()
+            }
+        }
+        
+        return layout
+    }
+    
+}
+

@@ -42,8 +42,8 @@ class SearchVC: UIViewController {
     var filteredData: [Album] = []
 
     var isFiltering: Bool {
-        return searchController.isActive
-            && !(searchController.searchBar.text?.isEmpty ?? true)
+        return searchController?.isActive ?? false
+        && !(searchController?.searchBar.text?.isEmpty ?? true)
     }
 
     lazy var collectionView: UICollectionView = {
@@ -110,33 +110,8 @@ class SearchVC: UIViewController {
         }
     }
 
-    private let searchController = UISearchController(
-        searchResultsController: nil
-    )
-
-    private func configureSearchController() {
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Álbum, Artista, Banda, Gênero"
-        searchController.searchBar.searchTextField.font = Fonts.bodyBold
-        searchController.searchBar.autocapitalizationType = .none
-        navigationItem.searchController = searchController
-        searchController.searchBar.delegate = self
-        definesPresentationContext = true
-    }
-
-    lazy var addButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(
-            barButtonSystemItem: .add,
-            target: self,
-            action: #selector(addTapped),
-        )
-        return button
-    }()
-
-    @objc func addTapped() {
-        print("Add Tapped")
-    }
+    private var searchResultsVC: SearchResultsVC?
+    private var searchController: UISearchController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -147,7 +122,6 @@ class SearchVC: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
 
         navigationItem.hidesSearchBarWhenScrolling = false
-        navigationItem.rightBarButtonItem = addButton
         
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()
@@ -157,7 +131,29 @@ class SearchVC: UIViewController {
 
 
         configureSearchController()
+        navigationItem.searchController = searchController
 
         setup()
+    }
+    
+    private func configureSearchController() {
+        
+        let resultsVC = SearchResultsVC()
+        let controller = UISearchController(searchResultsController: resultsVC)
+        
+        controller.searchResultsUpdater = self
+        controller.searchBar.placeholder = "Álbum, Artista, Banda, Gênero"
+        controller.searchBar.searchTextField.font = Fonts.text
+        controller.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
+        controller.obscuresBackgroundDuringPresentation = false
+        controller.searchBar.autocapitalizationType = .none
+        controller.searchBar.setValue(UIColor.yellow1, forKey: "tintColor")
+        controller.searchBar.searchTextField.tintColor = .yellow1
+        controller.searchBar.searchTextField.textColor = .pink2
+        controller.searchBar.delegate = self
+        searchResultsVC = resultsVC
+        searchController = controller
+        navigationItem.searchController = controller
+        definesPresentationContext = true
     }
 }

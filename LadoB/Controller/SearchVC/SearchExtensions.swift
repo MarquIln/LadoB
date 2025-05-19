@@ -137,9 +137,48 @@ extension SearchVC: ViewCodeProtocol {
     }
 }
 
+extension SearchResultsVC: ViewCodeProtocol {
+    func addSubviews() {
+        view.addSubview(collectionView)
+    }
+    
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            
+        ])
+    }
+}
+
+//extension SearchResultsVC: UICollectionViewDataSource {
+//    
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return filteredData.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+////        guard let cell = collectionView.dequeueReusableCell(
+////            withReuseIdentifier: SearchResultCell.identifier,
+////            for: indexPath
+////        ) as? SearchResultCell else {
+////            fatalError()
+////        }
+//
+//        let album = filteredData[indexPath.item]
+//        let image = UIImage(named: album.coverAsset)
+//        cell.configure(title: album.title, artist: album.artist, image: image)
+//
+//        return cell
+//    }
+//}
+
+
 extension SearchVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text?.lowercased(), !searchText.isEmpty else {
+        guard let searchText = searchController.searchBar.text?.lowercased(), !searchText.isEmpty, let resultsVC = searchController.searchResultsController as? SearchResultsVC else {
             filteredData = []
             collectionView.reloadData()
             return
@@ -154,6 +193,8 @@ extension SearchVC: UISearchResultsUpdating {
             $0.title.lowercased().contains(searchText) ||
             $0.artist.lowercased().contains(searchText)
         }
+        
+        resultsVC.updateResults(with: filteredData)
 
         collectionView.reloadData()
     }
