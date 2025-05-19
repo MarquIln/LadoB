@@ -31,7 +31,7 @@ class WishListVC: UIViewController {
         collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -6)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
-        collectionView.backgroundColor = .purple1
+        collectionView.backgroundColor = .purple2
         collectionView.register(CardWishList.self, forCellWithReuseIdentifier: CardWishList.identifier)
         
         return collectionView
@@ -52,8 +52,9 @@ class WishListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple2
+        view.backgroundColor = .purple1
         navigationItem.title = "No Radar"
+        navigationController?.navigationBar.backgroundColor = .purple1
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
         
@@ -97,9 +98,9 @@ extension WishListVC: ViewCodeProtocol {
             
         } else{
             NSLayoutConstraint.activate([
-                    wishListCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 16),
-                    wishListCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-                    wishListCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+                wishListCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+                    wishListCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                    wishListCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     wishListCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
                     
                 ])
@@ -129,7 +130,7 @@ extension WishListVC {
         
         //secao
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
         section.interGroupSpacing = 20
                                                         
         //layout
