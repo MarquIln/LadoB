@@ -73,7 +73,7 @@ class Card: UIView {
         stackView.axis = .horizontal
         stackView.alignment = .leading
         stackView.spacing = 8
-        stackView.backgroundColor = .purple1
+        stackView.backgroundColor = .purple2
         
         return stackView
     }()

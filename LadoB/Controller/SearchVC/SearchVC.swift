@@ -54,7 +54,7 @@ class SearchVC: UIViewController {
             collectionViewLayout: layout
         )
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .purple1
+        collectionView.backgroundColor = .purple2
 
         //Cells
         collectionView.register(
@@ -140,7 +140,7 @@ class SearchVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple2
+        view.backgroundColor = .purple1
         loadAllSections()
 
         navigationItem.title = "Descobrir"
@@ -154,7 +154,7 @@ class SearchVC: UIViewController {
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
-
+        
 
         configureSearchController()
 
