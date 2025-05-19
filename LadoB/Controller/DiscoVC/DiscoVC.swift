@@ -8,30 +8,24 @@
 import UIKit
 
 class DiscoVC: UIViewController {
-     var allAlbums: [Album] = []
-
-     let emptyState: EmptyState = {
+    var allAlbums: [Album] = []
+    
+    let emptyState: EmptyState = {
         let view = EmptyState()
         view.titleText = "Nenhum LP salvo ainda"
         view.descriptionText =
-            "Os álbuns, coletâneas e listas cadastradas e criadas por você aparecerão aqui"
+        "Os álbuns, coletâneas e listas cadastradas e criadas por você aparecerão aqui"
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-
-     var sections: [Int] = []
-     var rows: [[Album]] = []
-
-     func buildSections() {
-        for _ in 0..<10 {
-            sections.append(0)
-        }
-    }
-
-     func buildRows(from albums: [Album]) -> [[Album]] {
+    
+    var sections: [Int] = []
+    var rows: [[Album]] = []
+    
+    func buildRows(from albums: [Album]) -> [[Album]] {
         var rows: [[Album]] = []
         var currentRow: [Album] = []
-
+        
         for (index, album) in albums.enumerated() {
             currentRow.append(album)
             if currentRow.count == 4 || index == albums.count - 1 {
@@ -39,26 +33,45 @@ class DiscoVC: UIViewController {
                 currentRow = []
             }
         }
-
+        
         return rows
     }
     
-     lazy var addButton: UIBarButtonItem = {
+    lazy var addButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: .add,
+            image: UIImage(systemName: "plus.circle.fill"),
+            style: .plain,
             target: self,
-            action: #selector(addTapped),
+            action: #selector(addTapped)
         )
+        button.tintColor = .yellow1
+        
         return button
     }()
     
-    @objc  func addTapped() {
+    lazy var favoritesButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(
+            image: UIImage(systemName: "heart.fill"),
+            style: .plain,
+            target: self,
+            action: #selector(favoritesTapped)
+        )
+        button.tintColor = .yellow3
+        
+        return button
+    }()
+    
+    @objc func favoritesTapped() {
+        print("Favorites Tapped")
+    }
+    
+    @objc func addTapped() {
         print("Add Tapped")
     }
-
-     let cardTableView = CardTableView()
     
-     let searchController = UISearchController(searchResultsController: nil)
+    let cardTableView = CardTableView()
+    
+    let searchController = UISearchController(searchResultsController: nil)
     
     func configureSearchController() {
         searchController.searchResultsUpdater = self
@@ -69,21 +82,34 @@ class DiscoVC: UIViewController {
         searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         definesPresentationContext = true
-
+    }
+    
+    func updateAddButtonIcon() {
+        let iconName = allAlbums.isEmpty ? "plus.circle.fill" : "heart.fill"
+        addButton.image = UIImage(systemName: iconName)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationItem.title = "Discoteca"
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            .foregroundColor: UIColor.pink2
+        ]
+        
         navigationItem.rightBarButtonItem = addButton
+        
 
+        
         configureSearchController()
         
         setup()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateAddButtonIcon()
+    }
+    
 }
-
-
