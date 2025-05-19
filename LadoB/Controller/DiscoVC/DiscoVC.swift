@@ -56,7 +56,7 @@ class DiscoVC: UIViewController {
         print("Add Tapped")
     }
 
-     let cardTableView = CardTableView()
+    let cardTableView = CardTableView()
     
      let searchController = UISearchController(searchResultsController: nil)
     
@@ -78,7 +78,9 @@ class DiscoVC: UIViewController {
         view.backgroundColor = .purple1
         navigationItem.title = "Discoteca"
         navigationController?.navigationBar.prefersLargeTitles = true
+        
         navigationController?.navigationBar.backgroundColor = .purple1
+        
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
         navigationItem.rightBarButtonItem = addButton
 
