@@ -8,6 +8,9 @@
 import UIKit
 
 class EmptyState: UIView {
+    
+    var buttonAction: (() -> Void)?
+    
     private lazy var titleLabel: UILabel = {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -72,8 +75,7 @@ class EmptyState: UIView {
     }
 
     @objc func buttonTapped() {
-        //buttonAction()
-        //fazer ação do botão
+        buttonAction?()
     }
 
 }
