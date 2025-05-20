@@ -1,3 +1,10 @@
+//
+//  FavoritesVC+Extensions.swift
+//  LadoB
+//
+//  Created by Marcos on 19/05/25.
+//
+
 import UIKit
 
 class FavoritesVC: UIViewController {
@@ -10,7 +17,7 @@ class FavoritesVC: UIViewController {
 
     var isCoverFlowVisible = false
 
-    var albumsForCoverFlow: [Album] { favorites.reversed() }
+    var albumsForCoverFlow: [Album] { favorites }
     var currentAlbumTitle: String?
 
     let searchController = UISearchController(
@@ -43,6 +50,11 @@ class FavoritesVC: UIViewController {
         }
         return empty
     }()
+    
+    lazy var coverFlowView: CoverFlowVC = {
+        let coverFlow = CoverFlowVC()
+        return coverFlow
+    }()
 
     lazy var coverFlowCollectionView: UICollectionView = {
         let layout = StackFlowLayout()
@@ -59,6 +71,7 @@ class FavoritesVC: UIViewController {
             CoverFlowCell.self,
             forCellWithReuseIdentifier: CoverFlowCell.identifier
         )
+        
         return collectionView
     }()
 
@@ -96,7 +109,7 @@ class FavoritesVC: UIViewController {
             image: UIImage(systemName: "slider.horizontal.3"),
             style: .plain,
             target: self,
-            action: #selector(filterButtonTapped)
+            action: #selector(toggleCoverFlowView)
         )
         button.tintColor = .yellow1
         return button
@@ -104,7 +117,7 @@ class FavoritesVC: UIViewController {
 
     lazy var toggleViewButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            image: UIImage(systemName: "square.stack.fill"),
+            image: UIImage(),
             style: .plain,
             target: self,
             action: #selector(toggleCoverFlowView)
@@ -112,11 +125,13 @@ class FavoritesVC: UIViewController {
         button.tintColor = .yellow1
         return button
     }()
-
-    var navigationButtons: [UIBarButtonItem] {
-        [toggleViewButton, filterButton]
+    
+    func updateToggleButton() {
+        let iconName = isCoverFlowVisible ? "square.grid.2x2" : "square.stack.fill"
+        toggleViewButton.image = UIImage(systemName: iconName)
+        navigationItem.rightBarButtonItem = toggleViewButton
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSearchController()
@@ -124,6 +139,8 @@ class FavoritesVC: UIViewController {
         favorites = allAlbums.filter { $0.isFavorite == true }
         groupFavoritesByInitialsAndPairs(from: favorites)
         setup()
+
+        updateToggleButton()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -173,8 +190,8 @@ class FavoritesVC: UIViewController {
 
     func refreshMainView() {
         [
-            favoritesTableView, emptyStateView, coverFlowCollectionView,
-            albumInfoStackView,
+            favoritesTableView, emptyStateView, coverFlowView.view,
+            albumInfoStackView
         ].forEach {
             $0.removeFromSuperview()
         }
@@ -183,7 +200,8 @@ class FavoritesVC: UIViewController {
         setupConstraints()
 
         if isCoverFlowVisible {
-            coverFlowCollectionView.reloadData()
+            coverFlowView.albums = albumsForCoverFlow
+            coverFlowView.pagerView.reloadData()
             if let firstAlbum = albumsForCoverFlow.first {
                 updateAlbumLabels(with: firstAlbum)
             }
@@ -191,13 +209,12 @@ class FavoritesVC: UIViewController {
             favoritesTableView.reloadData()
         }
     }
-
-    @objc func filterButtonTapped() {
-        print("Filtro acionado")
-    }
-
+    
     @objc func toggleCoverFlowView() {
         isCoverFlowVisible.toggle()
         refreshMainView()
+
+        let iconName = isCoverFlowVisible ? "square.grid.2x2" : "square.stack.fill"
+        toggleViewButton.image = UIImage(systemName: iconName)
     }
 }
