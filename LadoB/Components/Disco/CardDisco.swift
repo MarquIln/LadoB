@@ -21,7 +21,7 @@ class Card: UIView {
         let label = UILabel()
         label.font = Fonts.calloutBold
         label.text = "Album name"
-        label.textColor = .pink2
+        label.textColor = .yellow1
         label.numberOfLines = 0
 
         return label
@@ -48,20 +48,6 @@ class Card: UIView {
         return stackView
     }()
     
-    private lazy var buttonImageView: UIImageView = {
-        let config = UIImage.SymbolConfiguration(weight: .bold)
-        let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "chevron.right", withConfiguration: config)
-        imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .pink1
-        imageView.isUserInteractionEnabled = true
-
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        imageView.addGestureRecognizer(tapGesture)
-
-        return imageView
-    }()
-    
     @objc func handleTap() {
         print("TAP")
     }
@@ -79,13 +65,15 @@ class Card: UIView {
     }()
     
     lazy var cardStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [
-            albumStackView, buttonImageView
-        ])
+        let stackView = albumStackView
         stackView.axis = .horizontal
         stackView.alignment = .center
         stackView.spacing = 8
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        
+        stackView.addGestureRecognizer(tapGesture)
         
         return stackView
     }()
@@ -129,8 +117,6 @@ extension Card: ViewCodeProtocol {
             imageView.heightAnchor.constraint(equalToConstant: 58),
             imageView.widthAnchor.constraint(equalToConstant: 58),
             
-            buttonImageView.heightAnchor.constraint(equalToConstant: 22),
-            buttonImageView.widthAnchor.constraint(equalToConstant: 11)
         ])
     }
 }

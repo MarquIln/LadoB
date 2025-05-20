@@ -19,7 +19,7 @@ class CardTableView: UIView {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "default-cell")
         tableView.register(CardTableViewCell.self, forCellReuseIdentifier: CardTableViewCell.reuseIdentifier)
         tableView.contentInsetAdjustmentBehavior = .automatic
-        tableView.backgroundColor = .purple2
+        tableView.backgroundColor = .purple1
         
         return tableView
     }()
@@ -102,7 +102,7 @@ extension CardTableView: UITableViewDelegate {
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         tableView.sectionIndexColor = .yellow1
-        tableView.sectionIndexBackgroundColor = .purple2
+        tableView.sectionIndexBackgroundColor = .purple1
         return sectionTitles
     }
 }
