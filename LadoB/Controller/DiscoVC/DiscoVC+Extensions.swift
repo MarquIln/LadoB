@@ -22,37 +22,13 @@ extension DiscoVC: ViewCodeProtocol {
         allAlbums = JSONLoader.loadAlbums(from: "mockedData")
     }
 
-    func setupConstraints() {
-        NSLayoutConstraint.activate([
-            emptyState.topAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.topAnchor,
-                constant: 321
-            ),
-            emptyState.leadingAnchor.constraint(
-                equalTo: view.leadingAnchor,
-                constant: 16
-            ),
-            emptyState.trailingAnchor.constraint(
-                equalTo: view.trailingAnchor,
-                constant: -16
-            ),
-            
-            emptyState.bottomAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.bottomAnchor
-            ),
-
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(
-                equalTo: view.trailingAnchor
-            ),
-        ])
-    }
+    func setupConstraints() {}
 }
 
 extension DiscoVC: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
+        emptyState.isHidden = !sectionTitles.isEmpty
+        tableView.isHidden = sectionTitles.isEmpty
         return sectionTitles.count
     }
 
@@ -61,6 +37,13 @@ extension DiscoVC: UITableViewDelegate, UITableViewDataSource {
         return groupedAlbums[key]?.count ?? 0
     }
 
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        tableView.sectionIndexColor = .yellow1
+        tableView.sectionIndexBackgroundColor = .purple2
+        
+        return sectionTitles
+    }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitles[section]
     }

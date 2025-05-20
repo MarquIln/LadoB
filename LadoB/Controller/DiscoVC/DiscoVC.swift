@@ -16,9 +16,7 @@ class DiscoVC: UIViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(CardTableViewCell.self, forCellReuseIdentifier: CardTableViewCell.reuseIdentifier)
-        tableView.backgroundColor = .purple1
-        tableView.sectionIndexColor = .yellow1
-        tableView.sectionIndexBackgroundColor = .purple1
+        tableView.backgroundColor = .purple2
         tableView.contentInsetAdjustmentBehavior = .automatic
         return tableView
     }()
@@ -107,7 +105,12 @@ class DiscoVC: UIViewController {
     }
 
     @objc func addTapped() {
-        print("Add Tapped")
+        if !allAlbums.isEmpty {
+            let favoriteVC = FavoritesVC()
+            navigationController?.pushViewController(favoriteVC, animated: true)
+            return
+        }
+        navigationController?.pushViewController(SearchVC(), animated: true)
     }
 
     func loadAlbums() {
