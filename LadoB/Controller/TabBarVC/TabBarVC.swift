@@ -49,7 +49,7 @@ class TabBarViewController: UITabBarController {
         tabItem.title = "Perfil"
         tabItem.image = UIImage(systemName: "person.fill")
         
-        let rootViewController = ExampleVC()
+        let rootViewController = ProfileVC()
         rootViewController.tabBarItem = tabItem
         
         let navigationController = UINavigationController(rootViewController: rootViewController)
