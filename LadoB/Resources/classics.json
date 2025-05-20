@@ -20,7 +20,7 @@
     {
         "title": "Nevermind",
         "artist": "Nirvana",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Grunge",
         "coverAsset": "nevermind",
         "biography": "Lançado em 1991, 'Nevermind' trouxe o grunge ao mainstream com hits como 'Smells Like Teen Spirit'. Transformou Nirvana em ícones de uma geração.",
@@ -38,7 +38,7 @@
     {
         "title": "Revolver",
         "artist": "The Beatles",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "revolver",
         "biography": "Lançado em 1966, 'Revolver' marcou a virada psicodélica dos Beatles, com inovações sonoras e letras introspectivas. Revolucionário para o rock.",
@@ -47,7 +47,7 @@
     {
         "title": "Time Out",
         "artist": "The Dave Brubeck Quartet",
-        "decade": 1970,
+        "decade": 1950,
         "genre": "Jazz",
         "coverAsset": "time_out",
         "biography": "De 1959, o álbum inovou ao usar compasso não convencional. 'Take Five' tornou-se um dos temas de jazz mais conhecidos do mundo.",
@@ -74,7 +74,7 @@
     {
         "title": "In Rainbows",
         "artist": "Radiohead",
-        "decade": 1970,
+        "decade": 2000,
         "genre": "Alternative Rock",
         "coverAsset": "in_rainbows",
         "biography": "De 2007, 'In Rainbows' se destacou pela distribuição online inovadora e som emocionalmente rico. Uma obra madura do Radiohead.",
@@ -83,7 +83,7 @@
     {
         "title": "The Miseducation Of Lauryn Hill",
         "artist": "Lauryn Hill",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "R&B",
         "coverAsset": "the_miseducation_of_lauryn_hill",
         "biography": "Lançado em 1998, o álbum mescla R&B, soul e hip hop com letras íntimas. Rendeu 5 Grammys e é um clássico do gênero.",
@@ -92,7 +92,7 @@
     {
         "title": "Lemonade",
         "artist": "Beyoncé",
-        "decade": 1970,
+        "decade": 2010,
         "genre": "R&B",
         "coverAsset": "lemonade",
         "biography": "Lançado em 2016, 'Lemonade' é visual e musicalmente ousado. Aborda infidelidade, identidade negra e empoderamento feminino.",
@@ -101,7 +101,7 @@
     {
         "title": "Mezzanine",
         "artist": "Massive Attack",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Electronic",
         "coverAsset": "mezzanine",
         "biography": "De 1998, o álbum mistura trip hop sombrio com elementos de dub e rock. Atmosférico, denso e altamente influente.",
@@ -110,7 +110,7 @@
     {
         "title": "Am",
         "artist": "Arctic Monkeys",
-        "decade": 1970,
+        "decade": 2010,
         "genre": "Rock",
         "coverAsset": "am",
         "biography": "Lançado em 2013, AM é o quinto álbum de estúdio da banda britânica Arctic Monkeys. O disco apresenta uma fusão de rock alternativo com elementos de hip-hop e R&B, evidenciada em faixas como 'Do I Wanna Know?' e 'Why'd You Only Call Me When You're High?'. Produzido por James Ford, o álbum recebeu aclamação crítica por sua maturidade sonora e letras introspectivas.",
@@ -119,7 +119,7 @@
     {
         "title": "Abbey Road",
         "artist": "The Beatles",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "abbey_road",
         "biography": "Lançado em 1969, Abbey Road é o 11º álbum de estúdio dos Beatles. Destaca-se pela icônica capa dos quatro membros atravessando a rua e por faixas como 'Come Together' e 'Here Comes the Sun'. O lado B do disco apresenta um medley de canções que demonstra a coesão e criatividade da banda em sua fase final.",
@@ -146,7 +146,7 @@
     {
         "title": "Bad",
         "artist": "Michael Jackson",
-        "decade": 1970,
+        "decade": 1980,
         "genre": "Pop",
         "coverAsset": "bad",
         "biography": "Lançado em 1987, Bad é o sétimo álbum de estúdio de Michael Jackson. Produzido por Quincy Jones, o disco apresenta uma série de hits como 'Smooth Criminal', 'Man in the Mirror' e a faixa-título 'Bad'. O álbum consolidou Jackson como o 'Rei do Pop' e vendeu milhões de cópias mundialmente.",
@@ -155,7 +155,7 @@
     {
         "title": "To Pimp A Butterfly",
         "artist": "Kendrick Lamar",
-        "decade": 1970,
+        "decade": 2010,
         "genre": "Hip Hop",
         "coverAsset": "to_pimp_a_butterfly",
         "biography": "Lançado em 2015, To Pimp a Butterfly é o terceiro álbum de estúdio de Kendrick Lamar. Combinando hip-hop com jazz, funk e soul, o álbum aborda temas como racismo, identidade e desigualdade social. Aclamado pela crítica, é considerado uma obra-prima contemporânea.",
@@ -173,7 +173,7 @@
     {
         "title": "Pet Sounds",
         "artist": "The Beach Boys",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "pet_sounds",
         "biography": "Lançado em 1966, Pet Sounds é considerado uma obra-prima dos Beach Boys. Produzido por Brian Wilson, o álbum apresenta arranjos inovadores e letras introspectivas, influenciando gerações de músicos.",
@@ -182,7 +182,7 @@
     {
         "title": "Selected Ambient Works 85–92",
         "artist": "Aphex Twin",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Electronic",
         "coverAsset": "selected_ambient_works_85–92",
         "biography": "Lançado em 1992, Selected Ambient Works 85–92 é o álbum de estreia de Aphex Twin. Com faixas gravadas desde 1985, o disco é um marco na música eletrônica, combinando ambient e techno de forma inovadora",
@@ -200,7 +200,7 @@
     {
         "title": "Dois",
         "artist": "Legião Urbana",
-        "decade": 1970,
+        "decade": 1980,
         "genre": "Rock",
         "coverAsset": "dois",
         "biography": "Lançado em 1986, Dois é o segundo álbum da banda brasileira Legião Urbana. Com letras poéticas e reflexivas, o disco aborda temas como amor, política e existencialismo, consolidando o grupo no cenário nacional.",
@@ -227,7 +227,7 @@
     {
         "title": "The College Dropout",
         "artist": "Kanye West",
-        "decade": 1970,
+        "decade": 2000,
         "genre": "Hip Hop",
         "coverAsset": "the_college_dropout",
         "biography": "Lançado em 2004, The College Dropout é o álbum de estreia de Kanye West. Combinando hip-hop com soul e letras introspectivas, o disco redefiniu o rap mainstream e lançou West ao estrelato.",

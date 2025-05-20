@@ -11,7 +11,7 @@
     {
         "title": "Sgt. Peppers Lonely Hearts Club Band",
         "artist": "The Beatles",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "sgt._peppers_lonely_hearts_club_band",
         "biography": "Lançado em 1967, este álbum revolucionou a música pop com seu conceito inovador e experimentações sonoras. Assumindo alter egos, os Beatles criaram uma obra que se tornou símbolo da contracultura dos anos 60. Inclui faixas icônicas como 'Lucy in the Sky with Diamonds' e 'A Day in the Life'.",
@@ -20,7 +20,7 @@
     {
         "title": "The Blueprint",
         "artist": "Jay-Z",
-        "decade": 1970,
+        "decade": 2000,
         "genre": "Hip Hop",
         "coverAsset": "the_blueprint",
         "biography": "Lançado em 2001, 'The Blueprint' é considerado um dos melhores álbuns de Jay-Z. Com produção de Kanye West e Just Blaze, o disco apresenta uma sonoridade soul e letras introspectivas. Inclui faixas como 'Izzo (H.O.V.A.)' e 'Renegade'.",
@@ -29,7 +29,7 @@
     {
         "title": "Jagged Little Pill",
         "artist": "Alanis Morissette",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Rock",
         "coverAsset": "jagged_little_pill",
         "biography": "Lançado em 1995, 'Jagged Little Pill' catapultou Alanis Morissette ao estrelato internacional. O álbum mistura rock alternativo e pop, com letras confessionais e emotivas. Inclui sucessos como 'You Oughta Know' e 'Ironic'.",
@@ -38,7 +38,7 @@
     {
         "title": "Da Lama Ao Caos",
         "artist": "Nação Zumbi",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Rock",
         "coverAsset": "da_lama_ao_caos",
         "biography": "Lançado em 1994, este álbum é um marco do movimento manguebeat, que mistura maracatu, rock, hip-hop e funk. Com letras que retratam a realidade urbana do Recife, o disco inclui faixas como 'A Cidade' e 'Rios, Pontes & Overdrives'.",
@@ -47,7 +47,7 @@
     {
         "title": "Illmatic",
         "artist": "Nas",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Hip Hop",
         "coverAsset": "illmatic",
         "biography": "Lançado em 1994, Illmatic é o álbum de estreia de Nas e é amplamente considerado uma obra-prima do hip-hop. Com letras introspectivas e realistas sobre a vida no Queensbridge, Nova York, o álbum apresenta produções de DJ Premier, Pete Rock e Q-Tip. Apesar de vendas modestas inicialmente, Illmatic recebeu aclamação crítica e é frequentemente citado como um dos álbuns mais influentes do gênero. ",
@@ -56,7 +56,7 @@
     {
         "title": "21",
         "artist": "Adele",
-        "decade": 1970,
+        "decade": 2010,
         "genre": "Pop",
         "coverAsset": "21",
         "biography": "Lançado em 2011, 21 é o segundo álbum de estúdio de Adele e consolidou sua carreira internacionalmente. Inspirado por um término de relacionamento, o álbum mistura soul, pop e blues, destacando-se por baladas emocionais como 'Someone Like You' e 'Rolling in the Deep'. 21 foi um sucesso comercial e crítico, tornando-se um dos álbuns mais vendidos do século XXI.",
@@ -65,7 +65,7 @@
     {
         "title": "Miles Smiles",
         "artist": "Miles Davis",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Jazz",
         "coverAsset": "miles_smiles",
         "biography": "Lançado em 1967, Miles Smiles é o segundo álbum do 'Second Great Quintet' de Miles Davis, com Wayne Shorter, Herbie Hancock, Ron Carter e Tony Williams. O álbum é conhecido por sua abordagem inovadora ao jazz, explorando estruturas rítmicas complexas e improvisações ousadas. Faixas como 'Footprints' e 'Circle' exemplificam a química e a criatividade do quinteto.",
@@ -74,7 +74,7 @@
     {
         "title": "The Beatles",
         "artist": "The Beatles",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "the_beatles",
         "biography": "Lançado em 1968, The Beatles, conhecido como 'White Album' devido à sua capa branca minimalista, é um álbum duplo que mostra a diversidade musical da banda. Gravado durante um período de tensões internas, o álbum apresenta uma variedade de estilos, desde rock pesado até baladas acústicas, refletindo as diferentes influências e interesses dos membros da banda.",
@@ -83,7 +83,7 @@
     {
         "title": "I Never Loved A Man The Way I Love You",
         "artist": "Aretha Franklin",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Soul",
         "coverAsset": "i_never_loved_a_man_the_way_i_love_you",
         "biography": "Lançado em 1967, este foi o primeiro álbum de Aretha Franklin pela Atlantic Records e marcou sua ascensão como a 'Rainha do Soul'. Com hits como  'Respect' e a faixa-título, o álbum combina emoção crua com performances vocais poderosas, estabelecendo Franklin como uma das maiores artistas da música americana.",
@@ -92,7 +92,7 @@
     {
         "title": "Caetano Veloso",
         "artist": "Caetano Veloso",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "MPB",
         "coverAsset": "caetano_veloso",
         "biography": "Lançado em 1968, o álbum homônimo de Caetano Veloso é considerado um marco do movimento Tropicália. Combinando elementos de rock psicodélico, bossa nova e música tradicional brasileira, o disco apresenta faixas icônicas como 'Tropicália' e 'Alegria, Alegria'. A obra desafiou as normas culturais da época e influenciou gerações futuras de músicos brasileiros.",
@@ -101,7 +101,7 @@
     {
         "title": "Discovery",
         "artist": "Daft Punk",
-        "decade": 1970,
+        "decade": 2001,
         "genre": "Electronic",
         "coverAsset": "discovery",
         "biography": "Lançado em 2001, 'Discovery' é o segundo álbum de estúdio da dupla francesa Daft Punk. O disco marcou uma mudança em relação ao estilo anterior da dupla, incorporando influências de disco, funk e synthpop. Com hits como 'One More Time' e 'Harder, Better, Faster, Stronger', o álbum foi aclamado pela crítica e consolidou o status do Daft Punk como pioneiros da música eletrônica.",
@@ -110,7 +110,7 @@
     {
         "title": "Cabeça Dinossauro",
         "artist": "Titãs",
-        "decade": 1970,
+        "decade": 1980,
         "genre": "Rock",
         "coverAsset": "cabeça_dinossauro",
         "biography": "Lançado em 1986, 'Cabeça Dinossauro' é o terceiro álbum de estúdio da banda brasileira Titãs. Considerado um dos álbuns mais importantes do rock nacional dos anos 80, o disco apresenta uma sonoridade agressiva e letras críticas à sociedade, religião e política. Faixas como 'Polícia' e 'Homem Primata' tornaram-se hinos de uma geração inconformada.",

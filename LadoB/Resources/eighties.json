@@ -1,146 +1,110 @@
 [
     {
-        "title": "Songs In The Key Of Life",
-        "artist": "Stevie Wonder",
-        "decade": 1970,
-        "genre": "Soul",
-        "coverAsset": "songs_in_the_key_of_life",
-        "biography": "Lançado em 1976, Songs in the Key of Life é o 18º álbum de estúdio de Stevie Wonder. Este álbum duplo é considerado uma obra-prima da música pop e soul, abordando temas como amor, espiritualidade e questões sociais. Com faixas como Sir Duke e Isn't She Lovely, o álbum estreou no topo das paradas e permaneceu lá por 14 semanas, sendo amplamente aclamado pela crítica e pelo público.",
-        "qtdMusicsAndDuration": "17 faixas – 85min 43s"
-    },
+          "title": "A Cor De Rosa Choque",
+          "artist": "Rita Lee",
+          "decade": 1980,
+          "genre": "Rock",
+          "coverAsset": "a_cor_de_rosa_choque",
+          "biography": "Lançado em 1982, A Cor de Rosa Choque é um dos álbuns mais emblemáticos de Rita Lee, destacando-se por sua abordagem feminista e irreverente. Combinando rock e pop, o disco apresenta letras bem-humoradas e críticas sociais, consolidando Rita como uma das maiores artistas brasileiras.",
+          "qtdMusicsAndDuration": "9 faixas - 35min 33s"
+      },
     {
-        "title": "Blue Train",
-        "artist": "John Coltrane",
-        "decade": 1970,
-        "genre": "Jazz",
-        "coverAsset": "blue_train",
-        "biography": "Blue Train, lançado em 1958, é o único álbum de John Coltrane como líder pela Blue Note Records. Gravado em 1957, este trabalho é considerado um marco no jazz, destacando-se pela sua intensidade emocional e virtuosismo técnico. Composições como a faixa-título demonstram a transição de Coltrane para um estilo mais pessoal e inovador.",
-        "qtdMusicsAndDuration": "5 faixas – 42min 14s"
-    },
-    {
-        "title": "Transa",
-        "artist": "Caetano Veloso",
-        "decade": 1970,
-        "genre": "MPB",
-        "coverAsset": "transa",
-        "biography": "Gravado durante o exílio de Caetano Veloso em Londres, 'Transa' foi lançado em 1972 e é um dos álbuns mais emblemáticos de sua carreira. Mesclando MPB, reggae e influências internacionais, o disco reflete a experiência do artista fora do Brasil e é considerado uma obra de resistência cultural.",
-        "qtdMusicsAndDuration": "7 faixas – 37min 13s"
-    },
-    {
-        "title": "Roberto Carlos",
-        "artist": "Roberto Carlos",
-        "decade": 1970,
-        "genre": "MPB",
-        "coverAsset": "roberto_carlos",
-        "biography": "O álbum homônimo de 1970 marca uma fase de transição na carreira de Roberto Carlos, afastando-se do movimento Jovem Guarda e adotando um estilo mais romântico e introspectivo. Com canções como 'Ana' e 'Jesus Cristo', o disco consolidou sua posição como o 'Rei' da música brasileira.",
-        "qtdMusicsAndDuration": "12 faixas – 49min 01s"
-    },
-    {
-        "title": "Innervisions",
-        "artist": "Stevie Wonder",
-        "decade": 1970,
-        "genre": "Soul",
-        "coverAsset": "innervisions",
-        "biography": "Lançado em 1973, 'Innervisions' é o 16º álbum de estúdio de Stevie Wonder e é amplamente reconhecido por sua abordagem inovadora e consciente. O álbum aborda temas sociais e políticos, como racismo e desigualdade, em faixas como 'Living for the City'. Musicalmente, destaca-se pelo uso pioneiro de sintetizadores e pela fusão de soul, funk e jazz.",
-        "qtdMusicsAndDuration": "9 faixas – 43min 52s"
-    },
-    {
-        "title": "Tutu",
-        "artist": "Miles Davis",
-        "decade": 1970,
-        "genre": "Jazz",
-        "coverAsset": "tutu",
-        "biography": "Lançado em 1986, 'Tutu' marca uma nova fase na carreira de Miles Davis, incorporando elementos de jazz fusion, funk e música eletrônica. Produzido por Marcus Miller, o álbum é um tributo ao arcebispo sul-africano Desmond Tutu e reflete o compromisso de Davis com a inovação sonora. 'Tutu' rendeu a Davis o Grammy de Melhor Performance Instrumental de Jazz Solo em 1986.",
-        "qtdMusicsAndDuration": "8 faixas – 42min 05s"
-    },
-    {
-        "title": "Secos & Molhados",
-        "artist": "Secos & Molhados",
-        "decade": 1970,
-        "genre": "MPB",
-        "coverAsset": "secos_&_molhados",
-        "biography": "O álbum de estreia homônimo do grupo brasileiro Secos & Molhados, lançado em 1973, é considerado um marco na música brasileira. Combinando rock, MPB e poesia, o disco apresentou letras de autores como Vinícius de Moraes e Manuel Bandeira. A performance teatral e a estética andrógina do vocalista Ney Matogrosso contribuíram para o impacto cultural do álbum, que desafiou as normas durante a ditadura militar no Brasil.",
-        "qtdMusicsAndDuration": "13 faixas – 30min 54s"
-    },
-    {
-        "title": "A Love Supreme",
-        "artist": "John Coltrane",
-        "decade": 1970,
-        "genre": "Jazz",
-        "coverAsset": "a_love_supreme",
-        "biography": "Gravado em 1964 e lançado em 1965, 'A Love Supreme' é uma suíte espiritual composta por John Coltrane. Considerado uma de suas obras-primas, o álbum expressa a fé e a busca espiritual do saxofonista, refletindo sua jornada pessoal de superação e iluminação. Composto por quatro partes, o disco é uma meditação musical sobre a devoção e a transcendência.",
-        "qtdMusicsAndDuration": "4 faixas – 32min 47s"
-    },
-    {
-        "title": "Acústico Mtv",
-        "artist": "Cássia Eller",
-        "decade": 1970,
+        "title": "Barão Vermelho",
+        "artist": "Barão Vermelho",
+        "decade": 1980,
         "genre": "Rock",
-        "coverAsset": "acústico_mtv",
-        "biography": "Gravado em março de 2001, 'Acústico MTV' foi o último álbum lançado por Cássia Eller antes de sua morte em dezembro do mesmo ano. O disco apresenta versões acústicas de seus maiores sucessos, além de covers e inéditas, destacando sua versatilidade vocal e presença de palco. Com vendas superiores a um milhão de cópias, o álbum consolidou seu legado na música brasileira.",
-        "qtdMusicsAndDuration": "17 faixas – 61min 56s"
-    },
+        "coverAsset": "barão_vermelho",
+        "biography": "Lançado em 1982, o álbum de estreia homônimo do Barão Vermelho apresenta uma fusão de rock, blues e pop. Com Cazuza nos vocais e Frejat na guitarra, o disco inclui a clássica 'Todo Amor Que Houver Nessa Vida'. É considerado um marco do rock brasileiro dos anos 80 ",
+        "qtdMusicsAndDuration": "10 faixas – 31min 10s"
+      },
     {
-        "title": "Matriz",
-        "artist": "Pitty",
-        "decade": 1970,
+        "title": "Bad",
+        "artist": "Michael Jackson",
+        "decade": 1980,
+        "genre": "Pop",
+        "coverAsset": "bad",
+        "biography": "Lançado em 1987, Bad é o sétimo álbum de estúdio de Michael Jackson. Produzido por Quincy Jones, o disco apresenta uma série de hits como 'Smooth Criminal', 'Man in the Mirror' e a faixa-título 'Bad'. O álbum consolidou Jackson como o 'Rei do Pop' e vendeu milhões de cópias mundialmente.",
+        "qtdMusicsAndDuration": "11 faixas – 48min 39s"
+      },
+    {
+        "title": "Back In Black",
+        "artist": "AC/DC",
+        "decade": 1980,
+        "genre": "Hard Rock",
+        "coverAsset": "back_in_black",
+        "biography": "Lançado em 1980, este álbum marcou o retorno do AC/DC após a morte do vocalista Bon Scott. Com Brian Johnson nos vocais, o disco tornou-se um dos mais vendidos da história, consolidando o som pesado e energético da banda.",
+        "qtdMusicsAndDuration": "10 faixas – 42min 11s"
+      },
+    {
+        "title": "The Joshua Tree",
+        "artist": "U2",
+        "decade": 1980,
         "genre": "Rock",
-        "coverAsset": "matriz",
-        "biography": "Lançado em 2019, 'Matriz' é o quinto álbum de estúdio da cantora brasileira Pitty. O disco marca um retorno às suas raízes musicais, incorporando elementos de rock, MPB e ritmos regionais. Com letras introspectivas e colaborações com artistas como Lazzo Matumbi e BaianaSystem, 'Matriz' reflete a maturidade artística de Pitty e sua conexão com a cultura baiana.",
-        "qtdMusicsAndDuration": "13 faixas – 44min 21s"
-    },
+        "coverAsset": "the_joshua_tree",
+        "biography": "Lançado em 1987, este álbum consolidou o U2 como uma das maiores bandas do mundo. Combinando rock atmosférico e letras espirituais, aborda temas como fé e política. Inclui hits como With or Without You e I Still Havent Found What Im Looking For.",
+        "qtdMusicsAndDuration": "11 faixas – 50min 11s"
+      },
     {
-        "title": "Acabou Chorare",
-        "artist": "Novos Baianos",
-        "decade": 1970,
-        "genre": "MPB",
-        "coverAsset": "acabou_chorare",
-        "biography": "Lançado em 1972, 'Acabou Chorare' é considerado um dos álbuns mais importantes da música brasileira. Combinando samba, rock e MPB, o disco apresenta faixas como 'Preta Pretinha' e 'Brasil Pandeiro'. O álbum alcançou o topo das paradas no Brasil e é frequentemente citado em listas dos melhores álbuns nacionais. ",
-        "qtdMusicsAndDuration": "10 faixas – 39 min 29s"
-    },
+        "title": "Thriller",
+        "artist": "Michael Jackson",
+        "decade": 1980,
+        "genre": "Pop",
+        "coverAsset": "thriller",
+        "biography": "Lançado em 1982, é o álbum mais vendido da história. Produzido por Quincy Jones, combina pop, rock e R&B. Inclui clássicos como Billie Jean e Beat It, e revolucionou os videoclipes musicais.",
+        "qtdMusicsAndDuration": "9 faixas – 42min 16s"
+      },
     {
-        "title": "Sgt. Peppers Lonely Hearts Club Band",
-        "artist": "The Beatles",
-        "decade": 1970,
+        "title": "Bleach",
+        "artist": "Nirvana",
+        "decade": 1980,
+        "genre": "Grunge",
+        "coverAsset": "bleach",
+        "biography": "'Bleach', álbum de estreia do Nirvana lançado em 1989, apresenta um som cru e pesado, influenciado pelo punk e pelo grunge. Gravado em Seattle com orçamento limitado, o disco inclui faixas como 'About a Girl' e 'Love Buzz', demonstrando o potencial da banda que revolucionaria o rock nos anos 90.",
+        "qtdMusicsAndDuration": "11 faixas – 37min 21s"
+      },
+    {
+        "title": "Legend",
+        "artist": "Bob Marley & The Wailers",
+        "decade": 1980,
+        "genre": "Reggae",
+        "coverAsset": "legend",
+        "biography": "Lançada em 1984, esta coletânea reúne os maiores sucessos de Bob Marley, como 'No Woman, No Cry' e 'Redemption Song'. É o álbum de reggae mais vendido de todos os tempos, introduzindo a mensagem de amor e unidade de Marley a um público global.",
+        "qtdMusicsAndDuration": "14 faixas – 51min 01s"
+      },
+    {
+          "title": "Tutu",
+          "artist": "Miles Davis",
+          "decade": 1980,
+          "genre": "Jazz",
+          "coverAsset": "tutu",
+          "biography": "Lançado em 1986, 'Tutu' marca uma nova fase na carreira de Miles Davis, incorporando elementos de jazz fusion, funk e música eletrônica. Produzido por Marcus Miller, o álbum é um tributo ao arcebispo sul-africano Desmond Tutu e reflete o compromisso de Davis com a inovação sonora. 'Tutu' rendeu a Davis o Grammy de Melhor Performance Instrumental de Jazz Solo em 1986.",
+          "qtdMusicsAndDuration": "8 faixas – 42min 05s"
+      },
+    {
+        "title": "Cabeça Dinossauro",
+        "artist": "Titãs",
+        "decade": 1980,
         "genre": "Rock",
-        "coverAsset": "sgt._peppers_lonely_hearts_club_band",
-        "biography": "Lançado em 1967, este álbum revolucionou a música pop com seu conceito inovador e experimentações sonoras. Assumindo alter egos, os Beatles criaram uma obra que se tornou símbolo da contracultura dos anos 60. Inclui faixas icônicas como 'Lucy in the Sky with Diamonds' e 'A Day in the Life'.",
-        "qtdMusicsAndDuration": "13 faixas – 39 min 36s"
-    },
+        "coverAsset": "cabeça_dinossauro",
+        "biography": "Lançado em 1986, 'Cabeça Dinossauro' é o terceiro álbum de estúdio da banda brasileira Titãs. Considerado um dos álbuns mais importantes do rock nacional dos anos 80, o disco apresenta uma sonoridade agressiva e letras críticas à sociedade, religião e política. Faixas como 'Polícia' e 'Homem Primata' tornaram-se hinos de uma geração inconformada.",
+        "qtdMusicsAndDuration": "13 faixas – 38min 41s"
+      },
     {
-        "title": "The Blueprint",
-        "artist": "Jay-Z",
-        "decade": 1970,
-        "genre": "Hip Hop",
-        "coverAsset": "the_blueprint",
-        "biography": "Lançado em 2001, 'The Blueprint' é considerado um dos melhores álbuns de Jay-Z. Com produção de Kanye West e Just Blaze, o disco apresenta uma sonoridade soul e letras introspectivas. Inclui faixas como 'Izzo (H.O.V.A.)' e 'Renegade'.",
-        "qtdMusicsAndDuration": "13 faixas - 63min 25s "
-    },
-    {
-        "title": "Jagged Little Pill",
-        "artist": "Alanis Morissette",
-        "decade": 1970,
+        "title": "Nebraska",
+        "artist": "Bruce Springsteen",
+        "decade": 1980,
         "genre": "Rock",
-        "coverAsset": "jagged_little_pill",
-        "biography": "Lançado em 1995, 'Jagged Little Pill' catapultou Alanis Morissette ao estrelato internacional. O álbum mistura rock alternativo e pop, com letras confessionais e emotivas. Inclui sucessos como 'You Oughta Know' e 'Ironic'.",
-        "qtdMusicsAndDuration": "13 faixas -  57min 23s"
-    },
+        "coverAsset": "nebraska",
+        "biography": "Lançado em 1982, 'Nebraska' é um álbum solo de Bruce Springsteen, gravado em casa com um gravador de quatro canais. Com uma abordagem minimalista e acústica, o disco apresenta narrativas sombrias sobre personagens marginalizados e temas como crime, desespero e redenção. Embora tenha sido um desvio do estilo rock habitual de Springsteen, 'Nebraska' é amplamente considerado uma de suas obras-primas.",
+        "qtdMusicsAndDuration": "10 faixas – 40min 50s"
+      },
     {
-        "title": "Da Lama Ao Caos",
-        "artist": "Nação Zumbi",
-        "decade": 1970,
+        "title": "Dois",
+        "artist": "Legião Urbana",
+        "decade": 1980,
         "genre": "Rock",
-        "coverAsset": "da_lama_ao_caos",
-        "biography": "Lançado em 1994, este álbum é um marco do movimento manguebeat, que mistura maracatu, rock, hip-hop e funk. Com letras que retratam a realidade urbana do Recife, o disco inclui faixas como 'A Cidade' e 'Rios, Pontes & Overdrives'.",
-        "qtdMusicsAndDuration": "13 faixas - 50min 10s"
-    },
-    {
-        "title": "Illmatic",
-        "artist": "Nas",
-        "decade": 1970,
-        "genre": "Hip Hop",
-        "coverAsset": "illmatic",
-        "biography": "Lançado em 1994, Illmatic é o álbum de estreia de Nas e é amplamente considerado uma obra-prima do hip-hop. Com letras introspectivas e realistas sobre a vida no Queensbridge, Nova York, o álbum apresenta produções de DJ Premier, Pete Rock e Q-Tip. Apesar de vendas modestas inicialmente, Illmatic recebeu aclamação crítica e é frequentemente citado como um dos álbuns mais influentes do gênero. ",
-        "qtdMusicsAndDuration": "10 faixas - 39 min 48s"
-    }
+        "coverAsset": "dois",
+        "biography": "Lançado em 1986, Dois é o segundo álbum da banda brasileira Legião Urbana. Com letras poéticas e reflexivas, o disco aborda temas como amor, política e existencialismo, consolidando o grupo no cenário nacional.",
+        "qtdMusicsAndDuration": "9 faixas – 42min 10s"
+      },
 ]

@@ -2,7 +2,7 @@
     {
         "title": "Atliens",
         "artist": "OutKast",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Hip Hop",
         "coverAsset": "atliens",
         "biography": "Lançado em 1996, ATLiens é o segundo álbum de estúdio da dupla de hip-hop OutKast. O título combina 'ATL' (Atlanta) com 'aliens', refletindo a sensação de alienação dos artistas. Com produção influenciada por dub, gospel e sons espaciais, o álbum aborda temas como vida urbana e existencialismo. Destacam-se faixas como 'Elevators (Me & You)' e 'Jazzy Belle' ",
@@ -11,7 +11,7 @@
     {
         "title": "Speak No Evil",
         "artist": "Wayne Shorter",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Jazz",
         "coverAsset": "speak_no_evil",
         "biography": "Gravado em 1964 e lançado em 1966, Speak No Evil é um dos álbuns mais aclamados do saxofonista Wayne Shorter. Composições como 'Witch Hunt' e 'Infant Eyes' destacam-se pela sofisticação harmônica e lirismo. O disco é considerado uma obra-prima do jazz moderno .",
@@ -20,7 +20,7 @@
     {
         "title": "Achtung Baby",
         "artist": "U2",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Rock",
         "coverAsset": "achtung_baby",
         "biography": "Lançado em 1991, Achtung Baby marca uma reinvenção sonora do U2, incorporando elementos de rock alternativo e eletrônico. Gravado em Berlim, o álbum reflete influências de artistas como David Bowie. Com faixas como 'One' e 'Mysterious Ways', é considerado um dos melhores trabalhos da banda .",
@@ -29,7 +29,7 @@
     {
         "title": "Back To Black",
         "artist": "Amy Winehouse",
-        "decade": 1970,
+        "decade": 2000,
         "genre": "Soul",
         "coverAsset": "back_to_black",
         "biography": "Lançado em 2006, Back to Black é o segundo e último álbum de estúdio de Amy Winehouse. Inspirado por sua tumultuada relação com Blake Fielder-Civil, o disco explora temas de amor, perda e vícios. Com produção de Mark Ronson e Salaam Remi, e hits como Rehab e You Know I'm No Good, o álbum é considerado um clássico moderno .",
@@ -38,7 +38,7 @@
     {
         "title": "Barão Vermelho",
         "artist": "Barão Vermelho",
-        "decade": 1970,
+        "decade": 1980,
         "genre": "Rock",
         "coverAsset": "barão_vermelho",
         "biography": "Lançado em 1982, o álbum de estreia homônimo do Barão Vermelho apresenta uma fusão de rock, blues e pop. Com Cazuza nos vocais e Frejat na guitarra, o disco inclui a clássica 'Todo Amor Que Houver Nessa Vida'. É considerado um marco do rock brasileiro dos anos 80 ",
@@ -65,7 +65,7 @@
     {
         "title": "Nevermind",
         "artist": "Nirvana",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Grunge",
         "coverAsset": "nevermind",
         "biography": "Lançado em 1991, 'Nevermind' trouxe o grunge ao mainstream com hits como 'Smells Like Teen Spirit'. Transformou Nirvana em ícones de uma geração.",
@@ -83,7 +83,7 @@
     {
         "title": "Revolver",
         "artist": "The Beatles",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "revolver",
         "biography": "Lançado em 1966, 'Revolver' marcou a virada psicodélica dos Beatles, com inovações sonoras e letras introspectivas. Revolucionário para o rock.",
@@ -92,7 +92,7 @@
     {
         "title": "Time Out",
         "artist": "The Dave Brubeck Quartet",
-        "decade": 1970,
+        "decade": 1950,
         "genre": "Jazz",
         "coverAsset": "time_out",
         "biography": "De 1959, o álbum inovou ao usar compasso não convencional. 'Take Five' tornou-se um dos temas de jazz mais conhecidos do mundo.",
@@ -108,6 +108,15 @@
         "qtdMusicsAndDuration": "10 faixas - 42min 24s"
     },
     {
+        "title": "In Rainbows",
+        "artist": "Radiohead",
+        "decade": 2000,
+        "genre": "Alternative Rock",
+        "coverAsset": "in_rainbows",
+        "biography": "De 2007, 'In Rainbows' se destacou pela distribuição online inovadora e som emocionalmente rico. Uma obra madura do Radiohead.",
+        "qtdMusicsAndDuration": "10 faixas - 42min 39s"
+    },
+    {
         "title": "Legal",
         "artist": "Gal Costa",
         "decade": 1970,
@@ -116,13 +125,4 @@
         "biography": "Lançado em 1970, 'Legal' mostra Gal Costa entre a Tropicália e o pop psicodélico. Um retrato ousado e inovador da MPB.",
         "qtdMusicsAndDuration": "10 faixas - 33min 02s"
     },
-    {
-        "title": "In Rainbows",
-        "artist": "Radiohead",
-        "decade": 1970,
-        "genre": "Alternative Rock",
-        "coverAsset": "in_rainbows",
-        "biography": "De 2007, 'In Rainbows' se destacou pela distribuição online inovadora e som emocionalmente rico. Uma obra madura do Radiohead.",
-        "qtdMusicsAndDuration": "10 faixas - 42min 39s"
-    }
 ]

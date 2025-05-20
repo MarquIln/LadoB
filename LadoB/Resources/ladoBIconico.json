@@ -11,7 +11,7 @@
     {
         "title": "In Rainbows",
         "artist": "Radiohead",
-        "decade": 1970,
+        "decade": 2000,
         "genre": "Alternative Rock",
         "coverAsset": "in_rainbows",
         "biography": "De 2007, 'In Rainbows' se destacou pela distribuição online inovadora e som emocionalmente rico. Uma obra madura do Radiohead.",
@@ -20,7 +20,7 @@
     {
         "title": "The Miseducation Of Lauryn Hill",
         "artist": "Lauryn Hill",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "R&B",
         "coverAsset": "the_miseducation_of_lauryn_hill",
         "biography": "Lançado em 1998, o álbum mescla R&B, soul e hip hop com letras íntimas. Rendeu 5 Grammys e é um clássico do gênero.",
@@ -29,7 +29,7 @@
     {
         "title": "Lemonade",
         "artist": "Beyoncé",
-        "decade": 1970,
+        "decade": 2010,
         "genre": "R&B",
         "coverAsset": "lemonade",
         "biography": "Lançado em 2016, 'Lemonade' é visual e musicalmente ousado. Aborda infidelidade, identidade negra e empoderamento feminino.",
@@ -38,7 +38,7 @@
     {
         "title": "Mezzanine",
         "artist": "Massive Attack",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Electronic",
         "coverAsset": "mezzanine",
         "biography": "De 1998, o álbum mistura trip hop sombrio com elementos de dub e rock. Atmosférico, denso e altamente influente.",
@@ -47,7 +47,7 @@
     {
         "title": "Am",
         "artist": "Arctic Monkeys",
-        "decade": 1970,
+        "decade": 2010,
         "genre": "Rock",
         "coverAsset": "am",
         "biography": "Lançado em 2013, AM é o quinto álbum de estúdio da banda britânica Arctic Monkeys. O disco apresenta uma fusão de rock alternativo com elementos de hip-hop e R&B, evidenciada em faixas como 'Do I Wanna Know?' e 'Why'd You Only Call Me When You're High?'. Produzido por James Ford, o álbum recebeu aclamação crítica por sua maturidade sonora e letras introspectivas.",
@@ -56,7 +56,7 @@
     {
         "title": "Abbey Road",
         "artist": "The Beatles",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "abbey_road",
         "biography": "Lançado em 1969, Abbey Road é o 11º álbum de estúdio dos Beatles. Destaca-se pela icônica capa dos quatro membros atravessando a rua e por faixas como 'Come Together' e 'Here Comes the Sun'. O lado B do disco apresenta um medley de canções que demonstra a coesão e criatividade da banda em sua fase final.",
@@ -83,7 +83,7 @@
     {
         "title": "Discovery",
         "artist": "Daft Punk",
-        "decade": 1970,
+        "decade": 2000,
         "genre": "Electronic",
         "coverAsset": "discovery",
         "biography": "Lançado em 2001, 'Discovery' é o segundo álbum de estúdio da dupla francesa Daft Punk. O disco marcou uma mudança em relação ao estilo anterior da dupla, incorporando influências de disco, funk e synthpop. Com hits como 'One More Time' e 'Harder, Better, Faster, Stronger', o álbum foi aclamado pela crítica e consolidou o status do Daft Punk como pioneiros da música eletrônica.",
@@ -92,7 +92,7 @@
     {
         "title": "Cabeça Dinossauro",
         "artist": "Titãs",
-        "decade": 1970,
+        "decade": 1980,
         "genre": "Rock",
         "coverAsset": "cabeça_dinossauro",
         "biography": "Lançado em 1986, 'Cabeça Dinossauro' é o terceiro álbum de estúdio da banda brasileira Titãs. Considerado um dos álbuns mais importantes do rock nacional dos anos 80, o disco apresenta uma sonoridade agressiva e letras críticas à sociedade, religião e política. Faixas como 'Polícia' e 'Homem Primata' tornaram-se hinos de uma geração inconformada.",
@@ -101,7 +101,7 @@
     {
         "title": "Nebraska",
         "artist": "Bruce Springsteen",
-        "decade": 1970,
+        "decade": 1980,
         "genre": "Rock",
         "coverAsset": "nebraska",
         "biography": "Lançado em 1982, 'Nebraska' é um álbum solo de Bruce Springsteen, gravado em casa com um gravador de quatro canais. Com uma abordagem minimalista e acústica, o disco apresenta narrativas sombrias sobre personagens marginalizados e temas como crime, desespero e redenção. Embora tenha sido um desvio do estilo rock habitual de Springsteen, 'Nebraska' é amplamente considerado uma de suas obras-primas.",
@@ -137,7 +137,7 @@
     {
         "title": "The Chronic",
         "artist": "Dr. Dre",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Hip Hop",
         "coverAsset": "the_chronic",
         "biography": "Lançado em 1992, The Chronic é o álbum de estreia solo de Dr. Dre e introduziu o estilo G-funk ao mainstream. Com batidas suaves, sintetizadores e letras marcantes, o disco apresenta Snoop Dogg ao público e aborda temas sociais e urbanos. Considerado um marco no hip-hop, o álbum influenciou profundamente o gênero nos anos seguintes.",
@@ -146,7 +146,7 @@
     {
         "title": "My Beautiful Dark Twisted Fantasy",
         "artist": "Kanye West",
-        "decade": 1970,
+        "decade": 2010,
         "genre": "Hip Hop",
         "coverAsset": "my_beautiful_dark_twisted_fantasy",
         "biography": "Lançado em 2010, My Beautiful Dark Twisted Fantasy é o quinto álbum de estúdio de Kanye West. Gravado após um período de controvérsias, o disco é uma obra grandiosa que mistura hip-hop, rock e soul. Com participações de artistas como Jay-Z e Bon Iver, e faixas como 'Runaway', o álbum recebeu aclamação crítica e é frequentemente citado entre os melhores da década.",
@@ -155,7 +155,7 @@
     {
         "title": "Electric Ladyland",
         "artist": "Jimi Hendrix",
-        "decade": 1970,
+        "decade": 1960,
         "genre": "Rock",
         "coverAsset": "electric_ladyland",
         "biography": "Lançado em 1968, Electric Ladyland é o terceiro e último álbum de estúdio do The Jimi Hendrix Experience. Este álbum duplo destaca-se pela experimentação sonora e pela produção inovadora de Hendrix. Inclui versões memoráveis de 'All Along the Watchtower' e 'Voodoo Child', consolidando Hendrix como um dos maiores guitarristas da história.",
@@ -164,7 +164,7 @@
     {
         "title": "Viva La Vida",
         "artist": "Coldplay",
-        "decade": 1970,
+        "decade": 2000,
         "genre": "Alternative Rock",
         "coverAsset": "viva_la_vida_or_death_and_all_his_friends",
         "biography": "Lançado em 2008, Viva la Vida or Death and All His Friends marca uma mudança sonora para o Coldplay, incorporando elementos de art rock e pop barroco. Produzido por Brian Eno, o álbum explora temas como amor, guerra e fé, com destaque para a faixa-título, que se tornou um sucesso global. A capa apresenta a pintura 'Liberdade Guiando o Povo' de Delacroix, refletindo o tom revolucionário do disco.",
@@ -182,7 +182,7 @@
     {
         "title": "Ready To Die",
         "artist": "The Notorious B.I.G.",
-        "decade": 1970,
+        "decade": 1990,
         "genre": "Hip Hop",
         "coverAsset": "ready_to_die",
         "biography": "Lançado em 1994, Ready to Die é o álbum de estreia de The Notorious B.I.G., apresentando narrativas cruas sobre a vida nas ruas do Brooklyn. Com hits como 'Juicy' e 'Big Poppa', o disco é considerado um clássico do hip-hop, destacando-se pela lírica afiada e produção marcante. ",
@@ -200,7 +200,7 @@
     {
         "title": "A Cor De Rosa Choque",
         "artist": "Rita Lee",
-        "decade": 1970,
+        "decade": 1980,
         "genre": "Rock",
         "coverAsset": "a_cor_de_rosa_choque",
         "biography": "Lançado em 1982, A Cor de Rosa Choque é um dos álbuns mais emblemáticos de Rita Lee, destacando-se por sua abordagem feminista e irreverente. Combinando rock e pop, o disco apresenta letras bem-humoradas e críticas sociais, consolidando Rita como uma das maiores artistas brasileiras.",
