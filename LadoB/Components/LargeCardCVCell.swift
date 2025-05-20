@@ -24,10 +24,16 @@ class LargeCardCVCell: UICollectionViewCell {
         return imageView
     }()
     
+    var onGoModal: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
         contentView.clipsToBounds = true
+        
+        cardView.goModalAction = { [weak self] in
+                self?.onGoModal?() // ✅ Repassa o clique do botão para quem usar a célula
+            }
     }
     
     required init?(coder: NSCoder) {

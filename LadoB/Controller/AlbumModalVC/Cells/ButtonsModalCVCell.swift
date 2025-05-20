@@ -12,13 +12,17 @@ class ButtonsModalCVCell: UICollectionViewCell {
     
     private lazy var button: ButtonsAlbumModal = {
         let button0 = ButtonsAlbumModal()
+        button0.translatesAutoresizingMaskIntoConstraints = false
+        //button0.backgroundColor = .red
         return button0
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-        contentView.clipsToBounds = true
+        //contentView.clipsToBounds = true
+        self.layer.cornerRadius = 12
+        
     }
     
     required init?(coder: NSCoder) {
@@ -33,12 +37,15 @@ class ButtonsModalCVCell: UICollectionViewCell {
 
 extension ButtonsModalCVCell: ViewCodeProtocol{
     func addSubviews() {
-        //contentView.addSubview(backgroundImage)
+        contentView.addSubview(button)
     }
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            //
+            button.topAnchor.constraint(equalTo: contentView.topAnchor),
+            button.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            button.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            button.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
             ])
     }
     

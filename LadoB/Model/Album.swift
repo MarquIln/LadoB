@@ -15,6 +15,7 @@ struct Album: Decodable {
     let genre: Genre
     let coverAsset: String
     var biography: String?
+    var qtdMusicsAndDuration: String?
     var isWished: Bool?
 
     init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String) {

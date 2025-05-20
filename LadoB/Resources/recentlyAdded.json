@@ -8,11 +8,13 @@
       "coverAsset": "my_beautiful_dark_twisted_fantasy"
     },
     {
-      "title": "Electric Ladyland",
-      "artist": "The Jimi Hendrix Experience",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "electric_ladyland"
+        "title": "Electric Ladyland",
+        "artist": "The Jimi Hendrix Experience",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "electric_ladyland",
+        "biography": "Lançado em 1968, Electric Ladyland é o terceiro e último álbum de estúdio do The Jimi Hendrix Experience. Este álbum duplo destaca-se pela experimentação sonora e pela produção inovadora de Hendrix. Inclui versões memoráveis de 'All Along the Watchtower' e 'Voodoo Child', consolidando Hendrix como um dos maiores guitarristas da história.",
+        "qtdMusicsAndDuration": "73min 56s"
     },
     {
       "title": "Viva La Vida Or Death And All His Friends",

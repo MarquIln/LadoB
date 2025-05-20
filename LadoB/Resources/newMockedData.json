@@ -47,7 +47,9 @@
     "artist": "The Jimi Hendrix Experience",
     "decade": 1960,
     "genre": "Rock",
-    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a9/ElectricLadyland.jpg"
+    "coverURL": "https://upload.wikimedia.org/wikipedia/pt/a/a9/ElectricLadyland.jpg",
+    "biography": "Lançado em 1968, Electric Ladyland é o terceiro e último álbum de estúdio do The Jimi Hendrix Experience. Este álbum duplo destaca-se pela experimentação sonora e pela produção inovadora de Hendrix. Inclui versões memoráveis de 'All Along the Watchtower' e 'Voodoo Child', consolidando Hendrix como um dos maiores guitarristas da história.",
+    "qtdMusicsAndDuration": "73min 56s"
   },
   {
     "title": "The Dark Side of the Moon",

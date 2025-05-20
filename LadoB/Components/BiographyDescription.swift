@@ -11,9 +11,10 @@ class BiographyDescription: UIView {
  
     lazy var biographyTitleLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "SFPro-Bold", size: 20)
         label.text = "Biografia"
-        label.textColor = .pink2
+        label.textColor = .pink1
         label.numberOfLines = 0
 
         return label
@@ -22,13 +23,13 @@ class BiographyDescription: UIView {
     lazy var biographyField: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
-        //textView.backgroundColor = UIColor(named: "Background-Tertiary")
-        textView.text = ""
         textView.layer.cornerRadius = 8
         textView.font = UIFont.systemFont(ofSize: 16)
-        textView.textColor = .label
+        textView.textColor = .pink1
+        textView.backgroundColor = .clear
+        textView.isEditable = false
         textView.textContainer.lineFragmentPadding = 0
-        textView.textContainerInset = UIEdgeInsets(top: 12, left: 8, bottom: 12, right: 8)
+        textView.textContainerInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         return textView
     }()
     
@@ -61,15 +62,20 @@ class BiographyDescription: UIView {
 
 extension BiographyDescription: ViewCodeProtocol {
     func addSubviews() {
-        addSubview(mainStack)
+        addSubview(biographyTitleLabel)
+        addSubview(biographyField)
     }
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            mainStack.topAnchor.constraint(equalTo: self.topAnchor),
-            mainStack.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            mainStack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            mainStack.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            biographyTitleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            biographyTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            biographyTitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+
+            biographyField.topAnchor.constraint(equalTo: biographyTitleLabel.bottomAnchor, constant: 12),
+            biographyField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            biographyField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            biographyField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
         ])
     }
 }

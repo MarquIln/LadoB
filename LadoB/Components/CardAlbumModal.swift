@@ -13,16 +13,19 @@ class CardAlbumModal: UIView {
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = .systemBlue
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.heightAnchor.constraint(equalToConstant: 370).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 370).isActive = true
+        imageView.layer.cornerRadius = 8
+//        imageView.setContentHuggingPriority(.defaultHigh, for: .vertical)
+//        imageView.setContentCompressionResistancePriority(.required, for: .vertical)
+        imageView.clipsToBounds = true
         return imageView
     }()
     
     lazy var albumNameLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.calloutBold
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "SFPro-Semibold", size: 16)
         label.text = "Album name"
-        label.textColor = .pink2
+        label.textColor = .black1
         label.numberOfLines = 0
 
         return label
@@ -30,18 +33,20 @@ class CardAlbumModal: UIView {
     
     lazy var artistNameAndYearLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.subtitle
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "SFPro-Regular", size: 12)
         label.text = "Artist name"
-        label.textColor = .pink1
+        label.textColor = .black1
 
         return label
     }()
     
     lazy var totalMusicsLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.subtitle
-        label.text = "Total musics"
-        label.textColor = .gray
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "SFPro-Regular", size: 12)
+        //label.text = "Total musics"
+        label.textColor = .black1
         return label
     }()
     
@@ -71,14 +76,23 @@ class CardAlbumModal: UIView {
         }
     }
     
-    
-    lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [imageView, albumNameLabel, artistNameAndYearLabel])
-        stackView.axis = .vertical
-        stackView.spacing = 8
-        stackView.distribution = .fillProportionally
-        return stackView
-    }()
+//    lazy var stackLabels: UIStackView = {
+//        let stackLabels0 = UIStackView(arrangedSubviews: [albumNameLabel,artistNameAndYearLabel, totalMusicsLabel])
+//        stackLabels0.axis = .vertical
+//        stackLabels0.spacing = 4
+//        stackLabels0.translatesAutoresizingMaskIntoConstraints = false
+//        return stackLabels0
+//    }()
+//    
+//    lazy var mainStack: UIStackView = {
+//        let stackView = UIStackView(arrangedSubviews: [imageView,stackLabels])
+//        stackView.translatesAutoresizingMaskIntoConstraints = false
+//        stackView.axis = .vertical
+//        stackView.spacing = 16
+//        stackView.alignment = .fill
+//        stackView.distribution = .fill
+//        return stackView
+//    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -93,15 +107,48 @@ class CardAlbumModal: UIView {
 
 extension CardAlbumModal: ViewCodeProtocol {
     func addSubviews() {
-        addSubview(stackView)
+        //addSubview(mainStack)
+        addSubview(imageView)
+        addSubview(albumNameLabel)
+        addSubview(artistNameAndYearLabel)
+        addSubview(totalMusicsLabel)
     }
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: self.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            stackView.topAnchor.constraint(equalTo: self.topAnchor),
+//            stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+//            stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            
+//            imageView.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 16),
+//            imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+//            imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            
+//            imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
+//            imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
+//            imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+//            imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            imageView.heightAnchor.constraint(equalToConstant: 370),
+            
+            //imageView.heightAnchor.constraint(equalToConstant: 370),
+            
+            albumNameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 16),
+            albumNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            albumNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+
+            artistNameAndYearLabel.topAnchor.constraint(equalTo: albumNameLabel.bottomAnchor, constant: 4),
+            artistNameAndYearLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            artistNameAndYearLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+
+            totalMusicsLabel.topAnchor.constraint(equalTo: artistNameAndYearLabel.bottomAnchor, constant: 4),
+            totalMusicsLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            totalMusicsLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            totalMusicsLabel.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -16)
         ])
     }
 }

@@ -58,6 +58,14 @@ extension SearchVC: UICollectionViewDataSource {
             let artist = album.artist
             
             cell.config(with: album, title: title, artist: artist, image: image, bgColor: .purple1)
+            
+            // ✅ Aqui definimos a ação da modal
+                cell.onGoModal = { [weak self] in
+                    let modal = AlbumModalViewController()
+                    modal.album = album
+                    self?.present(modal, animated: true)
+                }
+
                         
             return cell
         }

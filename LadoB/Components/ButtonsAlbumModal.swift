@@ -13,16 +13,16 @@ class ButtonsAlbumModal: UIView {
           imageView.image = UIImage(systemName: "custom.record.circle.fill.badge.sparkles.alt")
           //imageView.tintColor = UIColor(named: "DarkPurple") ?? .darkGray
           imageView.translatesAutoresizingMaskIntoConstraints = false
-          imageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
-          imageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+//          imageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
+//          imageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
           return imageView
       }()
       
         lazy var titleLabel: UILabel = {
           let label = UILabel()
           label.text = "Tenho"
-          //label.textColor = UIColor(named: "DarkPurple") ?? .darkGray
-          label.font = Fonts.bodyBold
+          label.textColor = .purple1
+          label.font = UIFont(name: "SFPro-Semibold", size: 14)
           label.translatesAutoresizingMaskIntoConstraints = false
           return label
       }()
@@ -32,6 +32,7 @@ class ButtonsAlbumModal: UIView {
           stack.axis = .horizontal
           stack.spacing = 8
           stack.alignment = .center
+          stack.distribution = .fillProportionally
           stack.translatesAutoresizingMaskIntoConstraints = false
           return stack
       }()
@@ -40,7 +41,7 @@ class ButtonsAlbumModal: UIView {
     var iconName: String? {
             didSet {
                 if let name = iconName {
-                    iconImageView.image = UIImage(named: name)
+                    iconImageView.image = UIImage(systemName: name)
                 }
             }
         }
@@ -54,6 +55,11 @@ class ButtonsAlbumModal: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        
+        self.layer.cornerRadius = 12
+//        self.backgroundColor = UIColor(named: "LightPurple") ?? UIColor.systemGray6
+        self.backgroundColor = .pink1
+    
     }
 
     required init?(coder: NSCoder) {
@@ -70,10 +76,16 @@ extension ButtonsAlbumModal: ViewCodeProtocol {
     func setupConstraints() {
         NSLayoutConstraint.activate([
             //
-            stack.topAnchor.constraint(equalTo: self.topAnchor),
-            stack.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            stack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            stack.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            stack.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            stack.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            stack.leadingAnchor.constraint(greaterThanOrEqualTo: self.leadingAnchor, constant: 12),
+            stack.trailingAnchor.constraint(lessThanOrEqualTo: self.trailingAnchor, constant: -12),
+            stack.topAnchor.constraint(greaterThanOrEqualTo: self.topAnchor, constant: 8),
+            stack.bottomAnchor.constraint(lessThanOrEqualTo: self.bottomAnchor, constant: -8),
+            
+            
+//            self.heightAnchor.constraint(greaterThanOrEqualToConstant: 46)
+            
             
         ])
     }

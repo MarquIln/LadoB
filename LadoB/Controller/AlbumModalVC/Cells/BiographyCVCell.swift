@@ -11,6 +11,7 @@ class BiographyCVCell: UICollectionViewCell {
     
     private lazy var biographyComponent: BiographyDescription = {
         let view = BiographyDescription()
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -31,12 +32,15 @@ class BiographyCVCell: UICollectionViewCell {
 
 extension BiographyCVCell: ViewCodeProtocol{
     func addSubviews() {
-        //contentView.addSubview(backgroundImage)
+        contentView.addSubview(biographyComponent)
     }
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            //
+            biographyComponent.topAnchor.constraint(equalTo: contentView.topAnchor),
+            biographyComponent.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            biographyComponent.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            biographyComponent.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
             ])
     }
     
