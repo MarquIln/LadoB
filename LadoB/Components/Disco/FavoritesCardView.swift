@@ -11,7 +11,6 @@ class FavoritesCardView: UIView {
     
     private lazy var albumImage: UIImageView = {
         let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
         image.heightAnchor.constraint(equalToConstant: 174).isActive = true
         image.widthAnchor.constraint(equalToConstant: 174).isActive = true
         image.layer.cornerRadius = 8
@@ -21,7 +20,6 @@ class FavoritesCardView: UIView {
     
     private lazy var labelAlbumName: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.font = Fonts.subtitle
         label.textColor = .pink1
@@ -30,7 +28,6 @@ class FavoritesCardView: UIView {
     
     private lazy var labelArtist: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.font = Fonts.footNote
         label.textColor = .pink3
@@ -39,7 +36,6 @@ class FavoritesCardView: UIView {
     
     private lazy var stackViewLabels: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [labelAlbumName, labelArtist])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 0
         return stackView

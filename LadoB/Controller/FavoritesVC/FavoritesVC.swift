@@ -57,37 +57,60 @@ class FavoritesVC: UIViewController {
         button.tintColor = .yellow1
         return button
     }()
+    
+    func groupAlbumsByInitialsAndPairs(from albums: [Album]) {
+        let sorted = albums.sorted {
+            $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending
+        }
 
+        let pairs = stride(from: 0, to: sorted.count, by: 2).map {
+            Array(sorted[$0..<min($0 + 2, sorted.count)])
+        }
+
+        var grouped: [String: [[Album]]] = [:]
+        var letters: Set<String> = []
+
+        for pair in pairs {
+            if let first = pair.first {
+                let firstLetter = String(first.title.prefix(1)).uppercased()
+                grouped[firstLetter, default: []].append(pair)
+                letters.insert(firstLetter)
+            }
+
+            if pair.count == 2 {
+                let second = pair[1]
+                let secondLetter = String(second.title.prefix(1)).uppercased()
+                letters.insert(secondLetter)
+            }
+        }
+
+        groupedAlbums = grouped
+        sectionTitles = letters.sorted()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .purple1
         navigationItem.title = "Favoritos"
         navigationController?.navigationBar.backgroundColor = .purple1
-        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+        navigationController?.navigationBar.tintColor = UIColor.yellow1
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.pink2]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.rightBarButtonItems = [actionButton, changeVisibilityButton]
 
         configureSearchController()
 
         albums.indices.forEach {
-            if [8, 80, 33, 25, 7].contains($0) {
+            if [7, 8, 80, 33, 25, 10, 12].contains($0) {
                 albums[$0].isFavorite = true
             }
         }
 
         favoriteAlbums = albums.filter { $0.isFavorite == true }
 
-        let sorted = favoriteAlbums.sorted {
-            $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending
-        }
-
-        let paired = stride(from: 0, to: sorted.count, by: 2).map {
-            Array(sorted[$0..<min($0 + 2, sorted.count)])
-        }
-
-        groupedAlbums = ["F": paired]
-        sectionTitles = ["F"]
+        groupAlbumsByInitialsAndPairs(from: favoriteAlbums)
 
         setup()
     }

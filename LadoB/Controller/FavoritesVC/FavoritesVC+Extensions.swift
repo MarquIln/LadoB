@@ -42,11 +42,12 @@ extension FavoritesVC: UITableViewDelegate {
 
 extension FavoritesVC: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return sectionTitles.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groupedAlbums["F"]?.count ?? 0
+        let key = sectionTitles[section]
+        return groupedAlbums[key]?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,44 +57,35 @@ extension FavoritesVC: UITableViewDataSource {
             return UITableViewCell()
         }
 
-        if let pair = groupedAlbums["F"]?[indexPath.row] {
+        let key = sectionTitles[indexPath.section]
+        
+        if let pair = groupedAlbums[key]?[indexPath.row] {
             cell.config(albums: pair)
         }
-
         return cell
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        tableView.sectionIndexColor = .yellow1
+        tableView.sectionIndexBackgroundColor = .purple2
+        
+        return sectionTitles
     }
 }
 
 extension FavoritesVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let query = searchController.searchBar.text ?? ""
-        if !query.isEmpty {
-            filteredAlbums = favoriteAlbums.filter {
+
+        if query.isEmpty {
+            groupAlbumsByInitialsAndPairs(from: favoriteAlbums)
+        } else {
+            let filtered = favoriteAlbums.filter {
                 $0.title.lowercased().contains(query.lowercased()) ||
                 $0.artist.lowercased().contains(query.lowercased())
             }
 
-            let sorted = filteredAlbums.sorted {
-                $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending
-            }
-
-            let paired = stride(from: 0, to: sorted.count, by: 2).map {
-                Array(sorted[$0..<min($0 + 2, sorted.count)])
-            }
-
-            groupedAlbums = ["F": paired]
-            sectionTitles = ["F"]
-        } else {
-            let sorted = favoriteAlbums.sorted {
-                $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending
-            }
-
-            let paired = stride(from: 0, to: sorted.count, by: 2).map {
-                Array(sorted[$0..<min($0 + 2, sorted.count)])
-            }
-
-            groupedAlbums = ["F": paired]
-            sectionTitles = ["F"]
+            groupAlbumsByInitialsAndPairs(from: filtered)
         }
 
         tableView.reloadData()
