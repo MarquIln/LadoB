@@ -52,19 +52,6 @@ class DiscoVC: UIViewController {
         updateAddButtonIcon()
     }
 
-    func configureNavigationBar() {
-        navigationItem.title = "Discoteca"
-        navigationItem.rightBarButtonItem = addButton
-        navigationItem.hidesSearchBarWhenScrolling = false
-        navigationController?.navigationBar.prefersLargeTitles = true
-
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithTransparentBackground()
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
-
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-    }
 
     func configureSearchController() {
         searchController.searchResultsUpdater = self

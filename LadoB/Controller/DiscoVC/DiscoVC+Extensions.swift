@@ -9,11 +9,22 @@ import UIKit
 
 extension DiscoVC: ViewCodeProtocol {
     func addSubviews() {
+        navigationItem.title = "Discoteca"
+        navigationItem.rightBarButtonItem = addButton
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
         view.addSubview(emptyState)
         view.backgroundColor = .purple1
         view.addSubview(tableView)
         
-        configureNavigationBar()
         configureSearchController()
         configureLayout()
         configureTableView()
