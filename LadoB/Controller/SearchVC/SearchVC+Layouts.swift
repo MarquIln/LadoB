@@ -38,19 +38,21 @@ extension SearchVC {
                                               heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-
+        
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .estimated(174),
             heightDimension: .absolute(272)
         )
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         group.interItemSpacing = .fixed(10)
+        
 
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
         section.interGroupSpacing = 8.0
         section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 16, trailing: 16)
         section.boundarySupplementaryItems = [createSectionHeader()]
+        
         
         return section
     }
@@ -72,7 +74,7 @@ extension SearchVC {
            return NSCollectionLayoutBoundarySupplementaryItem(
                layoutSize: NSCollectionLayoutSize(
                    widthDimension: .fractionalWidth(1.0),
-                   heightDimension: .absolute(40)
+                   heightDimension: .absolute(40),
                ),
                elementKind: UICollectionView.elementKindSectionHeader,
                alignment: .topLeading

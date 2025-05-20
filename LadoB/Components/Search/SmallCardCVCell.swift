@@ -21,12 +21,14 @@ class SmallCardCVCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
+        imageView.backgroundColor = .clear
         return imageView
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        self.contentView.backgroundColor = .clear
         contentView.clipsToBounds = true
     }
     

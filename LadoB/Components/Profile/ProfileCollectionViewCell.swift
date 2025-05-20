@@ -82,7 +82,7 @@ class ProfileCollectionViewCell: UICollectionViewListCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-        contentView.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        contentView.layoutMargins = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
         contentView.clipsToBounds = true
         contentView.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }

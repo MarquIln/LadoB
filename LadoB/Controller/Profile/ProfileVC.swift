@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
-    let userTest = User(email: "teste@mail.com", password: "vitorlegal123456789##", subscriptionPlain: .free, connectedApps: [.appleMusic, .instagram], albunsOnDisco: 32, albunsOnFavorites: 8, albunsOnWishList: 16)
+    let userTest = User(email: "teste@mail.com", password: "vitorlegal123456789##", subscriptionPlain: .free, connectedApps: [.appleMusic, .instagram, .spotfy], albunsOnDisco: 32, albunsOnFavorites: 8, albunsOnWishList: 16)
     
     override func viewDidLoad() {
         super.viewDidLoad()

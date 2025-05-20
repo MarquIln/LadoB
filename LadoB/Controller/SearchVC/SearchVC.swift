@@ -73,6 +73,7 @@ class SearchVC: UIViewController {
                 .elementKindSectionHeader,
             withReuseIdentifier: SearchSectionHeader.identifier
         )
+        collectionView.clipsToBounds = true
 
         collectionView.dataSource = self
 
