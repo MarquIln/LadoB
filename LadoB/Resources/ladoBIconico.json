@@ -1,115 +1,147 @@
 [
     {
-      "title": "Legal",
-      "artist": "Gal Costa",
-      "decade": 1970,
-      "genre": "MPB",
-      "coverAsset": "legal"
+        "title": "Legal",
+        "artist": "Gal Costa",
+        "decade": 1970,
+        "genre": "MPB",
+        "coverAsset": "legal",
+        "biography": "Lançado em 1970, 'Legal' mostra Gal Costa entre a Tropicália e o pop psicodélico. Um retrato ousado e inovador da MPB.",
+        "qtdMusicsAndDuration": "10 faixas - 33min 02s"
     },
     {
-      "title": "In Rainbows",
-      "artist": "Radiohead",
-      "decade": 1970,
-      "genre": "Alternative Rock",
-      "coverAsset": "in_rainbows"
+        "title": "In Rainbows",
+        "artist": "Radiohead",
+        "decade": 1970,
+        "genre": "Alternative Rock",
+        "coverAsset": "in_rainbows",
+        "biography": "De 2007, 'In Rainbows' se destacou pela distribuição online inovadora e som emocionalmente rico. Uma obra madura do Radiohead.",
+        "qtdMusicsAndDuration": "10 faixas - 42min 39s"
     },
     {
-      "title": "The Miseducation Of Lauryn Hill",
-      "artist": "Lauryn Hill",
-      "decade": 1970,
-      "genre": "R&B",
-      "coverAsset": "the_miseducation_of_lauryn_hill"
+        "title": "The Miseducation Of Lauryn Hill",
+        "artist": "Lauryn Hill",
+        "decade": 1970,
+        "genre": "R&B",
+        "coverAsset": "the_miseducation_of_lauryn_hill",
+        "biography": "Lançado em 1998, o álbum mescla R&B, soul e hip hop com letras íntimas. Rendeu 5 Grammys e é um clássico do gênero.",
+        "qtdMusicsAndDuration": "16 faixas - 77min 39s"
     },
     {
-      "title": "Lemonade",
-      "artist": "Beyonc\u00e9",
-      "decade": 1970,
-      "genre": "R&B",
-      "coverAsset": "lemonade"
+        "title": "Lemonade",
+        "artist": "Beyoncé",
+        "decade": 1970,
+        "genre": "R&B",
+        "coverAsset": "lemonade",
+        "biography": "Lançado em 2016, 'Lemonade' é visual e musicalmente ousado. Aborda infidelidade, identidade negra e empoderamento feminino.",
+        "qtdMusicsAndDuration": "12 faixas – 45min 49s"
     },
     {
-      "title": "Mezzanine",
-      "artist": "Massive Attack",
-      "decade": 1970,
-      "genre": "Electronic",
-      "coverAsset": "mezzanine"
+        "title": "Mezzanine",
+        "artist": "Massive Attack",
+        "decade": 1970,
+        "genre": "Electronic",
+        "coverAsset": "mezzanine",
+        "biography": "De 1998, o álbum mistura trip hop sombrio com elementos de dub e rock. Atmosférico, denso e altamente influente.",
+        "qtdMusicsAndDuration": "11 faixas – 65min 31s"
     },
     {
-      "title": "Am",
-      "artist": "Arctic Monkeys",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "am"
+        "title": "Am",
+        "artist": "Arctic Monkeys",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "am",
+        "biography": "Lançado em 2013, AM é o quinto álbum de estúdio da banda britânica Arctic Monkeys. O disco apresenta uma fusão de rock alternativo com elementos de hip-hop e R&B, evidenciada em faixas como 'Do I Wanna Know?' e 'Why'd You Only Call Me When You're High?'. Produzido por James Ford, o álbum recebeu aclamação crítica por sua maturidade sonora e letras introspectivas.",
+        "qtdMusicsAndDuration": "12 faixas – 41min 43s"
     },
     {
-      "title": "Abbey Road",
-      "artist": "The Beatles",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "abbey_road"
+        "title": "Abbey Road",
+        "artist": "The Beatles",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "abbey_road",
+        "biography": "Lançado em 1969, Abbey Road é o 11º álbum de estúdio dos Beatles. Destaca-se pela icônica capa dos quatro membros atravessando a rua e por faixas como 'Come Together' e 'Here Comes the Sun'. O lado B do disco apresenta um medley de canções que demonstra a coesão e criatividade da banda em sua fase final.",
+        "qtdMusicsAndDuration": "17 faixas – 47min 03s"
     },
     {
-      "title": "Hotel California",
-      "artist": "Eagles",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "hotel_california"
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "hotel_california",
+        "biography": "Lançado em 1976, Hotel California é o quinto álbum de estúdio da banda americana Eagles. A faixa-título tornou-se um dos maiores sucessos da banda, com letras enigmáticas e solos de guitarra memoráveis. O álbum explora temas de decadência e desilusão na sociedade americana, consolidando-se como um clássico do rock.",
+        "qtdMusicsAndDuration": "9 faixas – 43min 28s"
     },
     {
-      "title": "Horses",
-      "artist": "Patti Smith",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "horses"
+        "title": "Horses",
+        "artist": "Patti Smith",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "horses",
+        "biography": "Lançado em 1975, Horses é o álbum de estreia da cantora e poetisa americana Patti Smith. Combinando poesia beat com rock punk, o disco é considerado um marco do movimento punk e da música alternativa. Faixas como 'Gloria' e 'Land' destacam-se pela intensidade lírica e sonora.",
+        "qtdMusicsAndDuration": "8 faixas – 43min 10s"
     },
     {
-      "title": "Discovery",
-      "artist": "Daft Punk",
-      "decade": 1970,
-      "genre": "Electronic",
-      "coverAsset": "discovery"
+        "title": "Discovery",
+        "artist": "Daft Punk",
+        "decade": 1970,
+        "genre": "Electronic",
+        "coverAsset": "discovery",
+        "biography": "Lançado em 2001, 'Discovery' é o segundo álbum de estúdio da dupla francesa Daft Punk. O disco marcou uma mudança em relação ao estilo anterior da dupla, incorporando influências de disco, funk e synthpop. Com hits como 'One More Time' e 'Harder, Better, Faster, Stronger', o álbum foi aclamado pela crítica e consolidou o status do Daft Punk como pioneiros da música eletrônica.",
+        "qtdMusicsAndDuration": "14 faixas – 60m 50s "
     },
     {
-      "title": "Cabe\u00e7a Dinossauro",
-      "artist": "Tit\u00e3s",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "cabe\u00e7a_dinossauro"
+        "title": "Cabeça Dinossauro",
+        "artist": "Titãs",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "cabeça_dinossauro",
+        "biography": "Lançado em 1986, 'Cabeça Dinossauro' é o terceiro álbum de estúdio da banda brasileira Titãs. Considerado um dos álbuns mais importantes do rock nacional dos anos 80, o disco apresenta uma sonoridade agressiva e letras críticas à sociedade, religião e política. Faixas como 'Polícia' e 'Homem Primata' tornaram-se hinos de uma geração inconformada.",
+        "qtdMusicsAndDuration": "13 faixas – 38min 41s"
     },
     {
-      "title": "Nebraska",
-      "artist": "Bruce Springsteen",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "nebraska"
+        "title": "Nebraska",
+        "artist": "Bruce Springsteen",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "nebraska",
+        "biography": "Lançado em 1982, 'Nebraska' é um álbum solo de Bruce Springsteen, gravado em casa com um gravador de quatro canais. Com uma abordagem minimalista e acústica, o disco apresenta narrativas sombrias sobre personagens marginalizados e temas como crime, desespero e redenção. Embora tenha sido um desvio do estilo rock habitual de Springsteen, 'Nebraska' é amplamente considerado uma de suas obras-primas.",
+        "qtdMusicsAndDuration": "10 faixas – 40min 50s"
     },
     {
-      "title": "Let It Be",
-      "artist": "The Beatles",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "let_it_be"
+        "title": "Let It Be",
+        "artist": "The Beatles",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "let_it_be",
+        "biography": "Lançado em 1970, 'Let It Be' é o último álbum de estúdio dos Beatles. Originalmente concebido como um retorno às raízes da banda, o projeto enfrentou dificuldades durante as gravações, refletindo as tensões internas do grupo. Produzido por Phil Spector, o álbum inclui clássicos como 'Let It Be' e 'The Long and Winding Road'. Apesar das controvérsias, o disco é um testemunho do legado duradouro dos Beatles. ",
+        "qtdMusicsAndDuration": "12 faixas – 35min 10s "
     },
     {
-      "title": "Expresso 2222",
-      "artist": "Gilberto Gil",
-      "decade": 1970,
-      "genre": "MPB",
-      "coverAsset": "expresso_2222"
+        "title": "Expresso 2222",
+        "artist": "Gilberto Gil",
+        "decade": 1970,
+        "genre": "MPB",
+        "coverAsset": "expresso_2222",
+        "biography": "Lançado em 1972, Expresso 2222 marcou o retorno de Gilberto Gil ao Brasil após seu exílio em Londres. O álbum mescla elementos de MPB, samba e rock, refletindo a diversidade cultural brasileira. Com faixas como 'Back in Bahia' e 'O Canto da Ema', é considerado uma obra-prima da música brasileira e figura entre os 100 maiores álbuns nacionais pela Rolling Stone Brasil. ",
+        "qtdMusicsAndDuration": "9 faixas – 34min 01s"
     },
     {
-      "title": "Queen Ii",
-      "artist": "Queen",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "queen_ii"
+        "title": "Queen Ii",
+        "artist": "Queen",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "queen_ii",
+        "biography": "Lançado em 1974, Queen II é o segundo álbum de estúdio da banda britânica Queen. Dividido em 'Side White' e 'Side Black', o disco explora temas místicos e fantásticos, com arranjos complexos e vocais harmoniosos. Faixas como 'Seven Seas of Rhye' destacam-se, e o álbum é visto como um passo crucial na consolidação do estilo único da banda. ",
+        "qtdMusicsAndDuration": "11 faixas – 40min 42s"
     },
     {
-      "title": "The Chronic",
-      "artist": "Dr. Dre",
-      "decade": 1970,
-      "genre": "Hip Hop",
-      "coverAsset": "the_chronic"
+        "title": "The Chronic",
+        "artist": "Dr. Dre",
+        "decade": 1970,
+        "genre": "Hip Hop",
+        "coverAsset": "the_chronic",
+        "biography": "Lançado em 1992, The Chronic é o álbum de estreia solo de Dr. Dre e introduziu o estilo G-funk ao mainstream. Com batidas suaves, sintetizadores e letras marcantes, o disco apresenta Snoop Dogg ao público e aborda temas sociais e urbanos. Considerado um marco no hip-hop, o álbum influenciou profundamente o gênero nos anos seguintes.",
+        "qtdMusicsAndDuration": "16 faixas – 62min 51s"
     },
     {
         "title": "My Beautiful Dark Twisted Fantasy",
@@ -121,11 +153,13 @@
         "qtdMusicsAndDuration": "13 faixas – 68min 34s"
     },
     {
-      "title": "Electric Ladyland",
-      "artist": "Jimi Hendrix",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "electric_ladyland"
+        "title": "Electric Ladyland",
+        "artist": "Jimi Hendrix",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "electric_ladyland",
+        "biography": "Lançado em 1968, Electric Ladyland é o terceiro e último álbum de estúdio do The Jimi Hendrix Experience. Este álbum duplo destaca-se pela experimentação sonora e pela produção inovadora de Hendrix. Inclui versões memoráveis de 'All Along the Watchtower' e 'Voodoo Child', consolidando Hendrix como um dos maiores guitarristas da história.",
+        "qtdMusicsAndDuration": "10 faixas - 73min 56s"
     },
     {
         "title": "Viva La Vida",
