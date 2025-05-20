@@ -67,7 +67,9 @@ class DiscoVC: UIViewController {
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
-
+  
+    let cardTableView = CardTableView()
+    
     func configureSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -95,11 +97,20 @@ class DiscoVC: UIViewController {
             emptyState.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
+        view.backgroundColor = .purple1
+        navigationItem.title = "Discoteca"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationController?.navigationBar.backgroundColor = .purple1
+        
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
+        navigationItem.rightBarButtonItem = addButton
 
     func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
     }
+
 
     func updateAddButtonIcon() {
         let iconName = allAlbums.isEmpty ? "plus.circle.fill" : "heart.fill"
