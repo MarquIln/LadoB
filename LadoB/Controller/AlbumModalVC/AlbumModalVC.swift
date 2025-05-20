@@ -27,11 +27,11 @@ class AlbumModalViewController: UIViewController {
         let layout = UICollectionViewCompositionalLayout { sectionIndex, _ in
             switch sectionIndex {
             case 0:
-                return self.createLayoutSection(height: 500)
+                return self.createLayoutSection(height: 490)
             case 1:
                 return self.createHorizontalButtonsLayout()
             case 2:
-                return self.createLayoutSection(height: 220)
+                return self.createLayoutSection2(height: 220)
             case 3:
                 return self.createDiscographyLayout()
             default:
@@ -93,14 +93,12 @@ class AlbumModalViewController: UIViewController {
 
 extension AlbumModalViewController: ViewCodeProtocol {
     func addSubviews() {
-        //
         view.addSubview(headerView)
         view.addSubview(collectionView)
     }
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-           //
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),

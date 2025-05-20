@@ -111,40 +111,20 @@ extension HeaderViewAlbumModal: ViewCodeProtocol {
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-//            stack.topAnchor.constraint(equalTo: self.topAnchor),
-//            stack.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-//            stack.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
-//            
-//            // Centraliza o título
-//            titleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-//            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
-//
-//                // Alinha o botão à direita
-//            okButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-//            okButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
-//
-//            separator.topAnchor.constraint(equalTo: stack.bottomAnchor, constant: 11),
-//            separator.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-//            separator.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-//            separator.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//            separator.heightAnchor.constraint(equalToConstant: 0.25)
             
-            // TÍTULO CENTRALIZADO
-                   titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-                   titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
 
-                   // BOTÃO OK À DIREITA
-                   okButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-                   okButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+                  
+            okButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+            okButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
 
-                   // SEPARADOR ABAIXO
-                   separator.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
-                   separator.leadingAnchor.constraint(equalTo: leadingAnchor),
-                   separator.trailingAnchor.constraint(equalTo: trailingAnchor),
-                   separator.heightAnchor.constraint(equalToConstant: 0.5),
-                   separator.bottomAnchor.constraint(equalTo: bottomAnchor)
-            
-            
+                  
+            separator.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
+            separator.leadingAnchor.constraint(equalTo: leadingAnchor),
+            separator.trailingAnchor.constraint(equalTo: trailingAnchor),
+            separator.heightAnchor.constraint(equalToConstant: 0.5),
+            separator.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }

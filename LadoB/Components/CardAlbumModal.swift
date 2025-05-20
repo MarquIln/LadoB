@@ -10,23 +10,22 @@ class CardAlbumModal: UIView {
  
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.tintColor = .systemBlue
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = 8
-//        imageView.setContentHuggingPriority(.defaultHigh, for: .vertical)
-//        imageView.setContentCompressionResistancePriority(.required, for: .vertical)
         imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 12
         return imageView
     }()
     
     lazy var albumNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "SFPro-Semibold", size: 16)
+        label.font = UIFont(name: "SFPro-Semibold", size: 22)
         label.text = "Album name"
-        label.textColor = .black1
-        label.numberOfLines = 0
+        label.textColor = .pink1
+        label.clipsToBounds = true
+        label.lineBreakMode = .byTruncatingTail
 
         return label
     }()
@@ -34,9 +33,10 @@ class CardAlbumModal: UIView {
     lazy var artistNameAndYearLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "SFPro-Regular", size: 12)
+        label.font = UIFont(name: "SFPro-Regular", size: 19)
         label.text = "Artist name"
-        label.textColor = .black1
+        label.textColor = .pink1
+        label.clipsToBounds = true
 
         return label
     }()
@@ -44,9 +44,9 @@ class CardAlbumModal: UIView {
     lazy var totalMusicsLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "SFPro-Regular", size: 12)
+        label.font = UIFont(name: "SFPro-Regular", size: 16)
         //label.text = "Total musics"
-        label.textColor = .black1
+        label.textColor = .pink4
         return label
     }()
     

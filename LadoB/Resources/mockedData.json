@@ -33,7 +33,7 @@
   },
   {
     "title": "Are You Experienced",
-    "artist": "The Jimi Hendrix Experience",
+    "artist": "Jimi Hendrix",
     "decade": 1970,
     "genre": "Rock",
     "coverAsset": "are_you_experienced",
@@ -464,16 +464,17 @@
     "biography": "Lançado em 1992, The Chronic é o álbum de estreia solo de Dr. Dre e introduziu o estilo G-funk ao mainstream. Com batidas suaves, sintetizadores e letras marcantes, o disco apresenta Snoop Dogg ao público e aborda temas sociais e urbanos. Considerado um marco no hip-hop, o álbum influenciou profundamente o gênero nos anos seguintes."
   },
   {
-    "title": "My Beautiful Dark Twisted Fantasy",
-    "artist": "Kanye West",
-    "decade": 1970,
-    "genre": "Hip Hop",
-    "coverAsset": "my_beautiful_dark_twisted_fantasy",
-    "biography": "Lançado em 2010, My Beautiful Dark Twisted Fantasy é o quinto álbum de estúdio de Kanye West. Gravado após um período de controvérsias, o disco é uma obra grandiosa que mistura hip-hop, rock e soul. Com participações de artistas como Jay-Z e Bon Iver, e faixas como 'Runaway', o álbum recebeu aclamação crítica e é frequentemente citado entre os melhores da década."
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "my_beautiful_dark_twisted_fantasy",
+      "biography": "Lançado em 2010, My Beautiful Dark Twisted Fantasy é o quinto álbum de estúdio de Kanye West. Gravado após um período de controvérsias, o disco é uma obra grandiosa que mistura hip-hop, rock e soul. Com participações de artistas como Jay-Z e Bon Iver, e faixas como 'Runaway', o álbum recebeu aclamação crítica e é frequentemente citado entre os melhores da década.",
+      "qtdMusicsAndDuration": "13 faixas – 68min 34s"
   },
   {
     "title": "Electric Ladyland",
-    "artist": "The Jimi Hendrix Experience",
+    "artist": "Jimi Hendrix",
     "decade": 1970,
     "genre": "Rock",
     "coverAsset": "electric_ladyland",
@@ -481,68 +482,76 @@
     "qtdMusicsAndDuration": "73min 56s"
   },
   {
-    "title": "Viva La Vida Or Death And All His Friends",
-    "artist": "Coldplay",
-    "decade": 1970,
-    "genre": "Alternative Rock",
-    "coverAsset": "viva_la_vida_or_death_and_all_his_friends",
-    "biography": "Lançado em 2008, Viva la Vida or Death and All His Friends marca uma mudança sonora para o Coldplay, incorporando elementos de art rock e pop barroco. Produzido por Brian Eno, o álbum explora temas como amor, guerra e fé, com destaque para a faixa-título, que se tornou um sucesso global. A capa apresenta a pintura 'Liberdade Guiando o Povo' de Delacroix, refletindo o tom revolucionário do disco."
+      "title": "Viva La Vida",
+      "artist": "Coldplay",
+      "decade": 1970,
+      "genre": "Alternative Rock",
+      "coverAsset": "viva_la_vida_or_death_and_all_his_friends",
+      "biography": "Lançado em 2008, Viva la Vida or Death and All His Friends marca uma mudança sonora para o Coldplay, incorporando elementos de art rock e pop barroco. Produzido por Brian Eno, o álbum explora temas como amor, guerra e fé, com destaque para a faixa-título, que se tornou um sucesso global. A capa apresenta a pintura 'Liberdade Guiando o Povo' de Delacroix, refletindo o tom revolucionário do disco.",
+      "qtdMusicsAndDuration": "10 faixas – 45min 51s"
   },
   {
-    "title": "Head Hunters",
-    "artist": "Herbie Hancock",
-    "decade": 1970,
-    "genre": "Jazz",
-    "coverAsset": "head_hunters",
-    "biography": "Lançado em 1973, Head Hunters é um marco do jazz-funk, onde Herbie Hancock mescla jazz com funk e soul. Com faixas como 'Chameleon', o álbum destaca-se pelo uso inovador de sintetizadores e ritmos dançantes. Foi um sucesso comercial, tornando-se um dos álbuns de jazz mais vendidos da época."
+      "title": "Head Hunters",
+      "artist": "Herbie Hancock",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "head_hunters",
+      "biography": "Lançado em 1973, Head Hunters é um marco do jazz-funk, onde Herbie Hancock mescla jazz com funk e soul. Com faixas como 'Chameleon', o álbum destaca-se pelo uso inovador de sintetizadores e ritmos dançantes. Foi um sucesso comercial, tornando-se um dos álbuns de jazz mais vendidos da época.",
+      "qtdMusicsAndDuration": "4 faixas – 41min 52s"
   },
   {
-    "title": "Ready To Die",
-    "artist": "The Notorious B.I.G.",
-    "decade": 1970,
-    "genre": "Hip Hop",
-    "coverAsset": "ready_to_die",
-    "biography": "Lançado em 1994, Ready to Die é o álbum de estreia de The Notorious B.I.G., apresentando narrativas cruas sobre a vida nas ruas do Brooklyn. Com hits como 'Juicy' e 'Big Poppa', o disco é considerado um clássico do hip-hop, destacando-se pela lírica afiada e produção marcante. "
+      "title": "Ready To Die",
+      "artist": "The Notorious B.I.G.",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "ready_to_die",
+      "biography": "Lançado em 1994, Ready to Die é o álbum de estreia de The Notorious B.I.G., apresentando narrativas cruas sobre a vida nas ruas do Brooklyn. Com hits como 'Juicy' e 'Big Poppa', o disco é considerado um clássico do hip-hop, destacando-se pela lírica afiada e produção marcante. ",
+      "qtdMusicsAndDuration": "17 faixas – 69min 05s"
   },
   {
-    "title": "The Man-Machine",
-    "artist": "Kraftwerk",
-    "decade": 1970,
-    "genre": "Electronic",
-    "coverAsset": "the_man-machine",
-    "biography": "Lançado em 1978, The Man-Machine é um álbum conceitual do Kraftwerk que explora a relação entre humanos e tecnologia. Com sonoridades eletrônicas minimalistas e temas futuristas, o disco influenciou profundamente a música eletrônica e o synth-pop."
+      "title": "The Man-Machine",
+      "artist": "Kraftwerk",
+      "decade": 1970,
+      "genre": "Electronic",
+      "coverAsset": "the_man-machine",
+      "biography": "Lançado em 1978, The Man-Machine é um álbum conceitual do Kraftwerk que explora a relação entre humanos e tecnologia. Com sonoridades eletrônicas minimalistas e temas futuristas, o disco influenciou profundamente a música eletrônica e o synth-pop.",
+      "qtdMusicsAndDuration": "6 faixas – 36min 10s"
   },
   {
-    "title": "A Cor De Rosa Choque",
-    "artist": "Rita Lee",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "a_cor_de_rosa_choque",
-    "biography": "Lançado em 1982, A Cor de Rosa Choque é um dos álbuns mais emblemáticos de Rita Lee, destacando-se por sua abordagem feminista e irreverente. Combinando rock e pop, o disco apresenta letras bem-humoradas e críticas sociais, consolidando Rita como uma das maiores artistas brasileiras."
+      "title": "A Cor De Rosa Choque",
+      "artist": "Rita Lee",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "a_cor_de_rosa_choque",
+      "biography": "Lançado em 1982, A Cor de Rosa Choque é um dos álbuns mais emblemáticos de Rita Lee, destacando-se por sua abordagem feminista e irreverente. Combinando rock e pop, o disco apresenta letras bem-humoradas e críticas sociais, consolidando Rita como uma das maiores artistas brasileiras.",
+      "qtdMusicsAndDuration": "9 faixas - 35min 33s"
   },
   {
-    "title": "Atliens",
-    "artist": "OutKast",
-    "decade": 1970,
-    "genre": "Hip Hop",
-    "coverAsset": "atliens",
-    "biography": "Lançado em 1996, ATLiens é o segundo álbum de estúdio da dupla de hip-hop OutKast. O título combina 'ATL' (Atlanta) com 'aliens', refletindo a sensação de alienação dos artistas. Com produção influenciada por dub, gospel e sons espaciais, o álbum aborda temas como vida urbana e existencialismo. Destacam-se faixas como 'Elevators (Me & You)' e 'Jazzy Belle' "
+      "title": "Atliens",
+      "artist": "OutKast",
+      "decade": 1970,
+      "genre": "Hip Hop",
+      "coverAsset": "atliens",
+      "biography": "Lançado em 1996, ATLiens é o segundo álbum de estúdio da dupla de hip-hop OutKast. O título combina 'ATL' (Atlanta) com 'aliens', refletindo a sensação de alienação dos artistas. Com produção influenciada por dub, gospel e sons espaciais, o álbum aborda temas como vida urbana e existencialismo. Destacam-se faixas como 'Elevators (Me & You)' e 'Jazzy Belle' ",
+      "qtdMusicsAndDuration": "15 faixas – 57min 23s"
   },
   {
-    "title": "Speak No Evil",
-    "artist": "Wayne Shorter",
-    "decade": 1970,
-    "genre": "Jazz",
-    "coverAsset": "speak_no_evil",
-    "biography": "Gravado em 1964 e lançado em 1966, Speak No Evil é um dos álbuns mais aclamados do saxofonista Wayne Shorter. Composições como 'Witch Hunt' e 'Infant Eyes' destacam-se pela sofisticação harmônica e lirismo. O disco é considerado uma obra-prima do jazz moderno ."
+      "title": "Speak No Evil",
+      "artist": "Wayne Shorter",
+      "decade": 1970,
+      "genre": "Jazz",
+      "coverAsset": "speak_no_evil",
+      "biography": "Gravado em 1964 e lançado em 1966, Speak No Evil é um dos álbuns mais aclamados do saxofonista Wayne Shorter. Composições como 'Witch Hunt' e 'Infant Eyes' destacam-se pela sofisticação harmônica e lirismo. O disco é considerado uma obra-prima do jazz moderno .",
+      "qtdMusicsAndDuration": "6 faixas – 42min 16s"
   },
   {
-    "title": "Achtung Baby",
-    "artist": "U2",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "achtung_baby",
-    "biography": "Lançado em 1991, Achtung Baby marca uma reinvenção sonora do U2, incorporando elementos de rock alternativo e eletrônico. Gravado em Berlim, o álbum reflete influências de artistas como David Bowie. Com faixas como "One" e 'Mysterious Ways', é considerado um dos melhores trabalhos da banda ."
+      "title": "Achtung Baby",
+      "artist": "U2",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "achtung_baby",
+      "biography": "Lançado em 1991, Achtung Baby marca uma reinvenção sonora do U2, incorporando elementos de rock alternativo e eletrônico. Gravado em Berlim, o álbum reflete influências de artistas como David Bowie. Com faixas como 'One' e 'Mysterious Ways', é considerado um dos melhores trabalhos da banda .",
+      "qtdMusicsAndDuration": "12 faixas – 55min 27s"
   },
   {
     "title": "Back To Black",
@@ -561,12 +570,13 @@
     "biography": "Lançado em 1982, o álbum de estreia homônimo do Barão Vermelho apresenta uma fusão de rock, blues e pop. Com Cazuza nos vocais e Frejat na guitarra, o disco inclui a clássica 'Todo Amor Que Houver Nessa Vida'. É considerado um marco do rock brasileiro dos anos 80 "
   },
   {
-    "title": "Rumours",
-    "artist": "Fleetwood Mac",
-    "decade": 1970,
-    "genre": "Rock",
-    "coverAsset": "rumours",
-    "biography": "Lançado em 1977, 'Rumours' tornou-se um clássico do rock com letras sobre amores e conflitos internos da banda. Sucesso comercial e de crítica."
+      "title": "Rumours",
+      "artist": "Fleetwood Mac",
+      "decade": 1970,
+      "genre": "Rock",
+      "coverAsset": "rumours",
+      "biography": "Lançado em 1977, 'Rumours' tornou-se um clássico do rock com letras sobre amores e conflitos internos da banda. Sucesso comercial e de crítica.",
+      "qtdMusicsAndDuration": "11 faixas - 39 min 03s"
   },
   {
     "title": "Bat Out Of Hell",

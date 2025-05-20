@@ -18,7 +18,7 @@ class AlbumCVCell: UICollectionViewCell {
         return view
     }()
     
-    //Aqui depois botar year e quantidade musicas
+//    Aqui depois botar year e quantidade musicas
 //    func config(with album: Album, title: String, artist: String, image: String?) {
 //        cardView.title = title
 //        cardView.artistName = artist

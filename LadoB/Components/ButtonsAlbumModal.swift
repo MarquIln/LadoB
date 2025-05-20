@@ -11,10 +11,8 @@ class ButtonsAlbumModal: UIView {
         lazy var iconImageView: UIImageView = {
           let imageView = UIImageView()
           imageView.image = UIImage(systemName: "custom.record.circle.fill.badge.sparkles.alt")
-          //imageView.tintColor = UIColor(named: "DarkPurple") ?? .darkGray
           imageView.translatesAutoresizingMaskIntoConstraints = false
-//          imageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
-//          imageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+            imageView.tintColor = .purple1
           return imageView
       }()
       
