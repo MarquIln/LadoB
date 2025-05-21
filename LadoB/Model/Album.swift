@@ -15,13 +15,18 @@ struct Album: Decodable {
     let genre: Genre
     let coverAsset: String
     var isWished: Bool?
-
-    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String) {
+    var isFavorite: Bool?
+    var isDisco: Bool?
+    
+    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String, isWished: Bool? = nil, isFavorite: Bool? = nil, isDisco: Bool? = nil) {
         self.id = id
         self.title = title
         self.artist = artist
         self.decade = decade
         self.genre = genre
         self.coverAsset = coverAsset
+        self.isWished = isWished
+        self.isFavorite = isFavorite
+        self.isDisco = isDisco
     }
 }

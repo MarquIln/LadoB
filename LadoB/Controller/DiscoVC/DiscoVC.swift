@@ -1,10 +1,3 @@
-//
-//  DiscoVC.swift
-//  LadoB
-//
-//  Created by Marcos on 14/05/25.
-//
-
 import UIKit
 
 class DiscoVC: UIViewController {
@@ -16,9 +9,7 @@ class DiscoVC: UIViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(CardTableViewCell.self, forCellReuseIdentifier: CardTableViewCell.reuseIdentifier)
-        tableView.backgroundColor = .purple1
-        tableView.sectionIndexColor = .yellow1
-        tableView.sectionIndexBackgroundColor = .purple1
+        tableView.backgroundColor = .purple2
         tableView.contentInsetAdjustmentBehavior = .automatic
         return tableView
     }()
@@ -46,14 +37,6 @@ class DiscoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple1
-        navigationItem.title = "Discoteca"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        navigationController?.navigationBar.backgroundColor = .purple1
-        
-        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
-        navigationItem.rightBarButtonItem = addButton
         setup()
     }
 
@@ -62,22 +45,7 @@ class DiscoVC: UIViewController {
         updateAddButtonIcon()
     }
 
-    func configureNavigationBar() {
-        navigationItem.title = "Discoteca"
-        navigationItem.rightBarButtonItem = addButton
-        navigationItem.hidesSearchBarWhenScrolling = false
-        navigationController?.navigationBar.prefersLargeTitles = true
 
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithTransparentBackground()
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
-
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-    }
-  
-    let cardTableView = CardTableView()
-    
     func configureSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -105,13 +73,11 @@ class DiscoVC: UIViewController {
             emptyState.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
-        
 
     func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
     }
-
 
     func updateAddButtonIcon() {
         let iconName = allAlbums.isEmpty ? "plus.circle.fill" : "heart.fill"
@@ -119,7 +85,12 @@ class DiscoVC: UIViewController {
     }
 
     @objc func addTapped() {
-        print("Add Tapped")
+        if !allAlbums.isEmpty {
+            let favoriteVC = FavoritesVC()
+            navigationController?.pushViewController(favoriteVC, animated: true)
+            return
+        }
+        navigationController?.pushViewController(SearchVC(), animated: true)
     }
 
     func loadAlbums() {
