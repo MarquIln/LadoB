@@ -58,14 +58,11 @@ class WishListVC: UIViewController {
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
 
         configureSearchController()
+        
+//        Persistence.saveToWishlist(albuns[78])
+//        Persistence.saveToWishlist(albuns[66])
 
-        albuns[8].isWished = true
-        albuns[80].isWished = true
-        albuns[33].isWished = true
-        albuns[25].isWished = true
-        albuns[7].isWished = true
-
-        wishedAlbuns = albuns.filter { $0.isWished ?? false }
+        wishedAlbuns = Persistence.getWishedAlbuns()
 
         setup()
     }
