@@ -1,7 +1,7 @@
 import UIKit
 
 class DiscoVC: UIViewController {
-    var allAlbums: [Album] = []
+    var allAlbums = JSONLoader.loadAlbums(from: "mockedData")
     var discoAlbuns: [Album] = []
     var groupedAlbums: [String: [Album]] = [:]
     var sectionTitles: [String] = []
