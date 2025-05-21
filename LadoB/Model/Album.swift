@@ -12,7 +12,7 @@ struct Album: Codable, Equatable {
     var isDisco: Bool?
     var biography: String?
     var qtdMusicsAndDuration: String?
-
+  
     init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String, isWished: Bool? = nil, isFavorite: Bool? = nil, isDisco: Bool? = nil) {
         self.id = id
         self.title = title

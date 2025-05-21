@@ -19,7 +19,7 @@ class ProfileCollectionViewCell: UICollectionViewListCell {
         label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.setContentHuggingPriority(.defaultLow, for: .horizontal)
         label.font = Fonts.text
-        label.textColor = .pink2
+        label.textColor = .pink1
         return label
     }()
     
