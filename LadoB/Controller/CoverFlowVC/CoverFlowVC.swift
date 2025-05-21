@@ -137,13 +137,13 @@ extension CoverFlowVC: ViewCodeProtocol {
 
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            pagerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            pagerView.topAnchor.constraint(equalTo: view.topAnchor),
             pagerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             pagerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            pagerView.bottomAnchor.constraint(equalTo: albumInfoStack.topAnchor, constant: -32),
+            pagerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             pagerView.heightAnchor.constraint(equalToConstant: 500),
 
-            albumInfoStack.bottomAnchor.constraint(equalTo: shareButton.topAnchor, constant: -12),
+            albumInfoStack.bottomAnchor.constraint(equalTo: shareButton.topAnchor, constant: -20),
             albumInfoStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             albumInfoStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
 

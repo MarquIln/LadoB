@@ -13,8 +13,6 @@ extension FavoritesVC: ViewCodeProtocol {
         navigationItem.title = "Favoritos"
         navigationItem.largeTitleDisplayMode = .never
         
-
-        navigationController?.navigationBar.backgroundColor = .purple1
         navigationController?.navigationBar.tintColor = .yellow1
         navigationController?.navigationBar.titleTextAttributes = [
             .foregroundColor: UIColor.pink2
@@ -30,6 +28,7 @@ extension FavoritesVC: ViewCodeProtocol {
             view.addSubview(coverFlowView.view)
             coverFlowView.didMove(toParent: self)
             view.addSubview(albumInfoStackView)
+            navigationItem.searchController = nil
         } else {
             view.addSubview(favoritesTableView)
         }
