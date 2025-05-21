@@ -53,6 +53,7 @@ class FavoritesVC: UIViewController {
     
     lazy var coverFlowView: CoverFlowVC = {
         let coverFlow = CoverFlowVC()
+        coverFlow.albums = self.albumsForCoverFlow
         return coverFlow
     }()
 
