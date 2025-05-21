@@ -28,8 +28,8 @@ extension FavoritesVC: UISearchResultsUpdating {
             groupFavoritesByInitialsAndPairs(from: favorites)
         } else {
             let filtered = favorites.filter {
-                $0.title.lowercased().contains(query.lowercased()) ||
-                $0.artist.lowercased().contains(query.lowercased())
+                $0.title.lowercased().hasPrefix(query.lowercased()) ||
+                $0.artist.lowercased().hasPrefix(query.lowercased())
             }
 
             groupFavoritesByInitialsAndPairs(from: filtered)

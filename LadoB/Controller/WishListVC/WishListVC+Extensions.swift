@@ -69,8 +69,8 @@ extension WishListVC: UISearchResultsUpdating {
         let query = searchController.searchBar.text ?? ""
         if !query.isEmpty {
             filteredAlbums = wishedAlbuns.filter {
-                $0.title.lowercased().contains(query.lowercased()) ||
-                $0.artist.lowercased().contains(query.lowercased())
+                $0.title.lowercased().hasPrefix(query.lowercased()) ||
+                $0.artist.lowercased().hasPrefix(query.lowercased())
             }
         } else {
             filteredAlbums = []

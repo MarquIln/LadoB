@@ -2,6 +2,7 @@ import UIKit
 
 class DiscoVC: UIViewController {
     var allAlbums: [Album] = []
+    var discoAlbuns: [Album] = []
     var groupedAlbums: [String: [Album]] = [:]
     var sectionTitles: [String] = []
 
@@ -100,8 +101,15 @@ class DiscoVC: UIViewController {
             return
         }
 
-        allAlbums = decoded
-        groupAndSortAlbums(decoded)
+        discoAlbuns = decoded.filter {Persistence.isOnDiscoList($0)}
+        
+//        Persistence.saveToDisco(allAlbums[54])
+//        Persistence.saveToDisco(allAlbums[89])
+//        Persistence.saveToDisco(allAlbums[8])
+//        Persistence.saveToDisco(allAlbums[21])
+//        Persistence.saveToDisco(allAlbums[77])
+        
+        groupAndSortAlbums(Persistence.getDiscoAlbuns())
         tableView.reloadData()
     }
 
