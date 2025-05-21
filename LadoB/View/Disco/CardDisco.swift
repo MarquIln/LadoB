@@ -103,8 +103,7 @@ extension Card: ViewCodeProtocol {
         NSLayoutConstraint.activate([
             cardStackView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
             cardStackView.bottomAnchor.constraint(
-                equalTo: bottomAnchor,
-                constant: -12
+                equalTo: bottomAnchor
             ),
             cardStackView.leadingAnchor.constraint(
                 equalTo: leadingAnchor,
