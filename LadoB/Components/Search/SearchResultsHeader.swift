@@ -44,7 +44,7 @@ class SearchResultsHeaderView: UICollectionReusableView {
         addSubview(stackView)
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -60),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -45),
             stackView.topAnchor.constraint(equalTo: topAnchor, constant: 8),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8)
         ])
@@ -56,17 +56,31 @@ class SearchResultsHeaderView: UICollectionReusableView {
         let sortDropdown = createSortDropdownButton()
         stackView.addArrangedSubview(sortDropdown)
 
+        let attribute: [NSAttributedString.Key: Any] = [
+            .font: Fonts.bodyBold,
+            .foregroundColor: UIColor.pink1
+        ]
+        
         for filter in filters {
+            let attributedTitle = AttributedString(filter, attributes: AttributeContainer(attribute))
+            
             var config = UIButton.Configuration.plain()
-            config.title = filter
+            config.attributedTitle = attributedTitle
             config.baseForegroundColor = .pink1
-            config.contentInsets = NSDirectionalEdgeInsets(top: 6, leading: 12, bottom: 6, trailing: 12)
+            config.contentInsets = NSDirectionalEdgeInsets(top: 6, leading: 8, bottom: 6, trailing: 8)
             config.background.backgroundColor = .pink5
             config.background.cornerRadius = 16
 
             let button = UIButton(configuration: config)
             button.tag = filters.firstIndex(of: filter) ?? 0
             button.addTarget(self, action: #selector(filterTapped(_:)), for: .touchUpInside)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            
+            let width = filter.size(withAttributes: [NSAttributedString.Key.font: Fonts.bodyBold]).width + 24.2
+            
+            NSLayoutConstraint.activate([
+                button.widthAnchor.constraint(equalToConstant: width)
+            ])
 
             filterButtons.append(button)
             stackView.addArrangedSubview(button)
@@ -84,16 +98,14 @@ class SearchResultsHeaderView: UICollectionReusableView {
         let button = UIButton(configuration: config)
         button.showsMenuAsPrimaryAction = true
 
-        // Troca cor ao abrir o menu
         button.addAction(UIAction { [weak button] _ in
             guard let button = button else { return }
             var activeConfig = button.configuration
-            activeConfig?.baseForegroundColor = .purple1 // Cor ativa
-            activeConfig?.background.backgroundColor = .yellow1 // Cor ativa
+            activeConfig?.baseForegroundColor = .purple1
+            activeConfig?.background.backgroundColor = .yellow1
             button.configuration = activeConfig
         }, for: .touchDown)
 
-        // Crie os itens do menu já resetando a cor do botão após seleção
         let menuItems = [
             UIAction(title: "De A a Z", handler: { [weak self, weak button] _ in
                 self?.delegate?.didSelectSortOption("A-Z")
@@ -114,30 +126,47 @@ class SearchResultsHeaderView: UICollectionReusableView {
         return button
     }
     
-
-    
     @objc private func filterTapped(_ sender: UIButton) {
+        // BOTAO ANTERIOR
         for button in filterButtons {
-            var config = button.configuration
-            config?.baseForegroundColor = .pink1
-            config?.background.backgroundColor = .pink5
-            button.configuration = config
+            if button.titleLabel?.text == selectedFilter {
+                let attribute: [NSAttributedString.Key: Any] = [
+                    .font: Fonts.bodyBold,
+                    .foregroundColor: UIColor.pink1
+                ]
+                
+                let attributedTitle = AttributedString(selectedFilter ?? "", attributes: AttributeContainer(attribute))
+
+                var config = button.configuration
+                config?.attributedTitle = attributedTitle
+                config?.background.backgroundColor = .pink5
+                button.configuration = config
+            }
         }
+        
+        // BOTAO CLICADO NOVO
+        let attribute: [NSAttributedString.Key: Any] = [
+            .font: Fonts.bodyBold,
+            .foregroundColor: UIColor.purple1
+        ]
+        
+        let attributedTitle = AttributedString(sender.titleLabel?.text ?? "", attributes: AttributeContainer(attribute))
 
         var selectedConfig = sender.configuration
-        selectedConfig?.baseForegroundColor = .purple1
         selectedConfig?.background.backgroundColor = .yellow1
+        selectedConfig?.attributedTitle = attributedTitle
         sender.configuration = selectedConfig
 
         let selected = filters[sender.tag]
+        selectedFilter = selected
         delegate?.didSelectFilter(selected)
     }
 }
 private extension UIButton {
     func resetDropdownButtonColors() {
         var config = self.configuration
-        config?.baseForegroundColor = .pink1 // Cor padrão
-        config?.background.backgroundColor = .pink5 // Cor padrão
+        config?.baseForegroundColor = .pink1
+        config?.background.backgroundColor = .pink5
         self.configuration = config
     }
 }

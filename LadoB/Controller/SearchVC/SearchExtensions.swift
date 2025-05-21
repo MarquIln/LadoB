@@ -196,46 +196,13 @@ extension SearchResultsVC: UICollectionViewDataSource {
 extension SearchResultsVC: SearchResultsHeaderViewDelegate {
     
     func didSelectFilter(_ filter: String) {
-        print("Filtro selecionado: \(filter)")
-
-        switch filter {
-            case "Artistas":
-                filteredData = allResults.filter { !$0.artist.isEmpty }
-
-            case "Álbuns":
-                filteredData = allResults.filter { !$0.title.isEmpty }
-
-            case "Gênero":
-                filteredData = allResults.filter { $0.genre.rawValue.isEmpty == false }
-            default:
-                filteredData = allResults
-            }
-
-          collectionView.reloadData()
+        self.activeFilter = filter
+        applyFilters()
     }
-
+    
     func didSelectSortOption(_ sortOption: String) {
-        // Ordena os dados com base no critério
-        print("Ordenar por: \(sortOption)")
-        
-        switch sortOption {
-        case "A–Z":
-            filteredData.sort { (a: Album, b: Album) in
-                a.title.localizedCaseInsensitiveCompare(b.title) == .orderedAscending
-            }
-        case "Z–A":
-            filteredData.sort { (a: Album, b: Album) in
-                a.title.localizedCaseInsensitiveCompare(b.title) == .orderedDescending
-            }
-        case "Ano":
-            filteredData.sort { (a: Album, b: Album) in
-                (a.decade) > (b.decade)
-            }
-        default:
-            break
-        }
-
-        collectionView.reloadData()
+        self.sortOption = sortOption
+        applyFilters()
     }
 }
 
@@ -243,26 +210,22 @@ extension SearchResultsVC: SearchResultsHeaderViewDelegate {
 
 extension SearchVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text?.lowercased(), !searchText.isEmpty, let resultsVC = searchController.searchResultsController as? SearchResultsVC else {
-            filteredData = []
-            collectionView.reloadData()
-            return
-        }
+          guard let text = searchController.searchBar.text?.lowercased(),
+                let resultsVC = searchController.searchResultsController as? SearchResultsVC else {
+              if let resultsVC = searchController.searchResultsController as? SearchResultsVC {
+                  resultsVC.updateResults(with: [])
+                  resultsVC.searchText = ""
+              }
+              return
+          }
+          
+          let allAlbums = dataBySection.flatMap { $0.value }
+          let uniqueAlbums = Dictionary(grouping: allAlbums, by: { "\($0.title.lowercased())-\($0.artist.lowercased())" })
+              .compactMap { $0.value.first }
 
-        let allAlbums = dataBySection.flatMap { $0.value }
-
-        let uniqueAlbums = Dictionary(grouping: allAlbums, by: { "\($0.title.lowercased())-\($0.artist.lowercased())" })
-            .compactMap { $0.value.first }
-
-        filteredData = uniqueAlbums.filter {
-            $0.title.lowercased().hasPrefix(searchText)
-        }
-        .sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
-        
-        resultsVC.updateResults(with: filteredData)
-
-        collectionView.reloadData()
-    }
+          resultsVC.searchText = text
+          resultsVC.updateResults(with: uniqueAlbums)
+      }
 }
 
 extension SearchVC: UISearchBarDelegate {

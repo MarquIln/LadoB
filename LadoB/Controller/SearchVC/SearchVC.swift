@@ -40,6 +40,8 @@ enum SearchSection: Int, CaseIterable {
 
 class SearchVC: UIViewController {
     var filteredData: [Album] = []
+    var searchText: String = ""
+
 
     var isFiltering: Bool {
         return searchController?.isActive ?? false
