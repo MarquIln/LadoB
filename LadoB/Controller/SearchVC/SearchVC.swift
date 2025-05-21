@@ -84,32 +84,40 @@ class SearchVC: UIViewController {
     var dataBySection: [SearchSection: [Album]] = [:]
 
     func loadAllSections() {
+        let allAlbums = Persistence.getAllAlbuns()
+
         SearchSection.allCases.forEach { section in
-            if let data = loadJSON(named: section.jsonFileName) {
-                dataBySection[section] = data
+            if let sectionAlbumData = loadJSON(named: section.jsonFileName) {
+                let sectionAlbums: [Album] = sectionAlbumData.compactMap { partial in
+                    allAlbums.first(where: {
+                        $0.title == partial.title && $0.artist == partial.artist
+                    })
+                }
+                dataBySection[section] = sectionAlbums
             }
         }
+
         collectionView.reloadData()
     }
 
     func loadJSON(named filename: String) -> [Album]? {
-        guard
-            let url = Bundle.main.url(
-                forResource: filename,
-                withExtension: "json"
-            )
-        else {
-            print("File not found: \(filename).json")
-            return nil
+            guard
+                let url = Bundle.main.url(
+                    forResource: filename,
+                    withExtension: "json"
+                )
+            else {
+                print("File not found: \(filename).json")
+                return nil
+            }
+            do {
+                let data = try Data(contentsOf: url)
+                return try JSONDecoder().decode([Album].self, from: data)
+            } catch {
+                print("Error decoding: \(filename): \(error)")
+                return nil
+            }
         }
-        do {
-            let data = try Data(contentsOf: url)
-            return try JSONDecoder().decode([Album].self, from: data)
-        } catch {
-            print("Error decoding: \(filename): \(error)")
-            return nil
-        }
-    }
 
     private let searchController = UISearchController(
         searchResultsController: nil

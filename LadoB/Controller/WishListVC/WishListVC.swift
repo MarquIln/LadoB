@@ -8,7 +8,7 @@
 import UIKit
 
 class WishListVC: UIViewController {
-    var albuns = JSONLoader.loadAlbums(from: "mockedData")
+    var albuns = Persistence.getAllAlbuns()
     var wishedAlbuns: [Album] = []
     var filteredAlbums: [Album] = []
 

@@ -8,7 +8,7 @@
 import UIKit
 
 class FavoritesVC: UIViewController {
-    var allAlbums = JSONLoader.loadAlbums(from: "mockedData")
+    var allAlbums = Persistence.getAllAlbuns()
     var favorites: [Album] = []
     var filteredFavorites: [Album] = []
 

@@ -20,7 +20,8 @@ struct Album: Codable, Equatable {
     var biography: String?
     var qtdMusicsAndDuration: String?
     
-    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String, isWished: Bool? = nil, isFavorite: Bool? = nil, isDisco: Bool? = nil) {
+    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String, isWished: Bool? = nil, isFavorite: Bool? = nil, isDisco: Bool? = nil, biography: String? = nil,
+         qtdMusicsAndDuration: String? = nil) {
         self.id = id
         self.title = title
         self.artist = artist
@@ -30,5 +31,7 @@ struct Album: Codable, Equatable {
         self.isWished = isWished
         self.isFavorite = isFavorite
         self.isDisco = isDisco
+        self.biography = biography
+        self.qtdMusicsAndDuration = qtdMusicsAndDuration
     }
 }

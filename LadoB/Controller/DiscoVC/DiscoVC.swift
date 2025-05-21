@@ -1,7 +1,7 @@
 import UIKit
 
 class DiscoVC: UIViewController {
-    var allAlbums = JSONLoader.loadAlbums(from: "mockedData")
+    var allAlbums = Persistence.getAllAlbuns()
     var discoAlbuns: [Album] = []
     var groupedAlbums: [String: [Album]] = [:]
     var sectionTitles: [String] = []
