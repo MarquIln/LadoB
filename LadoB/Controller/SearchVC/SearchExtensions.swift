@@ -173,7 +173,72 @@ extension SearchResultsVC: UICollectionViewDataSource {
 
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        if kind == UICollectionView.elementKindSectionHeader {
+            guard let header = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: SearchResultsHeaderView.identifier,
+                for: indexPath
+            ) as? SearchResultsHeaderView else {
+                return UICollectionReusableView()
+            }
+
+            header.delegate = self
+            return header
+        }
+
+        return UICollectionReusableView()
+    }
 }
+
+extension SearchResultsVC: SearchResultsHeaderViewDelegate {
+    
+    func didSelectFilter(_ filter: String) {
+        print("Filtro selecionado: \(filter)")
+
+        switch filter {
+            case "Artistas":
+                filteredData = allResults.filter { !$0.artist.isEmpty }
+
+            case "Álbuns":
+                filteredData = allResults.filter { !$0.title.isEmpty }
+
+            case "Gênero":
+                filteredData = allResults.filter { $0.genre.rawValue.isEmpty == false }
+            default:
+                filteredData = allResults
+            }
+
+          collectionView.reloadData()
+    }
+
+    func didSelectSortOption(_ sortOption: String) {
+        // Ordena os dados com base no critério
+        print("Ordenar por: \(sortOption)")
+        
+        switch sortOption {
+        case "A–Z":
+            filteredData.sort { (a: Album, b: Album) in
+                a.title.localizedCaseInsensitiveCompare(b.title) == .orderedAscending
+            }
+        case "Z–A":
+            filteredData.sort { (a: Album, b: Album) in
+                a.title.localizedCaseInsensitiveCompare(b.title) == .orderedDescending
+            }
+        case "Ano":
+            filteredData.sort { (a: Album, b: Album) in
+                (a.decade) > (b.decade)
+            }
+        default:
+            break
+        }
+
+        collectionView.reloadData()
+    }
+}
+
 
 
 extension SearchVC: UISearchResultsUpdating {
@@ -190,9 +255,9 @@ extension SearchVC: UISearchResultsUpdating {
             .compactMap { $0.value.first }
 
         filteredData = uniqueAlbums.filter {
-            $0.title.lowercased().contains(searchText) ||
-            $0.artist.lowercased().contains(searchText)
+            $0.title.lowercased().hasPrefix(searchText)
         }
+        .sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
         
         resultsVC.updateResults(with: filteredData)
 
