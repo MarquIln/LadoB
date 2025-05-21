@@ -50,7 +50,7 @@
         "decade": 1970,
         "genre": "Rock",
         "coverAsset": "rumours",
-        "biography": "Lançado em 1977, 'Rumours' tornou-se um clássico do rock com letras sobre amores e conflitos internos da banda. Sucesso comercial e de crítica.",
+        "biography": "Rumours é o décimo primeiro álbum de estúdio da banda britânico-americana Fleetwood Mac, lançado em 4 de fevereiro de 1977 pela Warner Bros. Records. Registrado em 1976 enquanto os membros da banda enfrentavam divisões pessoais e excessos de drogas, o disco reflete tensões e emoções intensas em letras sobre relacionamentos tumultuados. Produzido pela própria banda com Ken Caillat e Richard Dashut, Rumours apresenta harmonias vocais marcantes e arranjos pop-rock refinados em sucessos como 'Go Your Own Way' e 'Dreams'. ",
         "qtdMusicsAndDuration": "11 faixas - 39 min 03s"
     },
     {
@@ -59,7 +59,7 @@
         "decade": 1970,
         "genre": "Rock",
         "coverAsset": "bat_out_of_hell",
-        "biography": "Com produção de Jim Steinman, o álbum de 1977 é um épico teatral do rock, misturando baladas dramáticas com energia explosiva. Um dos mais vendidos da história.",
+        "biography": "Bat Out of Hell é o álbum de estreia solo do cantor americano Meat Loaf, lançado em 21 de outubro de 1977 pela Cleveland International/Epic Records e produzido por Todd Rundgren. Desenvolvido a partir do musical Neverland, de Jim Steinman, o disco apresenta um rock teatral com influências de Wagner, arranjos grandiosos e narrativas épicas. Faixas como 'Paradise by the Dashboard Light' e 'Two Out of Three Ain’t Bad' destacam a performance vocal dramática de Meat Loaf e a parceria criativa com Steinman. Comercialmente, o álbum vendeu mais de 43 milhões de cópias globalmente.",
         "qtdMusicsAndDuration": "7 faixas - 46 min 25s"
     },
     {
@@ -68,7 +68,7 @@
         "decade": 1990,
         "genre": "Grunge",
         "coverAsset": "nevermind",
-        "biography": "Lançado em 1991, 'Nevermind' trouxe o grunge ao mainstream com hits como 'Smells Like Teen Spirit'. Transformou Nirvana em ícones de uma geração.",
+        "biography": "Nevermind é o segundo álbum de estúdio da banda americana Nirvana, lançado em 24 de setembro de 1991 pela gravadora DGC Records. Produzido por Butch Vig, o disco foi gravado nos estúdios Sound City e combina elementos de grunge, punk rock e pop melódico, marcando uma evolução na sonoridade crua que caracterizava a cena de Seattle. O single de abertura, “Smells Like Teen Spirit”, lançado em 10 de setembro de 1991, tornou-se um hino geracional, impulsionando o álbum ao topo das paradas e consolidando o grunge como fenômeno global.",
         "qtdMusicsAndDuration": "13 faixas - 49min 07s"
     },
     {
@@ -77,7 +77,7 @@
         "decade": 1970,
         "genre": "MPB",
         "coverAsset": "construção",
-        "biography": "Obra-prima de 1971, marcada por crítica social, poesia e experimentação musical. A faixa-título é um marco da música brasileira.",
+        "biography": "Construção é o oitavo álbum de estúdio do cantor e compositor brasileiro Chico Buarque, lançado em dezembro de 1971 durante o regime militar no Brasil. Composições foram criadas entre o exílio de Buarque na Itália e seu retorno ao país, refletindo denúncias à censura e ao autoritarismo por meio de letras poéticas e críticas, especialmente na faixa-título. O álbum carrega temáticas sociais e políticas, abordando condições de trabalho e repressão, mas também diferencia-se por arranjos sofisticados assinados por Rogério Duprat.",
         "qtdMusicsAndDuration": "10 faixas - 31min 10s"
     },
     {
@@ -86,7 +86,7 @@
         "decade": 1960,
         "genre": "Rock",
         "coverAsset": "revolver",
-        "biography": "Lançado em 1966, 'Revolver' marcou a virada psicodélica dos Beatles, com inovações sonoras e letras introspectivas. Revolucionário para o rock.",
+        "biography": "Revolver é o sétimo álbum de estúdio da banda inglesa The Beatles, lançado em 5 de agosto de 1966, acompanhado pelo single duplo 'Eleanor Rigby'/'Yellow Submarine'. Considerado um marco na história da música, marca a transição do grupo de uma banda de performances ao vivo para um coletivo centrado em estúdio, explorando técnicas inovadoras de gravação e produção. As composições refletem influências de psicodelia, música clássica indiana e R&B, com faixas emblemáticas como 'Tomorrow Never Knows' e 'Eleanor Rigby'. Produzido por George Martin, o álbum apresenta arranjos sofisticados, experimentação de fita e camadas sonoras que ampliaram os limites do pop rock.",
         "qtdMusicsAndDuration": "14 faixas - 35min 01s"
     },
     {
@@ -95,7 +95,7 @@
         "decade": 1950,
         "genre": "Jazz",
         "coverAsset": "time_out",
-        "biography": "De 1959, o álbum inovou ao usar compasso não convencional. 'Take Five' tornou-se um dos temas de jazz mais conhecidos do mundo.",
+        "biography": "Time Out é um álbum de estúdio do The Dave Brubeck Quartet, lançado em 14 de dezembro de 1959 pela Columbia Records. O trabalho se destaca pelo uso inovador de assinaturas de tempo pouco usuais no jazz, como 9/8, 6/4 e 5/4, conferindo uma sonoridade única ao gênero. A faixa 'Take Five', composta por Paul Desmond, tornou-se a primeira gravação de jazz a vender mais de um milhão de cópias e é um clássico instantâneo do repertório mundial.",
         "qtdMusicsAndDuration": "7 faixas - 38min 30s"
     },
     {
@@ -104,7 +104,7 @@
         "decade": 1970,
         "genre": "Pop",
         "coverAsset": "off_the_wall",
-        "biography": "Primeiro álbum solo adulto de Michael, lançado em 1979. Mistura disco, funk e pop. Iniciou sua ascensão como ícone global.",
+        "biography": "Off the Wall é o quinto álbum de estúdio de Michael Jackson, lançado em 10 de agosto de 1979 pela Epic Records e produzido por Quincy Jones. Representou um divisor de águas para Jackson, incorporando disco, funk, pop, R&B e baladas sofisticadas, enquanto o artista buscava afirmar sua independência criativa. Com composições de Stevie Wonder, Paul McCartney, Rod Temperton e três faixas escritas pelo próprio Jackson.",
         "qtdMusicsAndDuration": "10 faixas - 42min 24s"
     },
     {
@@ -113,7 +113,7 @@
         "decade": 2000,
         "genre": "Alternative Rock",
         "coverAsset": "in_rainbows",
-        "biography": "De 2007, 'In Rainbows' se destacou pela distribuição online inovadora e som emocionalmente rico. Uma obra madura do Radiohead.",
+        "biography": "In Rainbows é o sétimo álbum de estúdio da banda britânica Radiohead, lançado inicialmente por meio de download no site oficial em 10 de outubro de 2007, em um modelo pay-what-you-want que revolucionou a indústria musical. Gravado em locações como Halswell House, Tottenham House e no Hospital Club em Londres, o álbum apresenta letras mais pessoais e menos políticas que seus trabalhos anteriores. Musicalmente, mescla art rock, experimental rock, art pop e eletrônica, mantendo um equilíbrio entre acessibilidade e inovação sonora. ",
         "qtdMusicsAndDuration": "10 faixas - 42min 39s"
     },
     {
@@ -122,7 +122,7 @@
         "decade": 1970,
         "genre": "MPB",
         "coverAsset": "legal",
-        "biography": "Lançado em 1970, 'Legal' mostra Gal Costa entre a Tropicália e o pop psicodélico. Um retrato ousado e inovador da MPB.",
+        "biography": "Legal é um álbum da cantora e compositora brasileira Gal Costa, lançado em 1970, que sucede o registro experimental de 1969. O disco marca um retorno a um estilo mais acessível, combinando influências de música psicodélica, blues e R&B com arranjos ecléticos. A capa, criada pelo artista Hélio Oiticica, reforça a identidade tropicália da obra, mesclando arte visual e musical. Em faixas como “Eu Sou Terrível” e “London, London”, Costa apresenta sua versatilidade vocal e sintonia com as tendências internacionais, mantendo a sofisticação do MPB. ",
         "qtdMusicsAndDuration": "10 faixas - 33min 02s"
     },
 ]
