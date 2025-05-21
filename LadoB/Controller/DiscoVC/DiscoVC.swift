@@ -1,10 +1,3 @@
-//
-//  DiscoVC.swift
-//  LadoB
-//
-//  Created by Marcos on 14/05/25.
-//
-
 import UIKit
 
 class DiscoVC: UIViewController {

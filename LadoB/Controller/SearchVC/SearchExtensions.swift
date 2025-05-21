@@ -71,7 +71,7 @@ extension SearchVC: UICollectionViewDataSource {
                 title: album.title,
                 artist: album.artist,
                 image: UIImage(named: album.coverAsset),
-                bgColor: .purple1
+                bgColor: .purple2
             )
             return cell
         } else if let cell = collectionView.dequeueReusableCell(
@@ -83,7 +83,7 @@ extension SearchVC: UICollectionViewDataSource {
                 title: album.title,
                 artist: album.artist,
                 image: UIImage(named: album.coverAsset),
-                bgColor: .purple1
+                bgColor: .purple2
             )
             return cell
         }

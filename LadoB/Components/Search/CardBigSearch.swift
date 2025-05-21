@@ -15,6 +15,7 @@ class CardBigSearch: UIView {
         card.heightAnchor.constraint(equalToConstant: 150).isActive = true
         card.widthAnchor.constraint(equalToConstant: 150).isActive = true
         card.layer.cornerRadius = 4
+        card.clipsToBounds = true
         return card
     }()
     
@@ -159,6 +160,7 @@ class CardBigSearch: UIView {
         self.layer.cornerRadius = 12
         self.heightAnchor.constraint(equalToConstant: 272).isActive = true
         self.widthAnchor.constraint(equalToConstant: 174).isActive = true
+       
         setup()
     }
     

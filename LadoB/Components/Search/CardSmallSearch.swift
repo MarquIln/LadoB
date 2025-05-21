@@ -17,6 +17,9 @@ class CardSmallSearch: UIView {
         card.heightAnchor.constraint(equalToConstant: 102).isActive = true
         card.widthAnchor.constraint(equalToConstant: 102).isActive = true
         card.layer.cornerRadius = 4
+        card.clipsToBounds = true
+        card.contentMode = .scaleAspectFill
+        card.backgroundColor = .clear
         return card
     }()
     
@@ -92,6 +95,7 @@ class CardSmallSearch: UIView {
         self.layer.cornerRadius = 12
         self.heightAnchor.constraint(equalToConstant: 163).isActive = true
         self.widthAnchor.constraint(equalToConstant: 126).isActive = true
+        
         setup()
     }
     
