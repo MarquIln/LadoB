@@ -137,7 +137,14 @@ class FavoritesVC: UIViewController {
         super.viewDidLoad()
         configureSearchController()
         loadMockFavorites()
-        favorites = allAlbums.filter { $0.isFavorite == true }
+//        Persistence.saveToFaves(allAlbums[17])
+//        Persistence.saveToFaves(allAlbums[50])
+//        Persistence.saveToFaves(allAlbums[35])
+//        Persistence.saveToFaves(allAlbums[39])
+//        Persistence.saveToFaves(allAlbums[69])
+        //Persistence.saveToFaves(allAlbums[41])
+        //adicionei duas vezes os mesmo albuns sem querer, mas ta funcionando
+        favorites = Persistence.getFaves()
         groupFavoritesByInitialsAndPairs(from: favorites)
         setup()
 
