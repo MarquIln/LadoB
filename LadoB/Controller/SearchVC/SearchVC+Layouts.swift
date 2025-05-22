@@ -126,7 +126,7 @@ extension SearchResultsVC {
             subitems: [item, item, item]
         )
         
-        group.interItemSpacing = .fixed(26)
+        group.interItemSpacing = .fixed(21)
 
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .none

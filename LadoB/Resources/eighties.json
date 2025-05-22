@@ -1,115 +1,110 @@
-
 [
     {
-      "title": "Songs In The Key Of Life",
-      "artist": "Stevie Wonder",
-      "decade": 1970,
-      "genre": "Soul",
-      "coverAsset": "songs_in_the_key_of_life"
-    },
+          "title": "A Cor De Rosa Choque",
+          "artist": "Rita Lee",
+          "decade": 1980,
+          "genre": "Rock",
+          "coverAsset": "a_cor_de_rosa_choque",
+          "biography": "Lançado em 1982, A Cor de Rosa Choque é um dos álbuns mais emblemáticos de Rita Lee, destacando-se por sua abordagem feminista e irreverente. Combinando rock e pop, o disco apresenta letras bem-humoradas e críticas sociais, consolidando Rita como uma das maiores artistas brasileiras.",
+          "qtdMusicsAndDuration": "9 faixas - 35min 33s"
+      },
     {
-      "title": "Blue Train",
-      "artist": "John Coltrane",
-      "decade": 1970,
-      "genre": "Jazz",
-      "coverAsset": "blue_train"
-    },
+        "title": "Barão Vermelho",
+        "artist": "Barão Vermelho",
+        "decade": 1980,
+        "genre": "Rock",
+        "coverAsset": "barão_vermelho",
+        "biography": "Lançado em 1982, o álbum de estreia homônimo do Barão Vermelho apresenta uma fusão de rock, blues e pop. Com Cazuza nos vocais e Frejat na guitarra, o disco inclui a clássica 'Todo Amor Que Houver Nessa Vida'. É considerado um marco do rock brasileiro dos anos 80 ",
+        "qtdMusicsAndDuration": "10 faixas – 31min 10s"
+      },
     {
-      "title": "Transa",
-      "artist": "Caetano Veloso",
-      "decade": 1970,
-      "genre": "MPB",
-      "coverAsset": "transa"
-    },
+        "title": "Bad",
+        "artist": "Michael Jackson",
+        "decade": 1980,
+        "genre": "Pop",
+        "coverAsset": "bad",
+        "biography": "Lançado em 1987, Bad é o sétimo álbum de estúdio de Michael Jackson. Produzido por Quincy Jones, o disco apresenta uma série de hits como 'Smooth Criminal', 'Man in the Mirror' e a faixa-título 'Bad'. O álbum consolidou Jackson como o 'Rei do Pop' e vendeu milhões de cópias mundialmente.",
+        "qtdMusicsAndDuration": "11 faixas – 48min 39s"
+      },
     {
-      "title": "Roberto Carlos",
-      "artist": "Roberto Carlos",
-      "decade": 1970,
-      "genre": "MPB",
-      "coverAsset": "roberto_carlos"
-    },
+        "title": "Back In Black",
+        "artist": "AC/DC",
+        "decade": 1980,
+        "genre": "Hard Rock",
+        "coverAsset": "back_in_black",
+        "biography": "Lançado em 1980, este álbum marcou o retorno do AC/DC após a morte do vocalista Bon Scott. Com Brian Johnson nos vocais, o disco tornou-se um dos mais vendidos da história, consolidando o som pesado e energético da banda.",
+        "qtdMusicsAndDuration": "10 faixas – 42min 11s"
+      },
     {
-      "title": "Innervisions",
-      "artist": "Stevie Wonder",
-      "decade": 1970,
-      "genre": "Soul",
-      "coverAsset": "innervisions"
-    },
+        "title": "The Joshua Tree",
+        "artist": "U2",
+        "decade": 1980,
+        "genre": "Rock",
+        "coverAsset": "the_joshua_tree",
+        "biography": "Lançado em 1987, este álbum consolidou o U2 como uma das maiores bandas do mundo. Combinando rock atmosférico e letras espirituais, aborda temas como fé e política. Inclui hits como With or Without You e I Still Havent Found What Im Looking For.",
+        "qtdMusicsAndDuration": "11 faixas – 50min 11s"
+      },
     {
-      "title": "Tutu",
-      "artist": "Miles Davis",
-      "decade": 1970,
-      "genre": "Jazz",
-      "coverAsset": "tutu"
-    },
+        "title": "Thriller",
+        "artist": "Michael Jackson",
+        "decade": 1980,
+        "genre": "Pop",
+        "coverAsset": "thriller",
+        "biography": "Thriller é o sexto álbum de estúdio do cantor e compositor americano Michael Jackson, lançado em 29 de novembro de 1982 pela Epic Records. Produzido por Quincy Jones, com quem Jackson já havia colaborado em Off the Wall (1979), o disco foi gravado entre 14 de abril e 8 de novembro de 1982 no Westlake Recording Studios, em Los Angeles.",
+        "qtdMusicsAndDuration": "9 faixas – 42min 16s"
+      },
     {
-      "title": "Secos & Molhados",
-      "artist": "Secos & Molhados",
-      "decade": 1970,
-      "genre": "MPB",
-      "coverAsset": "secos_&_molhados"
-    },
+        "title": "Bleach",
+        "artist": "Nirvana",
+        "decade": 1980,
+        "genre": "Grunge",
+        "coverAsset": "bleach",
+        "biography": "'Bleach', álbum de estreia do Nirvana lançado em 1989, apresenta um som cru e pesado, influenciado pelo punk e pelo grunge. Gravado em Seattle com orçamento limitado, o disco inclui faixas como 'About a Girl' e 'Love Buzz', demonstrando o potencial da banda que revolucionaria o rock nos anos 90.",
+        "qtdMusicsAndDuration": "11 faixas – 37min 21s"
+      },
     {
-      "title": "A Love Supreme",
-      "artist": "John Coltrane",
-      "decade": 1970,
-      "genre": "Jazz",
-      "coverAsset": "a_love_supreme"
-    },
+        "title": "Legend",
+        "artist": "Bob Marley & The Wailers",
+        "decade": 1980,
+        "genre": "Reggae",
+        "coverAsset": "legend",
+        "biography": "Lançada em 1984, esta coletânea reúne os maiores sucessos de Bob Marley, como 'No Woman, No Cry' e 'Redemption Song'. É o álbum de reggae mais vendido de todos os tempos, introduzindo a mensagem de amor e unidade de Marley a um público global.",
+        "qtdMusicsAndDuration": "14 faixas – 51min 01s"
+      },
     {
-      "title": "Ac\u00fastico Mtv",
-      "artist": "C\u00e1ssia Eller",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "ac\u00fastico_mtv"
-    },
+          "title": "Tutu",
+          "artist": "Miles Davis",
+          "decade": 1980,
+          "genre": "Jazz",
+          "coverAsset": "tutu",
+          "biography": "Lançado em 1986, 'Tutu' marca uma nova fase na carreira de Miles Davis, incorporando elementos de jazz fusion, funk e música eletrônica. Produzido por Marcus Miller, o álbum é um tributo ao arcebispo sul-africano Desmond Tutu e reflete o compromisso de Davis com a inovação sonora. 'Tutu' rendeu a Davis o Grammy de Melhor Performance Instrumental de Jazz Solo em 1986.",
+          "qtdMusicsAndDuration": "8 faixas – 42min 05s"
+      },
     {
-      "title": "Matriz",
-      "artist": "Pitty",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "matriz"
-    },
+        "title": "Cabeça Dinossauro",
+        "artist": "Titãs",
+        "decade": 1980,
+        "genre": "Rock",
+        "coverAsset": "cabeça_dinossauro",
+        "biography": "Lançado em 1986, 'Cabeça Dinossauro' é o terceiro álbum de estúdio da banda brasileira Titãs. Considerado um dos álbuns mais importantes do rock nacional dos anos 80, o disco apresenta uma sonoridade agressiva e letras críticas à sociedade, religião e política. Faixas como 'Polícia' e 'Homem Primata' tornaram-se hinos de uma geração inconformada.",
+        "qtdMusicsAndDuration": "13 faixas – 38min 41s"
+      },
     {
-      "title": "Acabou Chorare",
-      "artist": "Novos Baianos",
-      "decade": 1970,
-      "genre": "MPB",
-      "coverAsset": "acabou_chorare"
-    },
+        "title": "Nebraska",
+        "artist": "Bruce Springsteen",
+        "decade": 1980,
+        "genre": "Rock",
+        "coverAsset": "nebraska",
+        "biography": "Lançado em 1982, 'Nebraska' é um álbum solo de Bruce Springsteen, gravado em casa com um gravador de quatro canais. Com uma abordagem minimalista e acústica, o disco apresenta narrativas sombrias sobre personagens marginalizados e temas como crime, desespero e redenção. Embora tenha sido um desvio do estilo rock habitual de Springsteen, 'Nebraska' é amplamente considerado uma de suas obras-primas.",
+        "qtdMusicsAndDuration": "10 faixas – 40min 50s"
+      },
     {
-      "title": "Sgt. Peppers Lonely Hearts Club Band",
-      "artist": "The Beatles",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "sgt._peppers_lonely_hearts_club_band"
-    },
-    {
-      "title": "The Blueprint",
-      "artist": "Jay-Z",
-      "decade": 1970,
-      "genre": "Hip Hop",
-      "coverAsset": "the_blueprint"
-    },
-    {
-      "title": "Jagged Little Pill",
-      "artist": "Alanis Morissette",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "jagged_little_pill"
-    },
-    {
-      "title": "Da Lama Ao Caos",
-      "artist": "Na\u00e7\u00e3o Zumbi",
-      "decade": 1970,
-      "genre": "Rock",
-      "coverAsset": "da_lama_ao_caos"
-    },
-    {
-      "title": "Illmatic",
-      "artist": "Nas",
-      "decade": 1970,
-      "genre": "Hip Hop",
-      "coverAsset": "illmatic"
-    }
+        "title": "Dois",
+        "artist": "Legião Urbana",
+        "decade": 1980,
+        "genre": "Rock",
+        "coverAsset": "dois",
+        "biography": "Dois é o segundo álbum de estúdio da banda brasileira Legião Urbana, lançado em julho de 1986 pela EMI-Odeon e produzido por Mayrton Bahia. Gravado entre janeiro e março de 1986, o disco consolidou o som pós-punk e new wave do grupo, com letras introspectivas e críticas sociais, destacando-se faixas como 'Eduardo e Mônica' e 'Índios'. Sob o peso do 'síndrome do segundo álbum', Renato Russo e companhia superaram as expectativas, reduzindo o repertório planejado de 20 para 12 músicas e construindo uma obra mais coesa e acessível.",
+        "qtdMusicsAndDuration": "9 faixas – 42min 10s"
+      },
 ]
