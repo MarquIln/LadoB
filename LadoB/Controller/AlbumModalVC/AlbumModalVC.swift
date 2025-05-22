@@ -62,51 +62,72 @@ class AlbumModalViewController: UIViewController {
     
     var discography: [Album] = []
     
-    func loadAllAlbums0() -> [Album] {
-        guard let url = Bundle.main.url(forResource: "mockedData_with_qtd", withExtension: "json") else {
-            print("Arquivo JSON não encontrado")
-            return []
-        }
-        
-        do {
-            let data = try Data(contentsOf: url)
-                    var decoded = try JSONDecoder().decode([Album].self, from: data)
-                    
-                    // Garante que todos os álbuns tenham um id
-                    decoded = decoded.map { album in
-                        if let id = album.id {
-                            return album
-                        } else {
-                            return Album(
-                                id: UUID(), // gera novo id
-                                title: album.title,
-                                artist: album.artist,
-                                decade: album.decade,
-                                genre: album.genre,
-                                coverAsset: album.coverAsset,
-                                isWished: album.isWished,
-                                isFavorite: album.isFavorite,
-                                isDisco: album.isDisco
-                            )
-                        }
-                    }
-
-                    return decoded
-        } catch {
-            print("Erro ao decodificar JSON: \(error)")
-            return []
-        }
+//    func loadAllAlbums0() -> [Album] {
+//        guard let url = Bundle.main.url(forResource: "mockedData_with_qtd", withExtension: "json") else {
+//            print("Arquivo JSON não encontrado")
+//            return []
+//        }
+//        
+//        do {
+//            let data = try Data(contentsOf: url)
+//                    var decoded = try JSONDecoder().decode([Album].self, from: data)
+//                    
+//                    // Garante que todos os álbuns tenham um id
+//                    decoded = decoded.map { album in
+//                        if let id = album.id {
+//                            return album
+//                        } else {
+//                            return Album(
+//                                id: UUID(), // gera novo id
+//                                title: album.title,
+//                                artist: album.artist,
+//                                decade: album.decade,
+//                                genre: album.genre,
+//                                coverAsset: album.coverAsset,
+//                                isWished: album.isWished,
+//                                isFavorite: album.isFavorite,
+//                                isDisco: album.isDisco
+//                            )
+//                        }
+//                    }
+//
+//                    return decoded
+//        } catch {
+//            print("Erro ao decodificar JSON: \(error)")
+//            return []
+//        }
+//    }
+    
+    func loadDiscographyFromPersistence() -> [Album] {
+        let allAlbums = Persistence.getAllAlbuns()
+        return allAlbums.filter { $0.artist == album.artist }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple1
-        self.sheetPresentationController?.preferredCornerRadius = 30
-        headerView.addButtonIsEnabled = true
-        if let album = album {
-                discography = loadAllAlbums0().filter { $0.artist == album.artist }
-        }
-        setup()
-        collectionView.reloadData()
+//        print("🔍 Album recebido na modal:", album.title, "ID:", album.id ?? UUID())
+            view.backgroundColor = .purple1
+            self.sheetPresentationController?.preferredCornerRadius = 30
+            headerView.addButtonIsEnabled = true
+
+            // Atualiza o álbum com a versão persistida
+            if let albumID = album.id {
+                let allAlbuns = Persistence.getAllAlbuns()
+                if let updated = allAlbuns.first(where: { $0.id == albumID }) {
+                    self.album = updated
+                }
+            }
+        let id = album.id
+            album.isWished = Persistence.getWishedAlbuns().contains(where: { $0.id == id })
+            album.isFavorite = Persistence.getFaves().contains(where: { $0.id == id })
+            album.isDisco = Persistence.getDiscoAlbuns().contains(where: { $0.id == id })
+
+
+            // Carrega discografia baseada no álbum atualizado
+            discography = loadDiscographyFromPersistence()
+            
+            setup()
+            collectionView.reloadData()
     }
     
     

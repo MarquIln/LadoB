@@ -169,3 +169,20 @@ extension SearchVC: UISearchBarDelegate {
         searchBar.resignFirstResponder()
     }
 }
+extension SearchVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let album: Album
+        if isFiltering {
+            album = filteredData[indexPath.item]
+        } else {
+            guard let sectionEnum = SearchSection(rawValue: indexPath.section),
+                  let item = dataBySection[sectionEnum]?[indexPath.item]
+            else { return }
+            album = item
+        }
+
+        let modal = AlbumModalViewController()
+        modal.album = album
+        present(modal, animated: true)
+    }
+}

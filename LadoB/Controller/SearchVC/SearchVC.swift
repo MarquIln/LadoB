@@ -168,5 +168,6 @@ class SearchVC: UIViewController {
         configureSearchController()
 
         setup()
+        collectionView.delegate = self
     }
 }
