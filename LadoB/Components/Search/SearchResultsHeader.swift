@@ -33,6 +33,7 @@ class SearchResultsHeaderView: UICollectionReusableView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .purple1
         setup()
     }
 
@@ -98,14 +99,6 @@ class SearchResultsHeaderView: UICollectionReusableView {
         let button = UIButton(configuration: config)
         button.showsMenuAsPrimaryAction = true
 
-        button.addAction(UIAction { [weak button] _ in
-            guard let button = button else { return }
-            var activeConfig = button.configuration
-            activeConfig?.baseForegroundColor = .purple1
-            activeConfig?.background.backgroundColor = .yellow1
-            button.configuration = activeConfig
-        }, for: .touchDown)
-
         let menuItems = [
             UIAction(title: "De A a Z", handler: { [weak self, weak button] _ in
                 self?.delegate?.didSelectSortOption("A-Z")
@@ -120,6 +113,14 @@ class SearchResultsHeaderView: UICollectionReusableView {
                 button?.resetDropdownButtonColors()
             })
         ]
+        
+        button.addAction(UIAction { [weak button] _ in
+            guard let button = button else { return }
+            var activeConfig = button.configuration
+            activeConfig?.baseForegroundColor = .purple1
+            activeConfig?.background.backgroundColor = .yellow1
+            button.configuration = activeConfig
+        }, for: .touchDown)
 
         button.menu = UIMenu(title: "Ordenar por", options: .displayInline, children: menuItems)
 
