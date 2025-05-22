@@ -15,11 +15,14 @@ class DiscoVC: UIViewController {
         return tableView
     }()
 
-    let emptyState: EmptyState = {
+    lazy var emptyState: EmptyState = {
         let view = EmptyState()
         view.titleText = "Nenhum LP salvo ainda"
         view.descriptionText = "Os álbuns, coletâneas e listas cadastradas e criadas por você aparecerão aqui"
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.buttonAction = { [weak self] in
+            self?.tabBarController?.selectedIndex = 0
+        }
         return view
     }()
 
