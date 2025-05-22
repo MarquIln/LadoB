@@ -2,7 +2,7 @@
 //  SearchResultsVC.swift
 //  LadoB
 //
-//  Created by Eduardo Ferrari on 22/05/25.
+//  Created by Carolina Silva dos Santos on 19/05/25.
 //
 
 import UIKit
