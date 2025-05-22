@@ -142,26 +142,40 @@ extension SearchVC: ViewCodeProtocol {
     }
 }
 
+extension SearchResultsVC: ViewCodeProtocol {
+    func addSubviews() {
+        view.addSubview(collectionView)
+    }
+    
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            
+        ])
+    }
+}
+
 extension SearchVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text?.lowercased(), !searchText.isEmpty else {
-            filteredData = []
-            collectionView.reloadData()
-            return
-        }
+          guard let text = searchController.searchBar.text?.lowercased(),
+                let resultsVC = searchController.searchResultsController as? SearchResultsVC else {
+              if let resultsVC = searchController.searchResultsController as? SearchResultsVC {
+                  resultsVC.updateResults(with: [])
+                  resultsVC.searchText = ""
+              }
+              return
+          }
+          
+          let allAlbums = dataBySection.flatMap { $0.value }
+          let uniqueAlbums = Dictionary(grouping: allAlbums, by: { "\($0.title.lowercased())-\($0.artist.lowercased())" })
+              .compactMap { $0.value.first }
 
-        let allAlbums = dataBySection.flatMap { $0.value }
-
-        let uniqueAlbums = Dictionary(grouping: allAlbums, by: { "\($0.title.lowercased())-\($0.artist.lowercased())" })
-            .compactMap { $0.value.first }
-
-        filteredData = uniqueAlbums.filter {
-            $0.title.lowercased().contains(searchText) ||
-            $0.artist.lowercased().contains(searchText)
-        }
-
-        collectionView.reloadData()
-    }
+          resultsVC.searchText = text
+          resultsVC.updateResults(with: uniqueAlbums)
+      }
 }
 
 extension SearchVC: UISearchBarDelegate {
@@ -184,5 +198,68 @@ extension SearchVC: UICollectionViewDelegate {
         let modal = AlbumModalViewController()
         modal.album = album
         present(modal, animated: true)
+    }
+}
+
+
+extension SearchResultsVC: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return filteredData.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: SearchResultsCell.identifier,
+            for: indexPath
+        ) as? SearchResultsCell else {
+            fatalError()
+        }
+
+        let album = filteredData[indexPath.item]
+        
+        cell.config(albumCover: UIImage(named: album.coverAsset), artistName: album.artist, albumName: album.title)
+
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        if kind == UICollectionView.elementKindSectionHeader {
+            guard let header = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: SearchResultsHeaderView.identifier,
+                for: indexPath
+            ) as? SearchResultsHeaderView else {
+                return UICollectionReusableView()
+            }
+
+            header.delegate = self
+            return header
+        }
+
+        return UICollectionReusableView()
+    }
+}
+
+extension SearchResultsVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let album = filteredData[indexPath.item]
+        let modal = AlbumModalViewController()
+        modal.album = album
+        present(modal, animated: true)
+    }
+}
+
+extension SearchResultsVC: SearchResultsHeaderViewDelegate {
+    
+    func didSelectFilter(_ filter: String) {
+        self.activeFilter = filter
+        applyFilters()
+    }
+    
+    func didSelectSortOption(_ sortOption: String) {
+        self.sortOption = sortOption
+        applyFilters()
     }
 }

@@ -82,3 +82,84 @@ extension SearchVC {
        }
     
 }
+extension SearchResultsVC {
+    
+    func filterItemLayout() -> NSCollectionLayoutSection {
+            
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .absolute(126),
+            heightDimension: .absolute(163)
+        )
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .estimated(126),
+            heightDimension: .absolute(163)
+        )
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        group.interItemSpacing = .fixed(10)
+
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        section.interGroupSpacing = 8.0
+        section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 16, trailing: 16)
+        
+        return section
+    }
+    
+    func smallItemGridLayout() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .absolute(106),
+            heightDimension: .absolute(144)
+        )
+        
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .estimated(106),
+            heightDimension: .absolute(144)
+        )
+        
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: groupSize,
+            subitems: [item, item, item]
+        )
+        
+        group.interItemSpacing = .fixed(21)
+
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .none
+        section.interGroupSpacing = 10.0
+        section.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 16, trailing: 16)
+        
+        let headerSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .absolute(48)
+        )
+
+        let header = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: headerSize,
+            elementKind: UICollectionView.elementKindSectionHeader,
+            alignment: .top
+        )
+        header.pinToVisibleBounds = true
+
+        section.boundarySupplementaryItems = [header]
+        
+        return section
+    }
+    
+    func createResultsLayout() -> UICollectionViewLayout {
+        
+        let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
+            if sectionIndex == 0 {
+                return self.smallItemGridLayout()
+            } else {
+                return self.smallItemGridLayout()
+            }
+        }
+        
+        return layout
+    }
+    
+}
