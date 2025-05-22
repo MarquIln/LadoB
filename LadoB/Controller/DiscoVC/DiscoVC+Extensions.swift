@@ -43,6 +43,25 @@ extension DiscoVC: UITableViewDelegate, UITableViewDataSource {
         return sectionTitles.count
     }
 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let album = Persistence.getDiscoAlbuns()[indexPath.section]
+//        if isFiltering {
+//            album = filteredData[indexPath.item]
+//        } else {
+//            guard let sectionEnum = SearchSection(rawValue: indexPath.section),
+//                  let item = dataBySection[sectionEnum]?[indexPath.item]
+//            else { return }
+//            album = item
+//        }
+
+        let modal = AlbumModalViewController()
+        modal.album = album
+        present(modal, animated: true)
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let key = sectionTitles[section]
         return groupedAlbums[key]?.count ?? 0
@@ -72,7 +91,7 @@ extension DiscoVC: UITableViewDelegate, UITableViewDataSource {
         if let album = groupedAlbums[key]?[indexPath.row] {
             cell.config(with: album)
         }
-
+    
         return cell
     }
 }

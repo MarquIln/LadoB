@@ -6,6 +6,7 @@
 import UIKit
 
 // MARK: - ViewCodeProtocol
+
 extension WishListVC: ViewCodeProtocol {
     func addSubviews() {
         if wishedAlbuns.isEmpty {
@@ -85,4 +86,16 @@ extension WishListVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
     }
+}
+extension WishListVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let albumSelecionado = (searchController.isActive && !filteredAlbums.isEmpty)
+            ? filteredAlbums[indexPath.row]
+            : wishedAlbuns[indexPath.row]
+
+        let modal = AlbumModalViewController()
+        modal.album = albumSelecionado
+        present(modal, animated: true)
+    }
+
 }

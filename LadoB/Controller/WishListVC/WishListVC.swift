@@ -30,6 +30,7 @@ class WishListVC: UIViewController {
         collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -6)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = .purple2
         collectionView.register(CardWishList.self, forCellWithReuseIdentifier: CardWishList.identifier)
         return collectionView
@@ -48,6 +49,20 @@ class WishListVC: UIViewController {
         searchController.searchBar.delegate = self
         definesPresentationContext = true
     }
+    
+    func updateLayout() {
+        wishListCollectionView.removeFromSuperview()
+        emptyStateWishList.removeFromSuperview()
+        addSubviews()
+        setupConstraints()
+        wishListCollectionView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        wishedAlbuns = Persistence.getWishedAlbuns()
+        updateLayout()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,5 +80,7 @@ class WishListVC: UIViewController {
         wishedAlbuns = Persistence.getWishedAlbuns()
 
         setup()
+        updateLayout()
+        //wishListCollectionView.reloadData()
     }
 }

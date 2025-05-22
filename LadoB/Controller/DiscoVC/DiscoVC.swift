@@ -38,11 +38,15 @@ class DiscoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        discoAlbuns = Persistence.getDiscoAlbuns()
+        tableView.reloadData()
         setup()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let updatedDiscoAlbuns = Persistence.getDiscoAlbuns()
+        groupAndSortAlbums(updatedDiscoAlbuns)
         updateAddButtonIcon()
     }
 
@@ -68,10 +72,10 @@ class DiscoVC: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
 
-            emptyState.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 321),
+            
             emptyState.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             emptyState.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            emptyState.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            emptyState.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
     }
 
@@ -114,9 +118,15 @@ class DiscoVC: UIViewController {
     }
 
     func updateAlbums(_ albums: [Album]) {
-        groupAndSortAlbums(albums)
+        groupAndSortAlbums(Persistence.getDiscoAlbuns())
         tableView.reloadData()
     }
+    
+//    func getAlbum(by indexPath: IndexPath) -> Album {
+//        let albumOfSection = groupedAlbums[indexPath.section]
+//        let album = albumOfSection[indexPath.row]
+//        return album
+//    }
 
     private func groupAndSortAlbums(_ albums: [Album]) {
         let sorted = albums.sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
@@ -124,5 +134,6 @@ class DiscoVC: UIViewController {
         sectionTitles = groupedAlbums.keys.sorted()
         emptyState.isHidden = !albums.isEmpty
         tableView.isHidden = albums.isEmpty
+        tableView.reloadData()
     }
 }

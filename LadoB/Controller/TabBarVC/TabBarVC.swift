@@ -34,7 +34,7 @@ class TabBarViewController: UITabBarController {
     
     lazy var wishListTabBar: UINavigationController = {
         let tabItem = UITabBarItem()
-        tabItem.title = "WishList"
+        tabItem.title = "No radar"
         tabItem.image = UIImage(named: "custom.record.circle.fill.badge.sparkles.alt")
         
         let rootViewController = WishListVC()

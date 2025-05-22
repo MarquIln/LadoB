@@ -48,9 +48,9 @@ class Card: UIView {
         return stackView
     }()
     
-    @objc func handleTap() {
-        print("TAP")
-    }
+//    @objc func handleTap() {
+//        print("TAP")
+//    }
 
     lazy var albumStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
@@ -70,10 +70,6 @@ class Card: UIView {
         stackView.alignment = .center
         stackView.spacing = 8
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        
-        stackView.addGestureRecognizer(tapGesture)
         
         return stackView
     }()
