@@ -99,12 +99,14 @@ extension DiscoVC: UITableViewDelegate, UITableViewDataSource {
 extension DiscoVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text?.lowercased(), !text.isEmpty else {
-            updateAlbums(discoAlbuns)
+            updateAlbums(Persistence.getDiscoAlbuns())
             return
         }
 
-        let filtered = discoAlbuns.filter {
-            $0.title.lowercased().hasPrefix(text) || $0.artist.lowercased().hasPrefix(text)
+        let allDiscoAlbuns = Persistence.getDiscoAlbuns()
+        let filtered = allDiscoAlbuns.filter {
+            $0.title.lowercased().hasPrefix(text) ||
+            $0.artist.lowercased().hasPrefix(text)
         }
 
         updateAlbums(filtered)
@@ -113,7 +115,7 @@ extension DiscoVC: UISearchResultsUpdating {
 
 extension DiscoVC: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        updateAlbums(allAlbums)
+        updateAlbums(discoAlbuns)
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

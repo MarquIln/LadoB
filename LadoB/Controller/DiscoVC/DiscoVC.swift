@@ -55,15 +55,15 @@ class DiscoVC: UIViewController {
 
 
     func configureSearchController() {
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Álbum, Artista, Banda, Gênero"
-        searchController.searchBar.searchTextField.font = Fonts.bodyBold
-        searchController.searchBar.autocapitalizationType = .none
-        searchController.searchBar.delegate = self
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
-    }
+            searchController.searchResultsUpdater = self
+            searchController.obscuresBackgroundDuringPresentation = false
+            searchController.searchBar.placeholder = "Álbum, Artista, Banda, Gênero"
+            searchController.searchBar.searchTextField.font = Fonts.bodyBold
+            searchController.searchBar.autocapitalizationType = .none
+            searchController.searchBar.delegate = self
+            navigationItem.searchController = searchController
+            definesPresentationContext = true
+        }
 
     func configureLayout() {
         view.addSubview(tableView)
@@ -121,7 +121,7 @@ class DiscoVC: UIViewController {
     }
 
     func updateAlbums(_ albums: [Album]) {
-        groupAndSortAlbums(Persistence.getDiscoAlbuns())
+        groupAndSortAlbums(albums)
         tableView.reloadData()
     }
     
