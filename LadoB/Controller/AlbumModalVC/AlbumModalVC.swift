@@ -52,9 +52,9 @@ class AlbumModalViewController: UIViewController {
         cv.register(BiographyCVCell.self, forCellWithReuseIdentifier: BiographyCVCell.identifier)
         cv.register(DiscographyCVCell.self, forCellWithReuseIdentifier: DiscographyCVCell.identifier)
         cv.register(
-            SectionHeaderView.self,
+            SectionHeaderView2.self,
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: SectionHeaderView.identifier
+            withReuseIdentifier: SectionHeaderView2.identifier
         )
 
         return cv

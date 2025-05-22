@@ -143,9 +143,9 @@ extension AlbumModalViewController: UICollectionViewDataSource {
         if indexPath.section == 3 {
             let header = collectionView.dequeueReusableSupplementaryView(
                 ofKind: kind,
-                withReuseIdentifier: SectionHeaderView.identifier,
+                withReuseIdentifier: SectionHeaderView2.identifier,
                 for: indexPath
-            ) as! SectionHeaderView
+            ) as! SectionHeaderView2
             header.setTitle("Discografia")
             return header
         }

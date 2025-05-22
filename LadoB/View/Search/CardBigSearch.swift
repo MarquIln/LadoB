@@ -47,18 +47,18 @@ class CardBigSearch: UIView {
     }()
     
     private lazy var arrowButton: UIButton = {
-        var button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        let config = UIImage.SymbolConfiguration(pointSize: 16, weight: .bold)
-        let image = UIImage(systemName: "chevron.right", withConfiguration: config)
-        button.setImage(image, for: .normal)
-        button.tintColor = .yellow1
-        button.contentHorizontalAlignment = .right
-        button.heightAnchor.constraint(equalToConstant: 32).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 16).isActive = true
-        button.addTarget(self, action: #selector(buttonTappedArrow), for: .touchUpInside)
-        return button
-    }()
+            var button = UIButton()
+            button.translatesAutoresizingMaskIntoConstraints = false
+            let config = UIImage.SymbolConfiguration(pointSize: 16, weight: .bold)
+            let image = UIImage(systemName: "chevron.right", withConfiguration: config)
+            button.setImage(image, for: .normal)
+            button.tintColor = .yellow1
+            button.contentHorizontalAlignment = .right
+            button.heightAnchor.constraint(equalToConstant: 32).isActive = true
+            button.widthAnchor.constraint(equalToConstant: 16).isActive = true
+            button.addTarget(self, action: #selector(buttonTappedArrow), for: .touchUpInside)
+            return button
+        }()
     
     private lazy var shareButton: UIButton = {
         var button = UIButton()
@@ -84,13 +84,13 @@ class CardBigSearch: UIView {
     }()
     
     lazy var arrowStack: UIStackView = {
-        var stackView = UIStackView(arrangedSubviews: [arrowButton])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.alignment = .fill
-        stackView.distribution = .fill
-        return stackView
-    }()
+            var stackView = UIStackView(arrangedSubviews: [arrowButton])
+            stackView.translatesAutoresizingMaskIntoConstraints = false
+            stackView.axis = .vertical
+            stackView.alignment = .fill
+            stackView.distribution = .fill
+            return stackView
+        }()
     
     lazy var shareStack: UIStackView = {
         var stackView = UIStackView(arrangedSubviews: [shareButton])
@@ -145,10 +145,16 @@ class CardBigSearch: UIView {
         }
     }
     
-    
+    var goModalAction: () -> Void = {}
+        
     @objc func buttonTappedArrow() {
         //fazer ação do botão Arrow
+        print ("cliquei no botão arrow")
+        goModalAction()
+        //present(albumModalVC, animated: true)
     }
+        
+       
     
     @objc func buttonTappedShare() {
         //fazer ação do botão Share

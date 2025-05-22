@@ -30,6 +30,9 @@ class LargeCardCVCell: UICollectionViewCell {
         super.init(frame: frame)
         setup()
         contentView.clipsToBounds = true
+        cardView.goModalAction = { [weak self] in
+                self?.onGoModal?() // Repassa o clique do botão para quem usar a célula
+            }
     }
     
     required init?(coder: NSCoder) {
@@ -43,6 +46,9 @@ class LargeCardCVCell: UICollectionViewCell {
         backgroundImage.image = bgImage
         backgroundImage.backgroundColor = bgColor
     }
+    var onGoModal: (() -> Void)?
+        
+        
 }
 
 extension LargeCardCVCell: ViewCodeProtocol {

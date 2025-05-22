@@ -85,6 +85,11 @@ extension SearchVC: UICollectionViewDataSource {
                 image: UIImage(named: album.coverAsset),
                 bgColor: .purple2
             )
+            cell.onGoModal = { [weak self] in
+                                let modal = AlbumModalViewController()
+                                modal.album = album
+                                self?.present(modal, animated: true)
+                            }
             return cell
         }
         

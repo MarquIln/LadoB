@@ -7,8 +7,8 @@
 
 import UIKit
 
-class SectionHeaderView: UICollectionReusableView {
-    static let identifier = "SectionHeaderView"
+class SectionHeaderView2: UICollectionReusableView {
+    static let identifier = "SectionHeaderView2"
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
