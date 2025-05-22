@@ -9,9 +9,15 @@ import UIKit
 
 extension FavoritesVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        let album = Persistence.getFaves()[indexPath.section]
+            
+            let modal = AlbumModalViewController()
+            modal.album = album
+            present(modal, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
-}
+    
 
 extension FavoritesVC: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {

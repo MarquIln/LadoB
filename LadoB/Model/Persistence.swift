@@ -148,7 +148,8 @@ struct Persistence {
         if let data = UserDefaults.standard.data(forKey: favesAlbunsKey) {
             do {
                 let albumList = try JSONDecoder().decode([Album].self, from: data)
-                return albumList
+                let sortedList = albumList.sorted { $0.title.lowercased() < $1.title.lowercased() }
+                return sortedList
             } catch {
                 print("Erro ao decodificar favesAlbuns: \(error.localizedDescription)")
             }
