@@ -2,7 +2,7 @@
 //  SearchResultsHeader.swift
 //  LadoB
 //
-//  Created by Eduardo Ferrari on 22/05/25.
+//  Created by Carolina Silva dos Santos on 20/05/25.
 //
 
 import UIKit
@@ -20,6 +20,7 @@ class SearchResultsHeaderView: UICollectionReusableView {
     private let filters = ["Artistas", "Álbuns", "Gênero"]
     private var selectedFilter: String?
     private var filterButtons: [UIButton] = []
+    private var currentSortOption: String = "A-Z"
 
     private lazy var stackView: UIStackView = {
         let stack = UIStackView()
@@ -92,7 +93,7 @@ class SearchResultsHeaderView: UICollectionReusableView {
         var config = UIButton.Configuration.plain()
         config.image = UIImage(systemName: "slider.horizontal.3")
         config.baseForegroundColor = .pink1
-        config.contentInsets = NSDirectionalEdgeInsets(top: 6, leading: 12, bottom: 6, trailing: 12)
+        config.contentInsets = NSDirectionalEdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16)
         config.background.backgroundColor = .pink5
         config.background.cornerRadius = 16
 
@@ -122,8 +123,11 @@ class SearchResultsHeaderView: UICollectionReusableView {
             button.configuration = activeConfig
         }, for: .touchDown)
 
-        button.menu = UIMenu(title: "Ordenar por", options: .displayInline, children: menuItems)
-
+        button.menu = UIMenu(
+                title: "Ordenar por",
+                options: .displayInline,
+                children: makeSortMenuActions(for: button)
+            )
         return button
     }
     
@@ -162,6 +166,62 @@ class SearchResultsHeaderView: UICollectionReusableView {
         selectedFilter = selected
         delegate?.didSelectFilter(selected)
     }
+    
+    private func updateDropdownMenu(for button: UIButton) {
+        let menuItems = [
+            UIAction(
+                title: "De A a Z",
+                state: currentSortOption == "A-Z" ? .on : .off,
+                handler: { [weak self] _ in
+                    self?.delegate?.didSelectSortOption("A-Z")
+                    self?.currentSortOption = "A-Z"
+                    self?.updateDropdownMenu(for: button)
+                    button.resetDropdownButtonColors()
+                }
+            ),
+            UIAction(
+                title: "De Z a A",
+                state: currentSortOption == "Z-A" ? .on : .off,
+                handler: { [weak self] _ in
+                    self?.delegate?.didSelectSortOption("Z-A")
+                    self?.currentSortOption = "Z-A"
+                    self?.updateDropdownMenu(for: button)
+                    button.resetDropdownButtonColors()
+                }
+            ),
+            UIAction(
+                title: "Por Ano",
+                state: currentSortOption == "Ano" ? .on : .off,
+                handler: { [weak self] _ in
+                    self?.delegate?.didSelectSortOption("Ano")
+                    self?.currentSortOption = "Ano"
+                    self?.updateDropdownMenu(for: button)
+                    button.resetDropdownButtonColors()
+                }
+            )
+        ]
+        button.menu = UIMenu(title: "Ordenar por", options: .displayInline, children: menuItems)
+    }
+
+    
+    private func makeSortMenuActions(for button: UIButton) -> [UIAction] {
+        let options = ["A-Z", "Z-A", "Ano"]
+        let titles = ["De A a Z", "De Z a A", "Por Ano"]
+
+        return zip(options, titles).map { (option, title) in
+            UIAction(
+                title: title,
+                state: currentSortOption == option ? .on : .off,
+                handler: { [weak self] _ in
+                    self?.delegate?.didSelectSortOption(option)
+                    self?.currentSortOption = option
+                    self?.updateDropdownMenu(for: button)
+                    button.resetDropdownButtonColors()
+                }
+            )
+        }
+    }
+    
 }
 private extension UIButton {
     func resetDropdownButtonColors() {
