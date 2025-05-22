@@ -31,6 +31,13 @@ class SearchResultsVC: UIViewController {
     
     func applyFilters() {
         var data = allResults
+        
+        if !searchText.isEmpty && activeFilter == "Todos" {
+            data = data.filter {
+                $0.title.lowercased().hasPrefix(searchText) ||
+                $0.artist.lowercased().hasPrefix(searchText)
+            }
+        }
 
         switch activeFilter {
         case "Artistas":
