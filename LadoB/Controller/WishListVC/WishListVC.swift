@@ -40,11 +40,13 @@ class WishListVC: UIViewController {
 
     private func configureSearchController() {
         searchController.searchResultsUpdater = self
+        searchController.searchBar.searchTextField.font = Fonts.text
+        searchController.searchBar.setValue("Cancelar", forKey: "cancelButtonText")
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Álbum, Artista, Banda"
-        searchController.searchBar.searchTextField.font = Fonts.bodyBold
         searchController.searchBar.autocapitalizationType = .none
-        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.setValue(UIColor.yellow1, forKey: "tintColor")
+        searchController.searchBar.searchTextField.tintColor = .yellow1
+        searchController.searchBar.searchTextField.textColor = .pink2
         navigationItem.searchController = searchController
         searchController.searchBar.delegate = self
         definesPresentationContext = true
