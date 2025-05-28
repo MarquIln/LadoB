@@ -1,0 +1,236 @@
+[
+    {
+        "title": "Rumours",
+        "artist": "Fleetwood Mac",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "rumours",
+        "biography": "Rumours é o décimo primeiro álbum de estúdio da banda britânico-americana Fleetwood Mac, lançado em 4 de fevereiro de 1977 pela Warner Bros. Records. Registrado em 1976 enquanto os membros da banda enfrentavam divisões pessoais e excessos de drogas, o disco reflete tensões e emoções intensas em letras sobre relacionamentos tumultuados. Produzido pela própria banda com Ken Caillat e Richard Dashut, Rumours apresenta harmonias vocais marcantes e arranjos pop-rock refinados em sucessos como 'Go Your Own Way' e 'Dreams'. ",
+        "qtdMusicsAndDuration": "11 faixas - 39 min 03s"
+    },
+    {
+        "title": "Bat Out Of Hell",
+        "artist": "Meat Loaf",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "bat_out_of_hell",
+        "biography": "Bat Out of Hell é o álbum de estreia solo do cantor americano Meat Loaf, lançado em 21 de outubro de 1977 pela Cleveland International/Epic Records e produzido por Todd Rundgren. Desenvolvido a partir do musical Neverland, de Jim Steinman, o disco apresenta um rock teatral com influências de Wagner, arranjos grandiosos e narrativas épicas. Faixas como 'Paradise by the Dashboard Light' e 'Two Out of Three Ain’t Bad' destacam a performance vocal dramática de Meat Loaf e a parceria criativa com Steinman. Comercialmente, o álbum vendeu mais de 43 milhões de cópias globalmente.",
+        "qtdMusicsAndDuration": "7 faixas - 46 min 25s"
+    },
+    {
+        "title": "Nevermind",
+        "artist": "Nirvana",
+        "decade": 1990,
+        "genre": "Grunge",
+        "coverAsset": "nevermind",
+        "biography": "Nevermind é o segundo álbum de estúdio da banda americana Nirvana, lançado em 24 de setembro de 1991 pela gravadora DGC Records. Produzido por Butch Vig, o disco foi gravado nos estúdios Sound City e combina elementos de grunge, punk rock e pop melódico, marcando uma evolução na sonoridade crua que caracterizava a cena de Seattle. O single de abertura, “Smells Like Teen Spirit”, lançado em 10 de setembro de 1991, tornou-se um hino geracional, impulsionando o álbum ao topo das paradas e consolidando o grunge como fenômeno global.",
+        "qtdMusicsAndDuration": "13 faixas - 49min 07s"
+    },
+    {
+        "title": "Construção",
+        "artist": "Chico Buarque",
+        "decade": 1970,
+        "genre": "MPB",
+        "coverAsset": "construção",
+        "biography": "Construção é o oitavo álbum de estúdio do cantor e compositor brasileiro Chico Buarque, lançado em dezembro de 1971 durante o regime militar no Brasil. Composições foram criadas entre o exílio de Buarque na Itália e seu retorno ao país, refletindo denúncias à censura e ao autoritarismo por meio de letras poéticas e críticas, especialmente na faixa-título. O álbum carrega temáticas sociais e políticas, abordando condições de trabalho e repressão, mas também diferencia-se por arranjos sofisticados assinados por Rogério Duprat.",
+        "qtdMusicsAndDuration": "10 faixas - 31min 10s"
+    },
+    {
+        "title": "Revolver",
+        "artist": "The Beatles",
+        "decade": 1960,
+        "genre": "Rock",
+        "coverAsset": "revolver",
+        "biography": "Revolver é o sétimo álbum de estúdio da banda inglesa The Beatles, lançado em 5 de agosto de 1966, acompanhado pelo single duplo 'Eleanor Rigby'/'Yellow Submarine'. Considerado um marco na história da música, marca a transição do grupo de uma banda de performances ao vivo para um coletivo centrado em estúdio, explorando técnicas inovadoras de gravação e produção. As composições refletem influências de psicodelia, música clássica indiana e R&B, com faixas emblemáticas como 'Tomorrow Never Knows' e 'Eleanor Rigby'. Produzido por George Martin, o álbum apresenta arranjos sofisticados, experimentação de fita e camadas sonoras que ampliaram os limites do pop rock.",
+        "qtdMusicsAndDuration": "14 faixas - 35min 01s"
+    },
+    {
+        "title": "Time Out",
+        "artist": "The Dave Brubeck Quartet",
+        "decade": 1950,
+        "genre": "Jazz",
+        "coverAsset": "time_out",
+        "biography": "Time Out é um álbum de estúdio do The Dave Brubeck Quartet, lançado em 14 de dezembro de 1959 pela Columbia Records. O trabalho se destaca pelo uso inovador de assinaturas de tempo pouco usuais no jazz, como 9/8, 6/4 e 5/4, conferindo uma sonoridade única ao gênero. A faixa 'Take Five', composta por Paul Desmond, tornou-se a primeira gravação de jazz a vender mais de um milhão de cópias e é um clássico instantâneo do repertório mundial.",
+        "qtdMusicsAndDuration": "7 faixas - 38min 30s"
+    },
+    {
+        "title": "Off The Wall",
+        "artist": "Michael Jackson",
+        "decade": 1970,
+        "genre": "Pop",
+        "coverAsset": "off_the_wall",
+        "biography": "Off the Wall é o quinto álbum de estúdio de Michael Jackson, lançado em 10 de agosto de 1979 pela Epic Records e produzido por Quincy Jones. Representou um divisor de águas para Jackson, incorporando disco, funk, pop, R&B e baladas sofisticadas, enquanto o artista buscava afirmar sua independência criativa. Com composições de Stevie Wonder, Paul McCartney, Rod Temperton e três faixas escritas pelo próprio Jackson.",
+        "qtdMusicsAndDuration": "10 faixas - 42min 24s"
+    },
+    {
+        "title": "Legal",
+        "artist": "Gal Costa",
+        "decade": 1970,
+        "genre": "MPB",
+        "coverAsset": "legal",
+        "biography": "Legal é um álbum da cantora e compositora brasileira Gal Costa, lançado em 1970, que sucede o registro experimental de 1969. O disco marca um retorno a um estilo mais acessível, combinando influências de música psicodélica, blues e R&B com arranjos ecléticos. A capa, criada pelo artista Hélio Oiticica, reforça a identidade tropicália da obra, mesclando arte visual e musical. Em faixas como “Eu Sou Terrível” e “London, London”, Costa apresenta sua versatilidade vocal e sintonia com as tendências internacionais, mantendo a sofisticação do MPB. ",
+        "qtdMusicsAndDuration": "10 faixas - 33min 02s"
+    },
+    {
+        "title": "In Rainbows",
+        "artist": "Radiohead",
+        "decade": 2000,
+        "genre": "Alternative Rock",
+        "coverAsset": "in_rainbows",
+        "biography": "In Rainbows é o sétimo álbum de estúdio da banda britânica Radiohead, lançado inicialmente por meio de download no site oficial em 10 de outubro de 2007, em um modelo pay-what-you-want que revolucionou a indústria musical. Gravado em locações como Halswell House, Tottenham House e no Hospital Club em Londres, o álbum apresenta letras mais pessoais e menos políticas que seus trabalhos anteriores. Musicalmente, mescla art rock, experimental rock, art pop e eletrônica, mantendo um equilíbrio entre acessibilidade e inovação sonora. ",
+        "qtdMusicsAndDuration": "10 faixas - 42min 39s"
+    },
+    {
+        "title": "The Miseducation Of Lauryn Hill",
+        "artist": "Lauryn Hill",
+        "decade": 1990,
+        "genre": "R&B",
+        "coverAsset": "the_miseducation_of_lauryn_hill",
+        "biography": "The Miseducation of Lauryn Hill é o álbum solo de estreia da rapper e cantora americana Lauryn Hill, lançado em 19 de agosto de 1998. Quase integralmente escrito e produzido por Hill, foi gravado após a pausa do grupo The Fugees, refletindo seu desejo de introspecção e autonomia artística. Como um álbum conceitual sobre o aprendizado do amor, aborda complexidades de relacionamentos, conflitos interpessoais, maternidade e fé, especialmente na faixa 'To Zion'.",
+        "qtdMusicsAndDuration": "16 faixas - 77min 39s"
+    },
+    {
+        "title": "Lemonade",
+        "artist": "Beyoncé",
+        "decade": 2010,
+        "genre": "R&B",
+        "coverAsset": "lemonade",
+        "biography": "Lemonade é o sexto álbum de estúdio de Beyoncé Knowles, lançado em 23 de abril de 2016, acompanhado por um filme visual de 65 minutos. Este trabalho conceitual explora temas de infidelidade, identidade negra e empoderamento feminino, narrando a jornada emocional da artista após um episódio de traição conjugal. ",
+        "qtdMusicsAndDuration": "12 faixas – 45min 49s"
+    },
+    {
+        "title": "Mezzanine",
+        "artist": "Massive Attack",
+        "decade": 1990,
+        "genre": "Electronic",
+        "coverAsset": "mezzanine",
+        "biography": "Mezzanine, lançado em 20 de abril de 1998, é o terceiro álbum de estúdio do grupo inglês Massive Attack. O álbum representa uma virada para um clima mais sombrio e atmosférico, incorporando influências do post-punk britânico, da música industrial, do hip hop e do dub em sua sonoridade trip hop. Gravações tensas entre os membros da banda contribuíram para um processo criativo intenso, resultando em faixas marcantes como 'Teardrop' (com Elizabeth Fraser) e 'Angel' (com Horace Andy). Produzido em parceria com Neil Davidge, Mezzanine foi o primeiro trabalho de Massive Attack sem a participação do rapper Tricky e o derradeiro com Mushroom, ressaltando as dinâmicas internas do grupo na época.",
+        "qtdMusicsAndDuration": "11 faixas – 65min 31s"
+    },
+    {
+        "title": "Am",
+        "artist": "Arctic Monkeys",
+        "decade": 2010,
+        "genre": "Rock",
+        "coverAsset": "am",
+        "biography": "Lançado em 2013, AM é o quinto álbum de estúdio da banda britânica Arctic Monkeys. O disco apresenta uma fusão de rock alternativo com elementos de hip-hop e R&B, evidenciada em faixas como 'Do I Wanna Know?' e 'Why'd You Only Call Me When You're High?'. Produzido por James Ford, o álbum recebeu aclamação crítica por sua maturidade sonora e letras introspectivas.",
+        "qtdMusicsAndDuration": "12 faixas – 41min 43s"
+    },
+    {
+        "title": "Abbey Road",
+        "artist": "The Beatles",
+        "decade": 1960,
+        "genre": "Rock",
+        "coverAsset": "abbey_road",
+        "biography": "Lançado em 1969, Abbey Road é o 11º álbum de estúdio dos Beatles. Destaca-se pela icônica capa dos quatro membros atravessando a rua e por faixas como 'Come Together' e 'Here Comes the Sun'. O lado B do disco apresenta um medley de canções que demonstra a coesão e criatividade da banda em sua fase final.",
+        "qtdMusicsAndDuration": "17 faixas – 47min 03s"
+    },
+    {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "hotel_california",
+        "biography": "Lançado em 1976, Hotel California é o quinto álbum de estúdio da banda americana Eagles. A faixa-título tornou-se um dos maiores sucessos da banda, com letras enigmáticas e solos de guitarra memoráveis. O álbum explora temas de decadência e desilusão na sociedade americana, consolidando-se como um clássico do rock.",
+        "qtdMusicsAndDuration": "9 faixas – 43min 28s"
+    },
+    {
+        "title": "Horses",
+        "artist": "Patti Smith",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "horses",
+        "biography": "Lançado em 1975, Horses é o álbum de estreia da cantora e poetisa americana Patti Smith. Combinando poesia beat com rock punk, o disco é considerado um marco do movimento punk e da música alternativa. Faixas como 'Gloria' e 'Land' destacam-se pela intensidade lírica e sonora.",
+        "qtdMusicsAndDuration": "8 faixas – 43min 10s"
+    },
+    {
+        "title": "Bad",
+        "artist": "Michael Jackson",
+        "decade": 1980,
+        "genre": "Pop",
+        "coverAsset": "bad",
+        "biography": "Lançado em 1987, Bad é o sétimo álbum de estúdio de Michael Jackson. Produzido por Quincy Jones, o disco apresenta uma série de hits como 'Smooth Criminal', 'Man in the Mirror' e a faixa-título 'Bad'. O álbum consolidou Jackson como o 'Rei do Pop' e vendeu milhões de cópias mundialmente.",
+        "qtdMusicsAndDuration": "11 faixas – 48min 39s"
+    },
+    {
+        "title": "To Pimp A Butterfly",
+        "artist": "Kendrick Lamar",
+        "decade": 2010,
+        "genre": "Hip Hop",
+        "coverAsset": "to_pimp_a_butterfly",
+        "biography": "Lançado em 2015, To Pimp a Butterfly é o terceiro álbum de estúdio de Kendrick Lamar. Combinando hip-hop com jazz, funk e soul, o álbum aborda temas como racismo, identidade e desigualdade social. Aclamado pela crítica, é considerado uma obra-prima contemporânea.",
+        "qtdMusicsAndDuration": "16 faixas – 78min 03s"
+    },
+    {
+        "title": "Exile On Main St.",
+        "artist": "The Rolling Stones",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "exile_on_main_st.",
+        "biography": "Exile On Main St. é o décimo álbum de estúdio da lendária banda britânica The Rolling Stones, lançado em 12 de maio de 1972 pela Rolling Stones Records. Gravado em meio ao exílio fiscal da banda na França, as sessões tumultuadas aconteceram no porão úmido da Villa Nellcôte, perto de Nice, permeadas por problemas pessoais e excessos, o que conferiu ao disco uma atmosfera crua e genuína. Musicalmente, o álbum explora uma vasta paleta de estilos.",
+        "qtdMusicsAndDuration": "18 faixas – 67min 04s"
+    },
+    {
+        "title": "Pet Sounds",
+        "artist": "The Beach Boys",
+        "decade": 1960,
+        "genre": "Rock",
+        "coverAsset": "pet_sounds",
+        "biography": "Pet Sounds é o décimo primeiro álbum de estúdio da banda americana The Beach Boys, lançado em 16 de maio de 1966 pela Capitol Records. Concebido e produzido quase integralmente por Brian Wilson em parceria com o letrista Tony Asher, o disco representou um salto evolutivo em relação ao pop ensolarado dos títulos anteriores, introduzindo arranjos complexos de cordas, metais e efeitos sonoros de estúdio. Gravado entre janeiro e abril de 1966, o projeto refletiu a visão ambiciosa de Wilson de criar um álbum coeso. ",
+        "qtdMusicsAndDuration": "13 faixas – 36min 50s"
+    },
+    {
+        "title": "Selected Ambient Works 85–92",
+        "artist": "Aphex Twin",
+        "decade": 1990,
+        "genre": "Electronic",
+        "coverAsset": "selected_ambient_works_85–92",
+        "biography": "Selected Ambient Works 85–92 é o álbum de estreia do pioneiro da música eletrônica Richard D. James, sob o pseudônimo Aphex Twin, lançado em 9 de novembro de 1992 pela Apollo Records. Reunindo gravações caseiras iniciadas em 1985, quando James tinha apenas 13 anos, o trabalho mescla texturas etéreas de ambient com batidas minimalistas de techno, configurando uma paisagem sonora inovadora para a época. ",
+        "qtdMusicsAndDuration": "13 faixas – 74min 40s "
+    },
+    {
+        "title": "Elis & Tom",
+        "artist": "Elis Regina & Antônio Carlos Jobim",
+        "decade": 1970,
+        "genre": "Bossa Nova",
+        "coverAsset": "elis_&_tom",
+        "biography": "Elis & Tom é um álbum de bossa nova gravado por Elis Regina e Antônio Carlos Jobim, lançado em 1974 pela Philips, fruto de um sonho antigo de Elis de registrar uma obra inteira de Jobim. As gravações ocorreram ao longo de 16 dias no MGM Studios, em Los Angeles, unindo a voz expressiva de Elis à maestria composicional e arranjística de Jobim. O repertório traz clássicos como “Águas de Março” e “Triste”, em versões que equilibram leveza rítmica e sofisticação harmônica, acentuadas pelo refinamento de músicos de estúdio norte-americanos e brasileiros.",
+        "qtdMusicsAndDuration": "14 faixas – 37m 46s"
+    },
+    {
+        "title": "Dois",
+        "artist": "Legião Urbana",
+        "decade": 1980,
+        "genre": "Rock",
+        "coverAsset": "dois",
+        "biography": "Dois é o segundo álbum de estúdio da banda brasileira Legião Urbana, lançado em julho de 1986 pela EMI-Odeon e produzido por Mayrton Bahia. Gravado entre janeiro e março de 1986, o disco consolidou o som pós-punk e new wave do grupo, com letras introspectivas e críticas sociais, destacando-se faixas como 'Eduardo e Mônica' e 'Índios'. Sob o peso do 'síndrome do segundo álbum', Renato Russo e companhia superaram as expectativas, reduzindo o repertório planejado de 20 para 12 músicas e construindo uma obra mais coesa e acessível.",
+        "qtdMusicsAndDuration": "9 faixas – 42min 10s"
+    },
+    {
+        "title": "Born To Run",
+        "artist": "Bruce Springsteen",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "born_to_run",
+        "biography": "Born To Run é o terceiro álbum de estúdio de Bruce Springsteen, lançado em 25 de agosto de 1975 pela Columbia Records, marcando sua consagração como estrela do rock americano. Co-produzido por Springsteen, pelo empresário Mike Appel e por Jon Landau, o álbum trouxe a ambição de replicar o “Wall of Sound” de Phil Spector, resultando em arranjos exuberantes e uma sonoridade épica.",
+        "qtdMusicsAndDuration": "8 faixas – 39min 27s"
+    },
+    {
+        "title": "London Calling",
+        "artist": "The Clash",
+        "decade": 1970,
+        "genre": "Rock",
+        "coverAsset": "london_calling",
+        "biography": "London Calling é o terceiro álbum de estúdio da banda britânica The Clash, lançado em 14 de dezembro de 1979 pela CBS Records no Reino Unido (e em janeiro de 1980 pela Epic nos EUA). Concebido como um duplo LP, o disco mescla punk rock com reggae, rockabilly, ska, jazz e pop, demonstrando a capacidade do grupo de transcender barreiras estilísticas. Produzido por Guy Stevens nos estúdios Wessex Sound, London Calling aborda temas como crise social, terrorismo nuclear e desigualdade, com letras contundentes em faixas como 'Clampdown' e 'London Calling'. A crítica contemporânea saudou a ousadia musical e a profundidade lírica, posicionando-o como um dos pilares do pós-punk.",
+        "qtdMusicsAndDuration": "19 faixas – 65min 07s"
+    },
+    {
+        "title": "The College Dropout",
+        "artist": "Kanye West",
+        "decade": 2000,
+        "genre": "Hip Hop",
+        "coverAsset": "the_college_dropout",
+        "biography": "The College Dropout é o álbum de estreia do rapper e produtor americano Kanye West, lançado em 10 de fevereiro de 2004 pelas gravadoras Roc-A-Fella e Def Jam Recordings. Após anos de destaque como produtor para nomes como Jay-Z e Talib Kweli, West decidiu debutar como artista, abordando em suas letras temas como educação, fé, pressão social e consumismo. Musicalmente, o álbum se destaca pelo uso criativo de samples soul, batidas minimalistas e refrãos corais, equilibrando introspecção e ambição.",
+        "qtdMusicsAndDuration": "21 faixas – 76min 42s"
+    }
+]

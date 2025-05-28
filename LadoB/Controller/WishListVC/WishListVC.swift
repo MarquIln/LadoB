@@ -8,38 +8,78 @@
 import UIKit
 
 class WishListVC: UIViewController {
-    var albuns = Album.loadAlbunsFromJSON() //pegando os albusn do json pra por na tela
-    
+    var albuns = Persistence.getAllAlbuns()
+    var wishedAlbuns: [Album] = []
+    var filteredAlbums: [Album] = []
+
     lazy var emptyStateWishList: EmptyState = {
-            var empty = EmptyState()
-            empty.translatesAutoresizingMaskIntoConstraints = false
-            empty.titleText = "Nenhum LP cadastrado ainda"
-            empty.descriptionText = """
-                                    Procure um álbum que gostaria de ter em sua Discoteca, salve no Radar para lembrar na hora que estiver garimpando por aí.
-                                    """
-            return empty
-        }()
+        var empty = EmptyState()
+        empty.translatesAutoresizingMaskIntoConstraints = false
+        empty.titleText = "Nenhum LP cadastrado ainda"
+        empty.descriptionText = """
+        Procure um álbum que gostaria de ter em sua Discoteca, salve no Radar para lembrar na hora que estiver garimpando por aí.
+        """
+        empty.buttonAction = { [weak self] in
+            self?.tabBarController?.selectedIndex = 0
+        }
+        return empty
+    }()
+
+    lazy var wishListCollectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createSectionLayout())
+        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -6)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.backgroundColor = .purple2
+        collectionView.register(CardWishList.self, forCellWithReuseIdentifier: CardWishList.identifier)
+        return collectionView
+    }()
+
+    let searchController = UISearchController(searchResultsController: nil)
+
+    private func configureSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Álbum, Artista, Banda"
+        searchController.searchBar.searchTextField.font = Fonts.bodyBold
+        searchController.searchBar.autocapitalizationType = .none
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.searchController = searchController
+        searchController.searchBar.delegate = self
+        definesPresentationContext = true
+    }
     
-//    lazy var cardTest: CardWishList = {
-//        var card = CardWishList()
-//        card.translatesAutoresizingMaskIntoConstraints = false
-//        card.artistName = "Teste"
-//        card.songName = "Musica banger"
-//        card.albumImageURL = URL(string: album[0].coverURL) //pega a url do primeiro album
-//
-//        card.setup()
-//        return card
-//    }()
+    func updateLayout() {
+        wishListCollectionView.removeFromSuperview()
+        emptyStateWishList.removeFromSuperview()
+        addSubviews()
+        setupConstraints()
+        wishListCollectionView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        wishedAlbuns = Persistence.getWishedAlbuns()
+        updateLayout()
+    }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple1
-        
-        
-        setup()
-    }
+        navigationItem.title = "No Radar"
+        navigationController?.navigationBar.backgroundColor = .purple1
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.pink2]
 
+        configureSearchController()
+
+        wishedAlbuns = Persistence.getWishedAlbuns()
+
+        setup()
+        updateLayout()
+    }
 }
 
 extension WishListVC: ViewCodeProtocol {
@@ -48,8 +88,6 @@ extension WishListVC: ViewCodeProtocol {
         if albuns.isEmpty {
             view.addSubview(emptyStateWishList)
         }
-    
-//        view.addSubview(cardTest)
     }
     
     func setupConstraints() {
