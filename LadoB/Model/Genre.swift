@@ -7,34 +7,28 @@
 
 
 enum Genre: String, Codable, CaseIterable {
-    case rock = "Rock"
-    case pop = "Pop"
-    case jazz = "Jazz"
-    case blues = "Blues"
-    case hipHop = "Hip Hop"
-    case electronic = "Electronic"
-    case classical = "Classical"
-    case reggae = "Reggae"
-    case metal = "Metal"
-    case country = "Country"
-    case heavy_metal = "Heavy Metal"
-    case folk = "Folk"
-    case rnb = "R&B"
-    case punk = "Punk"
-    case soul = "Soul"
-    case indie = "Indie"
-    case latin = "Latin"
-    case funk = "Funk"
-    case disco = "Disco"
-    case gospel = "Gospel"
-    case kpop = "K-Pop"
-    case other = "Other"
-    case hard_rock = "Hard Rock"
-    case grunge = "Grunge"
-    case alternativeRock = "Alternative Rock"
-    case mpb = "MPB"
-    case bossaNova = "Bossa Nova"
-    case jazzBossaNova = "Jazz/Bossa Nova"
+    case Rock
+    case Pop
+    case Jazz
+    case Blues
+    case HipHop = "HipHop"
+    case Electronic
+    case Classical
+    case Reggae
+    case Metal
+    case Country
+    case Folk
+    case Rnb = "R&B"
+    case Punk
+    case Soul
+    case Indie
+    case Latin
+    case Funk
+    case MPB
+    case Disco
+    case Gospel
+    case Kpop = "K-Pop"
+    case Other
 }
 
 extension Genre {

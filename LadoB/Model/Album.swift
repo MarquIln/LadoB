@@ -7,31 +7,38 @@
 
 import Foundation
 
-struct Album: Codable, Equatable {
+struct Album: Decodable {
     let id: UUID?
     let title: String
     let artist: String
     let decade: Int
     let genre: Genre
-    let coverAsset: String
-    var isWished: Bool?
-    var isFavorite: Bool?
-    var isDisco: Bool?
-    var biography: String?
-    var qtdMusicsAndDuration: String?
-    
-    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverAsset: String, isWished: Bool? = nil, isFavorite: Bool? = nil, isDisco: Bool? = nil, biography: String? = nil,
-         qtdMusicsAndDuration: String? = nil) {
+    let coverURL: String
+    var isWished: Bool? = false
+
+    init(id: UUID = UUID(), title: String, artist: String, decade: Int, genre: Genre, coverURL: String) {
         self.id = id
         self.title = title
         self.artist = artist
         self.decade = decade
         self.genre = genre
-        self.coverAsset = coverAsset
-        self.isWished = isWished
-        self.isFavorite = isFavorite
-        self.isDisco = isDisco
-        self.biography = biography
-        self.qtdMusicsAndDuration = qtdMusicsAndDuration
+        self.coverURL = coverURL
     }
+    
+    //função para retornar o json de albuns e usar no app
+    static func loadAlbunsFromJSON() -> [Album] {
+        
+        //caminho do arquivo
+        guard let url = Bundle.main.url(forResource: "mockedData", withExtension: "json"),
+                let data = try? Data(contentsOf: url), // le o arquivo pra transofrma em data
+                let albunsListFromJson = try? JSONDecoder().decode([Album].self, from: data)
+                //tenta decodar a data em um array de Album
+        else {
+            
+            return []
+        }
+        
+        return albunsListFromJson
+    }
+    
 }
